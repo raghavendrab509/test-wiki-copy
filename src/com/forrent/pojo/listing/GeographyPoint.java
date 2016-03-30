@@ -4,14 +4,14 @@ import java.util.List;
 
 public class GeographyPoint
 {
-    private List<Float> coordinates;
+    private List<Double> coordinates;
 
-    public List<Float> getCoordinates()
+    public List<Double> getCoordinates()
     {
         return this.coordinates;
     }
 
-    public void setCoordinates(final List<Float> coordinates)
+    public void setCoordinates(final List<Double> coordinates)
     {
         this.coordinates = coordinates;
     }
