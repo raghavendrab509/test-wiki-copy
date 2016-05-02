@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_gIQBoA4xEeaAP_IZQp9FEw" name="RootElement">
+  <packagedElement xmi:type="uml:Model" xmi:id="_Bn8kMA41EeaDyPIpLbp0dw" name="generated">
+    <packagedElement xmi:type="uml:Package" xmi:id="_H9fJ8A41EeaDyPIpLbp0dw" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_H9fxAA41EeaDyPIpLbp0dw" name="forrent">
+        <packagedElement xmi:type="uml:Package" xmi:id="_H9fxAQ41EeaDyPIpLbp0dw" name="beans">
+          <packagedElement xmi:type="uml:Package" xmi:id="_H9fxAg41EeaDyPIpLbp0dw" name="listing">
+            <packagedElement xmi:type="uml:Class" xmi:id="_H9g_IA41EeaDyPIpLbp0dw" name="Account" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H9r-QA41EeaDyPIpLbp0dw" name="package_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_H9lQkA41EeaDyPIpLbp0dw" name="Account implements Serializable" client="_H9g_IA41EeaDyPIpLbp0dw" supplier="_H9iNQg41EeaDyPIpLbp0dw" contract="_H9iNQg41EeaDyPIpLbp0dw"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H9xd0A41EeaDyPIpLbp0dw" name="getPackage_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H91vQA41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H92WUA41EeaDyPIpLbp0dw" name="setPackage_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H92WUQ41EeaDyPIpLbp0dw" name="package_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_H94ykA41EeaDyPIpLbp0dw" name="Geography" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H95ZoQ41EeaDyPIpLbp0dw" name="address_one" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H96AsA41EeaDyPIpLbp0dw" name="address_two" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H96AsQ41EeaDyPIpLbp0dw" name="city_id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H96nwA41EeaDyPIpLbp0dw" name="city_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H96nwQ41EeaDyPIpLbp0dw" name="country_code" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H97O0A41EeaDyPIpLbp0dw" name="location" visibility="private" type="_H96nwg41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H97O0Q41EeaDyPIpLbp0dw" name="metro_id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H97O0g41EeaDyPIpLbp0dw" name="metro_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H9714A41EeaDyPIpLbp0dw" name="state_code" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H9714Q41EeaDyPIpLbp0dw" name="state_id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H9714g41EeaDyPIpLbp0dw" name="state_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H98c8A41EeaDyPIpLbp0dw" name="super_city_id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H98c8Q41EeaDyPIpLbp0dw" name="super_city_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H99EAg41EeaDyPIpLbp0dw" name="zip_code" visibility="private" type="_H99EAQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H99rEA41EeaDyPIpLbp0dw" name="zip_ext" visibility="private" type="_H99EAQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_H95ZoA41EeaDyPIpLbp0dw" name="Geography implements Serializable" client="_H94ykA41EeaDyPIpLbp0dw" supplier="_H9iNQg41EeaDyPIpLbp0dw" contract="_H9iNQg41EeaDyPIpLbp0dw"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H99rEQ41EeaDyPIpLbp0dw" name="getAddress_one" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H99rEg41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H9-SIA41EeaDyPIpLbp0dw" name="setAddress_one" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H9-SIQ41EeaDyPIpLbp0dw" name="address_one" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H9-SIg41EeaDyPIpLbp0dw" name="getAddress_two" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H9-5MA41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H9-5MQ41EeaDyPIpLbp0dw" name="setAddress_two" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H9-5Mg41EeaDyPIpLbp0dw" name="address_two" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H9-5Mw41EeaDyPIpLbp0dw" name="getCity_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H9_gQA41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H9_gQQ41EeaDyPIpLbp0dw" name="setCity_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H9_gQg41EeaDyPIpLbp0dw" name="city_id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-AHUA41EeaDyPIpLbp0dw" name="getCity_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-AHUQ41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-AHUg41EeaDyPIpLbp0dw" name="setCity_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-AuYA41EeaDyPIpLbp0dw" name="city_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-AuYQ41EeaDyPIpLbp0dw" name="getCountry_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-AuYg41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-BVcA41EeaDyPIpLbp0dw" name="setCountry_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-BVcQ41EeaDyPIpLbp0dw" name="country_code" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-B8gA41EeaDyPIpLbp0dw" name="getLocation" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-B8gQ41EeaDyPIpLbp0dw" type="_H96nwg41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-CjkA41EeaDyPIpLbp0dw" name="setLocation" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-CjkQ41EeaDyPIpLbp0dw" name="location" type="_H96nwg41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-Cjkg41EeaDyPIpLbp0dw" name="getMetro_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-DKoA41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-DKoQ41EeaDyPIpLbp0dw" name="setMetro_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-DKog41EeaDyPIpLbp0dw" name="metro_id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-DKow41EeaDyPIpLbp0dw" name="getMetro_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-DxsA41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-DxsQ41EeaDyPIpLbp0dw" name="setMetro_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-Dxsg41EeaDyPIpLbp0dw" name="metro_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-EYwA41EeaDyPIpLbp0dw" name="getState_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-EYwQ41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-EYwg41EeaDyPIpLbp0dw" name="setState_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-E_0A41EeaDyPIpLbp0dw" name="state_code" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-E_0Q41EeaDyPIpLbp0dw" name="getState_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-E_0g41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-Fm4A41EeaDyPIpLbp0dw" name="setState_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-Fm4Q41EeaDyPIpLbp0dw" name="state_id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-Fm4g41EeaDyPIpLbp0dw" name="getState_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-GN8A41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-GN8Q41EeaDyPIpLbp0dw" name="setState_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-GN8g41EeaDyPIpLbp0dw" name="state_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-G1AA41EeaDyPIpLbp0dw" name="getSuper_city_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-G1AQ41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-G1Ag41EeaDyPIpLbp0dw" name="setSuper_city_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-G1Aw41EeaDyPIpLbp0dw" name="super_city_id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-HcEA41EeaDyPIpLbp0dw" name="getSuper_city_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-HcEQ41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-HcEg41EeaDyPIpLbp0dw" name="setSuper_city_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-HcEw41EeaDyPIpLbp0dw" name="super_city_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-IDIA41EeaDyPIpLbp0dw" name="getZip_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-IDIQ41EeaDyPIpLbp0dw" type="_H99EAQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-IDIg41EeaDyPIpLbp0dw" name="setZip_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-IDIw41EeaDyPIpLbp0dw" name="zip_code" type="_H99EAQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-IqMA41EeaDyPIpLbp0dw" name="getZip_ext" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-IqMQ41EeaDyPIpLbp0dw" type="_H99EAQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-IqMg41EeaDyPIpLbp0dw" name="setZip_ext" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-IqMw41EeaDyPIpLbp0dw" name="zip_ext" type="_H99EAQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_H96nwg41EeaDyPIpLbp0dw" name="GeographyPoint" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H-KfYQ41EeaDyPIpLbp0dw" name="coordinates" visibility="private" type="_H-KfYA41EeaDyPIpLbp0dw" isUnique="false">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H-M7oA41EeaDyPIpLbp0dw"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H-OJwA41EeaDyPIpLbp0dw" value="*"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H-Ow0A41EeaDyPIpLbp0dw" name="type" visibility="private" isLeaf="true" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_H-J4UA41EeaDyPIpLbp0dw" name="GeographyPoint implements Serializable" client="_H96nwg41EeaDyPIpLbp0dw" supplier="_H9iNQg41EeaDyPIpLbp0dw" contract="_H9iNQg41EeaDyPIpLbp0dw"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-Ow0Q41EeaDyPIpLbp0dw" name="getCoordinates" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-Ow0g41EeaDyPIpLbp0dw" type="_H-KfYA41EeaDyPIpLbp0dw" direction="return">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H-PX4A41EeaDyPIpLbp0dw"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H-PX4Q41EeaDyPIpLbp0dw" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-PX4g41EeaDyPIpLbp0dw" name="setCoordinates" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-P-8A41EeaDyPIpLbp0dw" name="coordinates" type="_H-KfYA41EeaDyPIpLbp0dw">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H-P-8Q41EeaDyPIpLbp0dw"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H-P-8g41EeaDyPIpLbp0dw" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-P-8w41EeaDyPIpLbp0dw" name="getType" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-QmAA41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_H-KfYA41EeaDyPIpLbp0dw" name="Double"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_H-RNEA41EeaDyPIpLbp0dw" name="Listing" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H-R0IQ41EeaDyPIpLbp0dw" name="account" visibility="private" type="_H9g_IA41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H-R0Ig41EeaDyPIpLbp0dw" name="geo" visibility="private" type="_H94ykA41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H-SbMA41EeaDyPIpLbp0dw" name="id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_H-R0IA41EeaDyPIpLbp0dw" name="Listing implements Serializable" client="_H-RNEA41EeaDyPIpLbp0dw" supplier="_H9iNQg41EeaDyPIpLbp0dw" contract="_H9iNQg41EeaDyPIpLbp0dw"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-SbMQ41EeaDyPIpLbp0dw" name="getAccount" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-SbMg41EeaDyPIpLbp0dw" type="_H9g_IA41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-SbMw41EeaDyPIpLbp0dw" name="setAccount" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-TCQA41EeaDyPIpLbp0dw" name="account" type="_H9g_IA41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-TCQQ41EeaDyPIpLbp0dw" name="getGeo" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-TCQg41EeaDyPIpLbp0dw" type="_H94ykA41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-TCQw41EeaDyPIpLbp0dw" name="setGeo" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-TCRA41EeaDyPIpLbp0dw" name="geo" type="_H94ykA41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-TpUA41EeaDyPIpLbp0dw" name="getId" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-TpUQ41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-TpUg41EeaDyPIpLbp0dw" name="setId" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-TpUw41EeaDyPIpLbp0dw" name="id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_H-UQYA41EeaDyPIpLbp0dw" name="ListingContext" visibility="public"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_H-U3cA41EeaDyPIpLbp0dw" name="ListingContexts" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_H-U3cQ41EeaDyPIpLbp0dw" name="webSearch" visibility="private" type="_H-UQYA41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-U3cg41EeaDyPIpLbp0dw" name="getWebSearch" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-VegA41EeaDyPIpLbp0dw" type="_H-UQYA41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_H-VegQ41EeaDyPIpLbp0dw" name="setWebSearch" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_H-Vegg41EeaDyPIpLbp0dw" name="webSearch" type="_H-UQYA41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_H9hmMA41EeaDyPIpLbp0dw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_H9iNQA41EeaDyPIpLbp0dw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_H9iNQQ41EeaDyPIpLbp0dw" name="io">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_H9iNQg41EeaDyPIpLbp0dw" name="Serializable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_H9nFwA41EeaDyPIpLbp0dw" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_H9nFwQ41EeaDyPIpLbp0dw" name="String"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_H98c8g41EeaDyPIpLbp0dw" name="datatype">
+    <packagedElement xmi:type="uml:Package" xmi:id="_H99EAA41EeaDyPIpLbp0dw" name="datatype">
+      <packagedElement xmi:type="uml:Class" xmi:id="_H99EAQ41EeaDyPIpLbp0dw" name="Integer"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_LbI8kA41EeaDyPIpLbp0dw" name="com.forrent.beans.listings">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LbKxwA41EeaDyPIpLbp0dw" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LbLY0A41EeaDyPIpLbp0dw" name="forrent">
+        <packagedElement xmi:type="uml:Package" xmi:id="_LbLY0Q41EeaDyPIpLbp0dw" name="beans">
+          <packagedElement xmi:type="uml:Package" xmi:id="_LbLY0g41EeaDyPIpLbp0dw" name="listing">
+            <packagedElement xmi:type="uml:Class" xmi:id="_LbL_4A41EeaDyPIpLbp0dw" name="Listing" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LbMm8A41EeaDyPIpLbp0dw" name="account" visibility="private" type="_LbL_4g41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LbMm8g41EeaDyPIpLbp0dw" name="geo" visibility="private" type="_LbMm8Q41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_LbMm8w41EeaDyPIpLbp0dw" name="id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_LbL_4Q41EeaDyPIpLbp0dw" name="Listing implements Serializable" client="_LbL_4A41EeaDyPIpLbp0dw" supplier="_H9iNQg41EeaDyPIpLbp0dw" contract="_H9iNQg41EeaDyPIpLbp0dw"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LbNOAA41EeaDyPIpLbp0dw" name="getAccount" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LbNOAQ41EeaDyPIpLbp0dw" type="_LbL_4g41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LbNOAg41EeaDyPIpLbp0dw" name="setAccount" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LbNOAw41EeaDyPIpLbp0dw" name="account" type="_LbL_4g41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LbNOBA41EeaDyPIpLbp0dw" name="getGeo" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LbN1EA41EeaDyPIpLbp0dw" type="_LbMm8Q41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LbN1EQ41EeaDyPIpLbp0dw" name="setGeo" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LbN1Eg41EeaDyPIpLbp0dw" name="geo" type="_LbMm8Q41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LbN1Ew41EeaDyPIpLbp0dw" name="getId" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LbN1FA41EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_LbN1FQ41EeaDyPIpLbp0dw" name="setId" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_LbOcIA41EeaDyPIpLbp0dw" name="id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_LbL_4g41EeaDyPIpLbp0dw" name="Account" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXHkQA45EeaDyPIpLbp0dw" name="package_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NXG9MA45EeaDyPIpLbp0dw" name="Account implements Serializable" client="_LbL_4g41EeaDyPIpLbp0dw" supplier="_H9iNQg41EeaDyPIpLbp0dw" contract="_H9iNQg41EeaDyPIpLbp0dw"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXILUA45EeaDyPIpLbp0dw" name="getPackage_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXILUQ45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXILUg45EeaDyPIpLbp0dw" name="setPackage_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXILUw45EeaDyPIpLbp0dw" name="package_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_LbMm8Q41EeaDyPIpLbp0dw" name="Geography" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXKAgQ45EeaDyPIpLbp0dw" name="address_one" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXKnkA45EeaDyPIpLbp0dw" name="address_two" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXKnkQ45EeaDyPIpLbp0dw" name="city_id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXKnkg45EeaDyPIpLbp0dw" name="city_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXKnkw45EeaDyPIpLbp0dw" name="country_code" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXLOoA45EeaDyPIpLbp0dw" name="location" visibility="private" type="_NXKnlA45EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXLOoQ45EeaDyPIpLbp0dw" name="metro_id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXLOog45EeaDyPIpLbp0dw" name="metro_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXLOow45EeaDyPIpLbp0dw" name="state_code" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXL1sA45EeaDyPIpLbp0dw" name="state_id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXL1sQ45EeaDyPIpLbp0dw" name="state_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXL1sg45EeaDyPIpLbp0dw" name="super_city_id" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXL1sw45EeaDyPIpLbp0dw" name="super_city_name" visibility="private" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXL1tA45EeaDyPIpLbp0dw" name="zip_code" visibility="private" type="_H99EAQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXMcwA45EeaDyPIpLbp0dw" name="zip_ext" visibility="private" type="_H99EAQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NXKAgA45EeaDyPIpLbp0dw" name="Geography implements Serializable" client="_LbMm8Q41EeaDyPIpLbp0dw" supplier="_H9iNQg41EeaDyPIpLbp0dw" contract="_H9iNQg41EeaDyPIpLbp0dw"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXMcwQ45EeaDyPIpLbp0dw" name="getAddress_one" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXMcwg45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXMcww45EeaDyPIpLbp0dw" name="setAddress_one" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXMcxA45EeaDyPIpLbp0dw" name="address_one" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXMcxQ45EeaDyPIpLbp0dw" name="getAddress_two" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXND0A45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXND0Q45EeaDyPIpLbp0dw" name="setAddress_two" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXND0g45EeaDyPIpLbp0dw" name="address_two" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXND0w45EeaDyPIpLbp0dw" name="getCity_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXND1A45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXND1Q45EeaDyPIpLbp0dw" name="setCity_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXND1g45EeaDyPIpLbp0dw" name="city_id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXNq4A45EeaDyPIpLbp0dw" name="getCity_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXNq4Q45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXNq4g45EeaDyPIpLbp0dw" name="setCity_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXNq4w45EeaDyPIpLbp0dw" name="city_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXNq5A45EeaDyPIpLbp0dw" name="getCountry_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXOR8A45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXOR8Q45EeaDyPIpLbp0dw" name="setCountry_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXOR8g45EeaDyPIpLbp0dw" name="country_code" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXOR8w45EeaDyPIpLbp0dw" name="getLocation" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXOR9A45EeaDyPIpLbp0dw" type="_NXKnlA45EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXO5AA45EeaDyPIpLbp0dw" name="setLocation" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXO5AQ45EeaDyPIpLbp0dw" name="location" type="_NXKnlA45EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXO5Ag45EeaDyPIpLbp0dw" name="getMetro_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXO5Aw45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXO5BA45EeaDyPIpLbp0dw" name="setMetro_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXO5BQ45EeaDyPIpLbp0dw" name="metro_id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXPgEA45EeaDyPIpLbp0dw" name="getMetro_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXPgEQ45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXPgEg45EeaDyPIpLbp0dw" name="setMetro_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXPgEw45EeaDyPIpLbp0dw" name="metro_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXQHIA45EeaDyPIpLbp0dw" name="getState_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXQHIQ45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXQHIg45EeaDyPIpLbp0dw" name="setState_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXQHIw45EeaDyPIpLbp0dw" name="state_code" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXQHJA45EeaDyPIpLbp0dw" name="getState_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXQHJQ45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXQuMA45EeaDyPIpLbp0dw" name="setState_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXQuMQ45EeaDyPIpLbp0dw" name="state_id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXQuMg45EeaDyPIpLbp0dw" name="getState_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXQuMw45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXQuNA45EeaDyPIpLbp0dw" name="setState_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXQuNQ45EeaDyPIpLbp0dw" name="state_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXRVQA45EeaDyPIpLbp0dw" name="getSuper_city_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXRVQQ45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXRVQg45EeaDyPIpLbp0dw" name="setSuper_city_id" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXRVQw45EeaDyPIpLbp0dw" name="super_city_id" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXRVRA45EeaDyPIpLbp0dw" name="getSuper_city_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXRVRQ45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXRVRg45EeaDyPIpLbp0dw" name="setSuper_city_name" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXR8UA45EeaDyPIpLbp0dw" name="super_city_name" type="_H9nFwQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXR8UQ45EeaDyPIpLbp0dw" name="getZip_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXR8Ug45EeaDyPIpLbp0dw" type="_H99EAQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXR8Uw45EeaDyPIpLbp0dw" name="setZip_code" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXR8VA45EeaDyPIpLbp0dw" name="zip_code" type="_H99EAQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXSjYA45EeaDyPIpLbp0dw" name="getZip_ext" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXSjYQ45EeaDyPIpLbp0dw" type="_H99EAQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXSjYg45EeaDyPIpLbp0dw" name="setZip_ext" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXSjYw45EeaDyPIpLbp0dw" name="zip_ext" type="_H99EAQ41EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_NXKnlA45EeaDyPIpLbp0dw" name="GeographyPoint" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXTxgA45EeaDyPIpLbp0dw" name="coordinates" visibility="private" type="_NXTKcQ45EeaDyPIpLbp0dw" isUnique="false">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NXTxgQ45EeaDyPIpLbp0dw"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NXTxgg45EeaDyPIpLbp0dw" value="*"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXTxgw45EeaDyPIpLbp0dw" name="type" visibility="private" isLeaf="true" type="_H9nFwQ41EeaDyPIpLbp0dw" isUnique="false"/>
+              <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NXTKcA45EeaDyPIpLbp0dw" name="GeographyPoint implements Serializable" client="_NXKnlA45EeaDyPIpLbp0dw" supplier="_H9iNQg41EeaDyPIpLbp0dw" contract="_H9iNQg41EeaDyPIpLbp0dw"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXTxhA45EeaDyPIpLbp0dw" name="getCoordinates" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXUYkA45EeaDyPIpLbp0dw" type="_NXTKcQ45EeaDyPIpLbp0dw" direction="return">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NXUYkQ45EeaDyPIpLbp0dw"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NXUYkg45EeaDyPIpLbp0dw" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXUYkw45EeaDyPIpLbp0dw" name="setCoordinates" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXUYlA45EeaDyPIpLbp0dw" name="coordinates" type="_NXTKcQ45EeaDyPIpLbp0dw">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NXUYlQ45EeaDyPIpLbp0dw"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NXUYlg45EeaDyPIpLbp0dw" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXU_oA45EeaDyPIpLbp0dw" name="getType" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXU_oQ45EeaDyPIpLbp0dw" type="_H9nFwQ41EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_NXTKcQ45EeaDyPIpLbp0dw" name="Double"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_NXW00A45EeaDyPIpLbp0dw" name="ListingContext" visibility="public"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_NXW00Q45EeaDyPIpLbp0dw" name="ListingContexts" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_NXXb4A45EeaDyPIpLbp0dw" name="webSearch" visibility="private" type="_NXW00A45EeaDyPIpLbp0dw" isUnique="false"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXXb4Q45EeaDyPIpLbp0dw" name="getWebSearch" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXXb4g45EeaDyPIpLbp0dw" type="_NXW00A45EeaDyPIpLbp0dw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_NXYC8A45EeaDyPIpLbp0dw" name="setWebSearch" visibility="public">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_NXYC8Q45EeaDyPIpLbp0dw" name="webSearch" type="_NXW00A45EeaDyPIpLbp0dw"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

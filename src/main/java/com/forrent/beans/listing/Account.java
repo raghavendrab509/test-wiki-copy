@@ -5,15 +5,13 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class Account implements Serializable
 {
-    private String package_name;
+    private String packageName;
 
-    public String getPackage_name()
-    {
-        return this.package_name;
+    public String getPackageName() {
+        return this.packageName;
     }
 
-    public void setPackage_name(final String package_name)
-    {
-        this.package_name = package_name;
+    public void setPackageName(final String packageName) {
+        this.packageName = packageName;
     }
 }
