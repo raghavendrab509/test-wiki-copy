@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.9" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
   realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.forrent.beans.listing.Account" project="java-beans" 
-    file="/java-beans/src/main/java/com/forrent/beans/listing/Account.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="com.forrent.beans.propertyListing.Account" project="java-beans" 
+    file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Account.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="124" y="11"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="com.forrent.beans.listing.Geography" project="java-beans" 
-    file="/java-beans/src/main/java/com/forrent/beans/listing/Geography.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="com.forrent.beans.propertyListing.Geography" project="java-beans" 
+    file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Geography.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="527" y="228"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +20,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.forrent.beans.listing.GeographyPoint" project="java-beans" 
-    file="/java-beans/src/main/java/com/forrent/beans/listing/GeographyPoint.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="com.forrent.beans.propertyListing.GeographyPoint" project="java-beans" 
+    file="/java-beans/src/main/java/com/forrent/beans/propertyListing/GeographyPoint.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="876" y="174"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,8 +30,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.forrent.beans.listing.PropertyListing" project="java-beans" 
-    file="/java-beans/src/main/java/com/forrent/beans/listing/PropertyListing.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="com.forrent.beans.propertyListing.PropertyListing" project="java-beans" 
+    file="/java-beans/src/main/java/com/forrent/beans/propertyListing/PropertyListing.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="114" y="266"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      

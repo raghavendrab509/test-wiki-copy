@@ -1,4 +1,4 @@
-package com.forrent.beans.listing;
+package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
 

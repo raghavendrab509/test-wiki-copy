@@ -1,17 +1,17 @@
-package com.forrent.beans.listing;
+package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Map;
 
 @SuppressWarnings("serial")
 public class ApartmentProperty implements Serializable
 {
-    private Map<String, Floorplan> floorplans;
+    private List<Floorplan> floorplans;
     private FloorplanSummary floorplanSummary;
     private Map<Integer, FloorplanSummary> floorplanSummaryByRoomCount;
-    private Map<String, Image> images;
 
-    public Map<String, Floorplan> getFloorplans() {
+    public List<Floorplan> getFloorplans() {
         return this.floorplans;
     }
 
@@ -23,11 +23,7 @@ public class ApartmentProperty implements Serializable
         return this.floorplanSummaryByRoomCount;
     }
 
-    public Map<String, Image> getImages() {
-        return images;
-    }
-
-    public void setFloorplans(final Map<String, Floorplan> floorplans) {
+    public void setFloorplans(final List<Floorplan> floorplans) {
         this.floorplans = floorplans;
     }
 
@@ -37,9 +33,5 @@ public class ApartmentProperty implements Serializable
 
     public void setFloorplanSummaryByRoomCount(final Map<Integer, FloorplanSummary> floorplanSummaryByRoomCount) {
         this.floorplanSummaryByRoomCount = floorplanSummaryByRoomCount;
-    }
-
-    public void setImages(Map<String, Image> images) {
-        this.images = images;
     }
 }

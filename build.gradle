@@ -2,14 +2,28 @@ buildscript {
     repositories {
         mavenCentral()
     }
+    dependencies {
+        classpath 'org.ajoberstar:grgit:1.6.0'
+    }
 }
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
+ext {
+    // Open the Git repository in the current directory.
+    git = org.ajoberstar.grgit.Grgit.open(file('.'))
+
+    // Get commit id of HEAD.
+    revision = git.head().id
+}
+
+// Use abbreviatedId commit id in the version.
+version = "0.0.1.${git.head().abbreviatedId}"
+
 jar {
-    baseName = 'plain-old-java-objects'
-    version =  '0.0.1'
+    baseName = 'java-beans'
+    version = version
 }
 
 sourceCompatibility = 1.8

@@ -1,4 +1,4 @@
-package com.forrent.beans.listing;
+package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,6 +11,10 @@ public class GeographyPoint implements Serializable
 
     public List<Double> getCoordinates() {
         return this.coordinates;
+    }
+
+    public Double getCoordinates(final Integer index) {
+        return this.coordinates.get(index);
     }
 
     public String getType() {

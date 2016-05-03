@@ -1,4 +1,4 @@
-package com.forrent.beans.listing;
+package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
 
@@ -18,8 +18,8 @@ public class Geography implements Serializable
     private String stateName;
     private String superCityId;
     private String superCityName;
-    private Integer zipCode;
-    private Integer zipExt;
+    private String zipCode;
+    private String zipExt;
 
     public String getAddressOne() {
         return this.addressOne;
@@ -73,11 +73,11 @@ public class Geography implements Serializable
         return this.superCityName;
     }
 
-    public Integer getZipCode() {
+    public String getZipCode() {
         return this.zipCode;
     }
 
-    public Integer getZipExt() {
+    public String getZipExt() {
         return this.zipExt;
     }
 
@@ -133,11 +133,11 @@ public class Geography implements Serializable
         this.superCityName = superCityName;
     }
 
-    public void setZipCode(final Integer zipCode) {
+    public void setZipCode(final String zipCode) {
         this.zipCode = zipCode;
     }
 
-    public void setZipExt(final Integer zipExt) {
+    public void setZipExt(final String zipExt) {
         this.zipExt = zipExt;
     }
 }
