@@ -3,69 +3,122 @@
   realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="com.forrent.beans.propertyListing.Account" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Account.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="124" y="11"/>    
+    <position height="-1" width="-1" x="123" y="128"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
   <class id="2" language="java" name="com.forrent.beans.propertyListing.Geography" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Geography.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="527" y="228"/>    
+    <position height="-1" width="-1" x="140" y="370"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.forrent.beans.propertyListing.GeographyPoint" project="java-beans" 
-    file="/java-beans/src/main/java/com/forrent/beans/propertyListing/GeographyPoint.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="876" y="174"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="com.forrent.beans.propertyListing.PropertyListing" project="java-beans" 
+  <class id="3" language="java" name="com.forrent.beans.propertyListing.PropertyListing" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/PropertyListing.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="114" y="266"/>    
+    <position height="-1" width="-1" x="451" y="129"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.forrent.beans.propertyListing.ApartmentProperty" project="java-beans" 
+    file="/java-beans/src/main/java/com/forrent/beans/propertyListing/ApartmentProperty.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="873" y="134"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.forrent.beans.propertyListing.Floorplan" project="java-beans" 
+    file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Floorplan.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="868" y="294"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="false">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="5">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="6" name="account"/>      
-      <multiplicity id="7" minimum="0" maximum="1"/>    
+  <class id="6" language="java" name="com.forrent.beans.propertyListing.PhoneNumber" project="java-beans" 
+    file="/java-beans/src/main/java/com/forrent/beans/propertyListing/PhoneNumber.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="403" y="404"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="false">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.forrent.beans.propertyListing.Image" project="java-beans" 
+    file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Image.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="633" y="390"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="false">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <association id="8">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="9" name="account"/>      
+      <multiplicity id="10" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="8">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="9" name="geo"/>      
-      <multiplicity id="10" minimum="0" maximum="1"/>    
+  <association id="11">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="12" name="geo"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="11">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="12" name="location"/>      
-      <multiplicity id="13" minimum="0" maximum="1"/>    
+  <association id="14">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="15" name="floorplans"/>      
+      <multiplicity id="16" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="17">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="18" name="property"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="20">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="21" name="phoneNumbers"/>      
+      <multiplicity id="22" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="24" name="images"/>      
+      <multiplicity id="25" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-    sort-features="false" accessors="true" visibility="true">    
+    sort-features="false" accessors="true" visibility="false">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
     <operations public="true" package="true" protected="true" private="true" static="true"/>  
   </classifier-display>  
