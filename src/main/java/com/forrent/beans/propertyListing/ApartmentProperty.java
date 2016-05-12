@@ -14,6 +14,10 @@ public class ApartmentProperty implements Serializable
     public List<Floorplan> getFloorplans() {
         return this.floorplans;
     }
+    
+    public Floorplan getFloorplans(final Integer index) {
+        return this.floorplans.get(index);
+    }
 
     public FloorplanSummary getFloorplanSummary() {
         return this.floorplanSummary;
