@@ -26,8 +26,17 @@ public class Floorplan implements Serializable
 	private String phone;
 	private String floorplanImage2d;
 	private String floorplanImage3d;
-	private String insideViewFolder;
+	private String insideViewImage;
+	private Boolean active;
 	
+	public Boolean isActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -196,11 +205,11 @@ public class Floorplan implements Serializable
 		this.floorplanImage3d = floorplanImage3d;
 	}
 	
-	public String getInsideViewFolder() {
-		return insideViewFolder;
+	public String getInsideViewImage() {
+		return insideViewImage;
 	}
 	
-	public void setInsideViewFolder(String insideViewFolder) {
-		this.insideViewFolder = insideViewFolder;
+	public void setInsideViewImage(String insideViewImage) {
+		this.insideViewImage = insideViewImage;
 	}
 }
