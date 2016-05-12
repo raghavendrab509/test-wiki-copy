@@ -15,7 +15,7 @@ public class Floorplan implements Serializable
 	private String modelFilename;
 	private String text;
 	private String applicationFees;
-	private String deposit;
+	private Double deposit;
 	private String leaseTerms;
 	private Integer units;
 	private Integer rentableUnits;
@@ -117,11 +117,11 @@ public class Floorplan implements Serializable
 		this.applicationFees = applicationFees;
 	}
 	
-	public String getDeposit() {
+	public Double getDeposit() {
 		return deposit;
 	}
 	
-	public void setDeposit(String deposit) {
+	public void setDeposit(Double deposit) {
 		this.deposit = deposit;
 	}
 	
