@@ -5,40 +5,40 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class FloorplanSummary implements Serializable
 {
-    private FormattedRange bathrooms;
-    private FormattedRange bedrooms;
-    private FormattedRange price;
-    private FormattedRange squareFeet;
+    private Range<Double> bathrooms;
+    private Range<Integer> bedrooms;
+    private Range<Integer> price;
+    private Range<Integer> squareFeet;
 
-    public FormattedRange getBathrooms() {
+    public Range<Double> getBathrooms() {
         return this.bathrooms;
     }
 
-    public FormattedRange getBedrooms() {
+    public Range<Integer> getBedrooms() {
         return this.bedrooms;
     }
 
-    public FormattedRange getPrice() {
+    public Range<Integer> getPrice() {
         return this.price;
     }
 
-    public FormattedRange getSquareFeet() {
+    public Range<Integer> getSquareFeet() {
         return this.squareFeet;
     }
 
-    public void setBathrooms(final FormattedRange bathrooms) {
+    public void setBathrooms(final Range<Double> bathrooms) {
         this.bathrooms = bathrooms;
     }
 
-    public void setBedrooms(final FormattedRange bedrooms) {
+    public void setBedrooms(final Range<Integer> bedrooms) {
         this.bedrooms = bedrooms;
     }
 
-    public void setPrice(final FormattedRange price) {
+    public void setPrice(final Range<Integer> price) {
         this.price = price;
     }
 
-    public void setSquareFeet(final FormattedRange squareFeet) {
+    public void setSquareFeet(final Range<Integer> squareFeet) {
         this.squareFeet = squareFeet;
     }
 }

@@ -7,8 +7,8 @@ public class Floorplan implements Serializable
 {
 	private Integer id;
 	private String name;
-	private Range squareFeet;
-	private Range price;
+	private Range<Integer> squareFeet;
+	private Range<Integer> price;
 	private Integer beds;
 	private Double baths;
 	private String imageFilename;
@@ -53,19 +53,19 @@ public class Floorplan implements Serializable
 		this.name = name;
 	}
 	
-	public Range getSquareFeet() {
+	public Range<Integer> getSquareFeet() {
 		return squareFeet;
 	}
 	
-	public void setSquareFeet(Range squareFeet) {
+	public void setSquareFeet(Range<Integer> squareFeet) {
 		this.squareFeet = squareFeet;
 	}
 	
-	public Range getPrice() {
+	public Range<Integer> getPrice() {
 		return price;
 	}
 	
-	public void setPrice(Range price) {
+	public void setPrice(Range<Integer> price) {
 		this.price = price;
 	}
 	
