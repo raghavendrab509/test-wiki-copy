@@ -68,7 +68,7 @@ public class Floorplan implements Serializable
 		this.beds = beds;
 	}
 	
-	public double getBaths() {
+	public Double getBaths() {
 		return baths;
 	}
 	
@@ -140,7 +140,7 @@ public class Floorplan implements Serializable
 		this.rentableUnits = rentableUnits;
 	}
 	
-	public double getBrokerFee() {
+	public Double getBrokerFee() {
 		return brokerFee;
 	}
 	
