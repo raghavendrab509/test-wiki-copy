@@ -3,17 +3,9 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class SquareFeet implements Serializable {
-	private Integer low;
+public class Range implements Serializable {
 	private Integer high;
-	
-	public int getLow() {
-		return low;
-	}
-	
-	public void setLow(Integer low) {
-		this.low = low;
-	}
+	private Integer low;
 	
 	public int getHigh() {
 		return high;
@@ -21,5 +13,13 @@ public class SquareFeet implements Serializable {
 	
 	public void setHigh(Integer high) {
 		this.high = high;
+	}
+	
+	public int getLow() {
+		return low;
+	}
+	
+	public void setLow(Integer low) {
+		this.low = low;
 	}
 }
