@@ -69,7 +69,7 @@ public class Floorplan implements Serializable
 		this.price = price;
 	}
 	
-	public int getBeds() {
+	public Integer getBeds() {
 		return beds;
 	}
 	
