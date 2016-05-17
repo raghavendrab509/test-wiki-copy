@@ -15,6 +15,7 @@ public class PropertyListing implements Serializable
     private String name;
     private Map<String, PhoneNumber> phoneNumbers;
     private ApartmentProperty property;
+    private Detail detail;
 
     public Account getAccount() {
         return this.account;
@@ -53,6 +54,10 @@ public class PropertyListing implements Serializable
     public ApartmentProperty getProperty() {
         return property;
     }
+    
+    public Detail getDetail() {
+    	return detail;
+    }
 
     public void setAccount(final Account account) {
         this.account = account;
@@ -78,7 +83,11 @@ public class PropertyListing implements Serializable
         this.phoneNumbers = phoneNumbers;
     }
 
-    public void setProperty(ApartmentProperty property) {
+    public void setProperty(final ApartmentProperty property) {
         this.property = property;
+    }
+    
+    public void setDetail(final Detail detail) {
+    	this.detail = detail;
     }
 }
