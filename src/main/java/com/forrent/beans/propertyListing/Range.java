@@ -12,7 +12,10 @@ public class Range<T> implements Serializable {
 		this.high = high;
 	}
 	
-	public Range() {}
+	public Range() {
+		high = null;
+		low = null;
+	}
 
 	public T getHigh() {
 		return high;
