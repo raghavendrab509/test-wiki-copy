@@ -5,11 +5,11 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class Detail implements Serializable {
 	private Boolean paid;
-	private int searchWeightFrc;
-	private int searchWeightFrcEs;
-	private int searchWeightFru;
-	private int searchWeightFrcMobile;
-	private int relativePerformanceScore;
+	private Integer searchWeightFrc;
+	private Integer searchWeightFrcEs;
+	private Integer searchWeightFru;
+	private Integer searchWeightFrcMobile;
+	private Integer relativePerformanceScore;
 	
 	public Boolean getPaid() {
 		return paid;
@@ -19,43 +19,43 @@ public class Detail implements Serializable {
 		this.paid = paid;
 	}
 	
-	public int getSearchWeightFrc() {
+	public Integer getSearchWeightFrc() {
 		return searchWeightFrc;
 	}
 	
-	public void setSearchWeightFrc(final int searchWeightFrc) {
+	public void setSearchWeightFrc(final Integer searchWeightFrc) {
 		this.searchWeightFrc = searchWeightFrc;
 	}
 	
-	public int getSearchWeightFrcEs() {
+	public Integer getSearchWeightFrcEs() {
 		return searchWeightFrcEs;
 	}
 	
-	public void setSearchWeightFrcEs(final int searchWeightES) {
+	public void setSearchWeightFrcEs(final Integer searchWeightES) {
 		this.searchWeightFrcEs = searchWeightES;
 	}
 	
-	public int getSearchWeightFru() {
+	public Integer getSearchWeightFru() {
 		return searchWeightFru;
 	}
 	
-	public void setSearchWeightFru(final int searchWeightFru) {
+	public void setSearchWeightFru(final Integer searchWeightFru) {
 		this.searchWeightFru = searchWeightFru;
 	}
 	
-	public int getSearchWeightFrcMobile() {
+	public Integer getSearchWeightFrcMobile() {
 		return searchWeightFrcMobile;
 	}
 	
-	public void setSearchWeightFrcMobile(final int searchWeightFrcMobile) {
+	public void setSearchWeightFrcMobile(final Integer searchWeightFrcMobile) {
 		this.searchWeightFrcMobile = searchWeightFrcMobile;
 	}
 	
-	public int getRelativePerformanceScore() {
+	public Integer getRelativePerformanceScore() {
 		return relativePerformanceScore;
 	}
 	
-	public void setRelativePerformanceScore(final int relativePerformanceScore) {
+	public void setRelativePerformanceScore(final Integer relativePerformanceScore) {
 		this.relativePerformanceScore = relativePerformanceScore;
 	}
 }
