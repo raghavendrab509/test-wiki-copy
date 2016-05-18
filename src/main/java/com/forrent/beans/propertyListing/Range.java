@@ -3,23 +3,33 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class Range implements Serializable {
-	private Integer high;
-	private Integer low;
+public class Range<T> implements Serializable {
+	private T high;
+	private T low;
 	
-	public int getHigh() {
-		return high;
-	}
-	
-	public void setHigh(Integer high) {
+	public Range(T low, T high) {
+		this.low = low;
 		this.high = high;
 	}
 	
-	public int getLow() {
+	public Range() {
+		high = null;
+		low = null;
+	}
+
+	public T getHigh() {
+		return high;
+	}
+	
+	public void setHigh(T high) {
+		this.high = high;
+	}
+	
+	public T getLow() {
 		return low;
 	}
 	
-	public void setLow(Integer low) {
+	public void setLow(T low) {
 		this.low = low;
 	}
 }

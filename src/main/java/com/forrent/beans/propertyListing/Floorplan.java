@@ -7,8 +7,8 @@ public class Floorplan implements Serializable
 {
 	private Integer id;
 	private String name;
-	private Range squareFeet;
-	private Range price;
+	private Range<Integer> squareFeet;
+	private Range<Integer> price;
 	private Integer beds;
 	private Double baths;
 	private String imageFilename;
@@ -33,15 +33,15 @@ public class Floorplan implements Serializable
 		return active;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(final Boolean active) {
 		this.active = active;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 	
-	public void setId(Integer id) {
+	public void setId(final Integer id) {
 		this.id = id;
 	}
 	
@@ -49,31 +49,31 @@ public class Floorplan implements Serializable
 		return name;
 	}
 	
-	public void setName(String name) {
+	public void setName(final String name) {
 		this.name = name;
 	}
 	
-	public Range getSquareFeet() {
+	public Range<Integer> getSquareFeet() {
 		return squareFeet;
 	}
 	
-	public void setSquareFeet(Range squareFeet) {
+	public void setSquareFeet(final Range<Integer> squareFeet) {
 		this.squareFeet = squareFeet;
 	}
 	
-	public Range getPrice() {
+	public Range<Integer> getPrice() {
 		return price;
 	}
 	
-	public void setPrice(Range price) {
+	public void setPrice(final Range<Integer> price) {
 		this.price = price;
 	}
 	
-	public int getBeds() {
+	public Integer getBeds() {
 		return beds;
 	}
 	
-	public void setBeds(Integer beds) {
+	public void setBeds(final Integer beds) {
 		this.beds = beds;
 	}
 	
@@ -81,7 +81,7 @@ public class Floorplan implements Serializable
 		return baths;
 	}
 	
-	public void setBaths(Double baths) {
+	public void setBaths(final Double baths) {
 		this.baths = baths;
 	}
 	
@@ -89,7 +89,7 @@ public class Floorplan implements Serializable
 		return imageFilename;
 	}
 
-	public void setImageFilename(String imageFilename) {
+	public void setImageFilename(final String imageFilename) {
 		this.imageFilename = imageFilename;
 	}
 
@@ -97,7 +97,7 @@ public class Floorplan implements Serializable
 		return modelFilename;
 	}
 
-	public void setModelFilename(String modelFilename) {
+	public void setModelFilename(final String modelFilename) {
 		this.modelFilename = modelFilename;
 	}
 
@@ -105,7 +105,7 @@ public class Floorplan implements Serializable
 		return text;
 	}
 	
-	public void setText(String text) {
+	public void setText(final String text) {
 		this.text = text;
 	}
 	
@@ -113,7 +113,7 @@ public class Floorplan implements Serializable
 		return applicationFees;
 	}
 	
-	public void setApplicationFees(String applicationFees) {
+	public void setApplicationFees(final String applicationFees) {
 		this.applicationFees = applicationFees;
 	}
 	
@@ -121,7 +121,7 @@ public class Floorplan implements Serializable
 		return deposit;
 	}
 	
-	public void setDeposit(Double deposit) {
+	public void setDeposit(final Double deposit) {
 		this.deposit = deposit;
 	}
 	
@@ -129,23 +129,23 @@ public class Floorplan implements Serializable
 		return leaseTerms;
 	}
 	
-	public void setLeaseTerms(String leaseTerms) {
+	public void setLeaseTerms(final String leaseTerms) {
 		this.leaseTerms = leaseTerms;
 	}
 	
-	public int getUnits() {
+	public Integer getUnits() {
 		return units;
 	}
 	
-	public void setUnits(Integer units) {
+	public void setUnits(final Integer units) {
 		this.units = units;
 	}
 	
-	public int getRentableUnits() {
+	public Integer getRentableUnits() {
 		return rentableUnits;
 	}
 	
-	public void setRentableUnits(Integer rentableUnits) {
+	public void setRentableUnits(final Integer rentableUnits) {
 		this.rentableUnits = rentableUnits;
 	}
 	
@@ -153,7 +153,7 @@ public class Floorplan implements Serializable
 		return brokerFee;
 	}
 	
-	public void setBrokerFee(Double brokerFee) {
+	public void setBrokerFee(final Double brokerFee) {
 		this.brokerFee = brokerFee;
 	}
 	
@@ -161,7 +161,7 @@ public class Floorplan implements Serializable
 		return perBedPricing;
 	}
 	
-	public void setPerBedPricing(Boolean perBedPricing) {
+	public void setPerBedPricing(final Boolean perBedPricing) {
 		this.perBedPricing = perBedPricing;
 	}
 	
@@ -169,7 +169,7 @@ public class Floorplan implements Serializable
 		return requestToHoldUrl;
 	}
 	
-	public void setRequestToHoldUrl(String requestToHoldUrl) {
+	public void setRequestToHoldUrl(final String requestToHoldUrl) {
 		this.requestToHoldUrl = requestToHoldUrl;
 	}
 	
@@ -177,7 +177,7 @@ public class Floorplan implements Serializable
 		return summary;
 	}
 	
-	public void setSummary(String summary) {
+	public void setSummary(final String summary) {
 		this.summary = summary;
 	}
 	
@@ -185,7 +185,7 @@ public class Floorplan implements Serializable
 		return phone;
 	}
 	
-	public void setPhone(String phone) {
+	public void setPhone(final String phone) {
 		this.phone = phone;
 	}
 	
@@ -193,7 +193,7 @@ public class Floorplan implements Serializable
 		return floorplanImage2d;
 	}
 	
-	public void setFloorplanImage2d(String floorplanImage2d) {
+	public void setFloorplanImage2d(final String floorplanImage2d) {
 		this.floorplanImage2d = floorplanImage2d;
 	}
 	
@@ -201,7 +201,7 @@ public class Floorplan implements Serializable
 		return floorplanImage3d;
 	}
 	
-	public void setFloorplanImage3d(String floorplanImage3d) {
+	public void setFloorplanImage3d(final String floorplanImage3d) {
 		this.floorplanImage3d = floorplanImage3d;
 	}
 	
@@ -209,7 +209,7 @@ public class Floorplan implements Serializable
 		return insideViewImage;
 	}
 	
-	public void setInsideViewImage(String insideViewImage) {
+	public void setInsideViewImage(final String insideViewImage) {
 		this.insideViewImage = insideViewImage;
 	}
 }
