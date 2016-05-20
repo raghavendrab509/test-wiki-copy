@@ -13,7 +13,6 @@ public class Floorplan implements Serializable
 	private Double baths;
 	private String imageFilename;
 	private String modelFilename;
-	private String text;
 	private String applicationFees;
 	private Double deposit;
 	private String leaseTerms;
@@ -99,14 +98,6 @@ public class Floorplan implements Serializable
 
 	public void setModelFilename(final String modelFilename) {
 		this.modelFilename = modelFilename;
-	}
-
-	public String getText() {
-		return text;
-	}
-	
-	public void setText(final String text) {
-		this.text = text;
 	}
 	
 	public String getApplicationFees() {
