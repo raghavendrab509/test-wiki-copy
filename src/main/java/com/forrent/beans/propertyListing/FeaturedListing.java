@@ -3,9 +3,11 @@ package com.forrent.beans.propertyListing;
 
 import com.forrent.beans.propertyListing.ad.*;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class FeaturedListing
+@SuppressWarnings("serial")
+public class FeaturedListing  implements Serializable
 {
     private List<FRCFeatured> frcFeatured;
     private FRUFeatured fruFeatured;
