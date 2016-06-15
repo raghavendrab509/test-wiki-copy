@@ -1,21 +1,20 @@
 package com.forrent.beans.propertyListing;
 
-
 import com.forrent.beans.propertyListing.ad.*;
 
 import java.io.Serializable;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class FeaturedListing  implements Serializable
+public class FeaturedListing implements Serializable
 {
     private List<FRCFeatured> frcFeatured;
-    private FRUFeatured fruFeatured;
-    private Preferred preferred;
-    private MobileSelect mobileSelect;
-    private MobileExclusive mobileExclusive;
-    private HeroVideo heroVideo;
-    private Marquee marquee;
+    private List<FRUFeatured> fruFeatured;
+    private List<Preferred> preferred;
+    private List<MobileSelect> mobileSelect;
+    private List<MobileExclusive> mobileExclusive;
+    private List<HeroVideo> heroVideo;
+    private List<Marquee> marquee;
 
     public List<FRCFeatured> getFrcFeatured()
     {
@@ -27,62 +26,62 @@ public class FeaturedListing  implements Serializable
         this.frcFeatured = frcFeatured;
     }
 
-    public FRUFeatured getFruFeatured()
+    public List<FRUFeatured> getFruFeatured()
     {
         return fruFeatured;
     }
 
-    public void setFruFeatured(FRUFeatured fruFeatured)
+    public void setFruFeatured(List<FRUFeatured> fruFeatured)
     {
         this.fruFeatured = fruFeatured;
     }
 
-    public Preferred getPreferred()
+    public List<Preferred> getPreferred()
     {
         return preferred;
     }
 
-    public void setPreferred(Preferred preferred)
+    public void setPreferred(List<Preferred> preferred)
     {
         this.preferred = preferred;
     }
 
-    public MobileSelect getMobileSelect()
+    public List<MobileSelect> getMobileSelect()
     {
         return mobileSelect;
     }
 
-    public void setMobileSelect(MobileSelect mobileSelect)
+    public void setMobileSelect(List<MobileSelect> mobileSelect)
     {
         this.mobileSelect = mobileSelect;
     }
 
-    public MobileExclusive getMobileExclusive()
+    public List<MobileExclusive> getMobileExclusive()
     {
         return mobileExclusive;
     }
 
-    public void setMobileExclusive(MobileExclusive mobileExclusive)
+    public void setMobileExclusive(List<MobileExclusive> mobileExclusive)
     {
         this.mobileExclusive = mobileExclusive;
     }
 
-    public HeroVideo getHeroVideo()
+    public List<HeroVideo> getHeroVideo()
     {
         return heroVideo;
     }
 
-    public void setHeroVideo(HeroVideo heroVideo)
+    public void setHeroVideo(List<HeroVideo> heroVideo)
     {
         this.heroVideo = heroVideo;
     }
 
-    public Marquee getMarquee()
+    public List<Marquee> getMarquee()
     {
         return marquee;
     }
 
-    public void setMarquee(Marquee marquee)
+    public void setMarquee(List<Marquee> marquee)
     {
         this.marquee = marquee;
     }

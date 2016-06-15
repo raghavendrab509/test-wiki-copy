@@ -2,7 +2,18 @@ package com.forrent.beans.propertyListing.ad;
 
 public class MobileExclusive extends BaseAd
 {
+    private String metroId;
     private String metroName;
+
+    public String getMetroId()
+    {
+        return metroId;
+    }
+
+    public void setMetroId(String metroId)
+    {
+        this.metroId = metroId;
+    }
 
     public String getMetroName()
     {

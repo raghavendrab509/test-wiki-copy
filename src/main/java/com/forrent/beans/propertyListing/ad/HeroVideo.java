@@ -2,18 +2,17 @@ package com.forrent.beans.propertyListing.ad;
 
 public class HeroVideo extends BaseAd
 {
-    private String stateCode;
+    private String cityId;
     private String cityName;
-    private String metroName;
 
-    public String getStateCode()
+    public String getCityId()
     {
-        return stateCode;
+        return cityId;
     }
 
-    public void setStateCode(String stateCode)
+    public void setCityId(String cityId)
     {
-        this.stateCode = stateCode;
+        this.cityId = cityId;
     }
 
     public String getCityName()
@@ -24,15 +23,5 @@ public class HeroVideo extends BaseAd
     public void setCityName(String cityName)
     {
         this.cityName = cityName;
-    }
-
-    public String getMetroName()
-    {
-        return metroName;
-    }
-
-    public void setMetroName(String metroName)
-    {
-        this.metroName = metroName;
     }
 }

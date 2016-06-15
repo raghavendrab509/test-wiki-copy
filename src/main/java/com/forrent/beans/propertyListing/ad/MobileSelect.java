@@ -2,9 +2,18 @@ package com.forrent.beans.propertyListing.ad;
 
 public class MobileSelect extends BaseAd
 {
+    private String metroId;
     private String metroName;
-    private String stateCode;
-    private String cityName;
+
+    public String getMetroId()
+    {
+        return metroId;
+    }
+
+    public void setMetroId(String metroId)
+    {
+        this.metroId = metroId;
+    }
 
     public String getMetroName()
     {
@@ -14,25 +23,5 @@ public class MobileSelect extends BaseAd
     public void setMetroName(String metroName)
     {
         this.metroName = metroName;
-    }
-
-    public String getStateCode()
-    {
-        return stateCode;
-    }
-
-    public void setStateCode(String stateCode)
-    {
-        this.stateCode = stateCode;
-    }
-
-    public String getCityName()
-    {
-        return cityName;
-    }
-
-    public void setCityName(String cityName)
-    {
-        this.cityName = cityName;
     }
 }

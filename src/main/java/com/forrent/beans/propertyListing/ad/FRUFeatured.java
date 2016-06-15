@@ -2,8 +2,8 @@ package com.forrent.beans.propertyListing.ad;
 
 public class FRUFeatured extends BaseAd
 {
+    private String collegeId;
     private String collegeName;
-    private Integer collegeId;
 
     public String getCollegeName()
     {
@@ -15,12 +15,12 @@ public class FRUFeatured extends BaseAd
         this.collegeName = collegeName;
     }
 
-    public Integer getCollegeId()
+    public String getCollegeId()
     {
         return collegeId;
     }
 
-    public void setCollegeId(Integer collegeId)
+    public void setCollegeId(String collegeId)
     {
         this.collegeId = collegeId;
     }
