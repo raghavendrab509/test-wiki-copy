@@ -1,6 +1,6 @@
-package com.forrent.beans.propertyListing.ad;
+package com.forrent.beans.propertyListing.featuredListing;
 
-public class FRUFeatured extends BaseAd
+public class FRUFeatured extends BaseFeaturedListing
 {
     private String collegeId;
     private String collegeName;

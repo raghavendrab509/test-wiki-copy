@@ -1,6 +1,6 @@
-package com.forrent.beans.propertyListing.ad;
+package com.forrent.beans.propertyListing.featuredListing;
 
-public class FRCFeatured extends BaseAd
+public class FRCFeatured extends BaseFeaturedListing
 {
     private String areaId;
     private String areaName;

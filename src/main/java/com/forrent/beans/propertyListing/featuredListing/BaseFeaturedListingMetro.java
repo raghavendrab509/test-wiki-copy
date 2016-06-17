@@ -1,6 +1,6 @@
-package com.forrent.beans.propertyListing.ad;
+package com.forrent.beans.propertyListing.featuredListing;
 
-public class BaseAdMetro extends BaseAd
+public class BaseFeaturedListingMetro extends BaseFeaturedListing
 {
     private String metroId;
     private String metroName;

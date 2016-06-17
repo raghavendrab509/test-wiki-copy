@@ -1,6 +1,6 @@
 package com.forrent.beans.propertyListing;
 
-import com.forrent.beans.propertyListing.ad.*;
+import com.forrent.beans.propertyListing.featuredListing.*;
 
 import java.io.Serializable;
 import java.util.List;

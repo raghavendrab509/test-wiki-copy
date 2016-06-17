@@ -1,10 +1,10 @@
-package com.forrent.beans.propertyListing.ad;
+package com.forrent.beans.propertyListing.featuredListing;
 
 
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public abstract class BaseAd implements Serializable
+public abstract class BaseFeaturedListing implements Serializable
 {
     private String id;
 
