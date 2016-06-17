@@ -16,7 +16,7 @@ public class PropertyListing implements Serializable
     private Map<String, PhoneNumber> phoneNumbers;
     private ApartmentProperty property;
     private Detail detail;
-    private FeaturedListing featuredListing;
+    private FeaturedListingCollection featuredListings;
 
     public Account getAccount() {
         return this.account;
@@ -60,9 +60,9 @@ public class PropertyListing implements Serializable
     	return detail;
     }
 
-    public FeaturedListing getFeaturedListing()
+    public FeaturedListingCollection getFeaturedListings()
     {
-        return featuredListing;
+        return featuredListings;
     }
 
     public void setAccount(final Account account) {
@@ -97,8 +97,8 @@ public class PropertyListing implements Serializable
     	this.detail = detail;
     }
 
-    public void setFeaturedListing(FeaturedListing featuredListing)
+    public void setFeaturedListings(FeaturedListingCollection featuredListings)
     {
-        this.featuredListing = featuredListing;
+        this.featuredListings = featuredListings;
     }
 }

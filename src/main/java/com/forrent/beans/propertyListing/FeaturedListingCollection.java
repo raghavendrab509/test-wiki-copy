@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class FeaturedListing implements Serializable
+public class FeaturedListingCollection implements Serializable
 {
     private List<FRCFeatured> frcFeatured;
     private List<FRUFeatured> fruFeatured;
