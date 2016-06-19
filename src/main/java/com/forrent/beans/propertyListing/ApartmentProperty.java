@@ -15,7 +15,7 @@ public class ApartmentProperty implements Serializable
     public List<Floorplan> getFloorplans() {
         return this.floorplans;
     }
-    
+
     public Floorplan getFloorplans(final Integer index) {
         return this.floorplans.get(index);
     }
@@ -27,9 +27,9 @@ public class ApartmentProperty implements Serializable
     public Map<Integer, FloorplanSummary> getFloorplanSummaryByRoomCount() {
         return this.floorplanSummaryByRoomCount;
     }
-    
+
     public Map<String, Amenity> getAmenities() {
-		return amenities;
+		return this.amenities;
     }
 
     public void setFloorplans(final List<Floorplan> floorplans) {
@@ -43,7 +43,7 @@ public class ApartmentProperty implements Serializable
     public void setFloorplanSummaryByRoomCount(final Map<Integer, FloorplanSummary> floorplanSummaryByRoomCount) {
         this.floorplanSummaryByRoomCount = floorplanSummaryByRoomCount;
     }
-    
+
 	public void setAmenities(final Map<String, Amenity> amenities) {
 		this.amenities = amenities;
 	}

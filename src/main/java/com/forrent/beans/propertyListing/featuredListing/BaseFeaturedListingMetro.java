@@ -1,5 +1,6 @@
 package com.forrent.beans.propertyListing.featuredListing;
 
+@SuppressWarnings("serial")
 public class BaseFeaturedListingMetro extends BaseFeaturedListing
 {
     private String metroId;
@@ -7,20 +8,20 @@ public class BaseFeaturedListingMetro extends BaseFeaturedListing
 
     public String getMetroId()
     {
-        return metroId;
+        return this.metroId;
     }
 
-    public void setMetroId(String metroId)
+    public void setMetroId(final String metroId)
     {
         this.metroId = metroId;
     }
 
     public String getMetroName()
     {
-        return metroName;
+        return this.metroName;
     }
 
-    public void setMetroName(String metroName)
+    public void setMetroName(final String metroName)
     {
         this.metroName = metroName;
     }

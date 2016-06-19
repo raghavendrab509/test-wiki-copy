@@ -1,5 +1,6 @@
 package com.forrent.beans.propertyListing.featuredListing;
 
+@SuppressWarnings("serial")
 public class FRUFeatured extends BaseFeaturedListing
 {
     private String collegeId;
@@ -7,20 +8,20 @@ public class FRUFeatured extends BaseFeaturedListing
 
     public String getCollegeName()
     {
-        return collegeName;
+        return this.collegeName;
     }
 
-    public void setCollegeName(String collegeName)
+    public void setCollegeName(final String collegeName)
     {
         this.collegeName = collegeName;
     }
 
     public String getCollegeId()
     {
-        return collegeId;
+        return this.collegeId;
     }
 
-    public void setCollegeId(String collegeId)
+    public void setCollegeId(final String collegeId)
     {
         this.collegeId = collegeId;
     }

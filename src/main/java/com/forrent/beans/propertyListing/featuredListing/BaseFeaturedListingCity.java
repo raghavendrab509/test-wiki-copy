@@ -1,5 +1,6 @@
 package com.forrent.beans.propertyListing.featuredListing;
 
+@SuppressWarnings("serial")
 public class BaseFeaturedListingCity extends BaseFeaturedListing
 {
     private String stateCode;
@@ -8,30 +9,30 @@ public class BaseFeaturedListingCity extends BaseFeaturedListing
 
     public String getStateCode()
     {
-        return stateCode;
+        return this.stateCode;
     }
 
-    public void setStateCode(String stateCode)
+    public void setStateCode(final String stateCode)
     {
         this.stateCode = stateCode;
     }
 
     public String getCityId()
     {
-        return cityId;
+        return this.cityId;
     }
 
-    public void setCityId(String cityId)
+    public void setCityId(final String cityId)
     {
         this.cityId = cityId;
     }
 
     public String getCityName()
     {
-        return cityName;
+        return this.cityName;
     }
 
-    public void setCityName(String cityName)
+    public void setCityName(final String cityName)
     {
         this.cityName = cityName;
     }

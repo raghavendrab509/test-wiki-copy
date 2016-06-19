@@ -53,16 +53,16 @@ public class PropertyListing implements Serializable
     }
 
     public ApartmentProperty getProperty() {
-        return property;
+        return this.property;
     }
-    
+
     public Detail getDetail() {
-    	return detail;
+    	return this.detail;
     }
 
     public FeaturedListingCollection getFeaturedListings()
     {
-        return featuredListings;
+        return this.featuredListings;
     }
 
     public void setAccount(final Account account) {
@@ -92,12 +92,12 @@ public class PropertyListing implements Serializable
     public void setProperty(final ApartmentProperty property) {
         this.property = property;
     }
-    
+
     public void setDetail(final Detail detail) {
     	this.detail = detail;
     }
 
-    public void setFeaturedListings(FeaturedListingCollection featuredListings)
+    public void setFeaturedListings(final FeaturedListingCollection featuredListings)
     {
         this.featuredListings = featuredListings;
     }
