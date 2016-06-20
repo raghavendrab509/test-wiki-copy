@@ -4,8 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class Geography implements Serializable
-{
+public class Geography implements Serializable {
     private String addressOne;
     private String addressTwo;
     private String cityId;
@@ -143,15 +142,15 @@ public class Geography implements Serializable
         this.zipExt = zipExt;
     }
 
-	public List<Neighborhood> getNeighborhoods() {
-		return neighborhoods;
-	}
-	
-	public Neighborhood getNeighborhoods(final Integer index) {
-		return this.neighborhoods.get(index);
-	}
+    public List<Neighborhood> getNeighborhoods() {
+        return this.neighborhoods;
+    }
 
-	public void setNeighborhoods(List<Neighborhood> neighborhoods) {
-		this.neighborhoods = neighborhoods;
-	}
+    public Neighborhood getNeighborhoods(final Integer index) {
+        return this.neighborhoods.get(index);
+    }
+
+    public void setNeighborhoods(final List<Neighborhood> neighborhoods) {
+        this.neighborhoods = neighborhoods;
+    }
 }
