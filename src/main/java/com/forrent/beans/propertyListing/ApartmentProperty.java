@@ -10,7 +10,7 @@ public class ApartmentProperty implements Serializable
     private List<Floorplan> floorplans;
     private FloorplanSummary floorplanSummary;
     private Map<Integer, FloorplanSummary> floorplanSummaryByRoomCount;
-    private Map<String, Amenity> amenities;
+    private List<Amenity> amenities;
 
     public List<Floorplan> getFloorplans() {
         return this.floorplans;
@@ -27,9 +27,13 @@ public class ApartmentProperty implements Serializable
     public Map<Integer, FloorplanSummary> getFloorplanSummaryByRoomCount() {
         return this.floorplanSummaryByRoomCount;
     }
-
-    public Map<String, Amenity> getAmenities() {
-		return this.amenities;
+    
+    public List<Amenity> getAmenities() {
+		return amenities;
+    }
+    
+    public Amenity getAmenities(final Integer index){
+    	return this.amenities.get(index);
     }
 
     public void setFloorplans(final List<Floorplan> floorplans) {
@@ -43,8 +47,8 @@ public class ApartmentProperty implements Serializable
     public void setFloorplanSummaryByRoomCount(final Map<Integer, FloorplanSummary> floorplanSummaryByRoomCount) {
         this.floorplanSummaryByRoomCount = floorplanSummaryByRoomCount;
     }
-
-	public void setAmenities(final Map<String, Amenity> amenities) {
+    
+	public void setAmenities(final List<Amenity> amenities) {
 		this.amenities = amenities;
 	}
 }
