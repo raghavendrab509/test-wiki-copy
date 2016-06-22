@@ -17,6 +17,7 @@ public class PropertyListing implements Serializable
     private ApartmentProperty property;
     private Detail detail;
     private FeaturedListingCollection featuredListings;
+    private List<SiteText> siteTexts;
 
     public Account getAccount() {
         return this.account;
@@ -65,6 +66,11 @@ public class PropertyListing implements Serializable
         return this.featuredListings;
     }
 
+    public List<SiteText> getSiteTexts()
+    {
+        return siteTexts;
+    }
+
     public void setAccount(final Account account) {
         this.account = account;
     }
@@ -100,5 +106,10 @@ public class PropertyListing implements Serializable
     public void setFeaturedListings(final FeaturedListingCollection featuredListings)
     {
         this.featuredListings = featuredListings;
+    }
+
+    public void setSiteTexts(List<SiteText> siteTexts)
+    {
+        this.siteTexts = siteTexts;
     }
 }
