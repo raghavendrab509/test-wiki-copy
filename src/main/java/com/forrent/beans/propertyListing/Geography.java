@@ -1,16 +1,17 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
+import java.util.List;
 
 @SuppressWarnings("serial")
-public class Geography implements Serializable
-{
+public class Geography implements Serializable {
     private String addressOne;
     private String addressTwo;
     private String cityId;
     private String cityName;
     private String countryCode;
     private GeographyPoint location;
+    private List<School> schools;
     private String metroId;
     private String metroName;
     private String stateCode;
@@ -20,6 +21,7 @@ public class Geography implements Serializable
     private String superCityName;
     private String zipCode;
     private String zipExt;
+    private List<Neighborhood> neighborhoods;
 
     public String getAddressOne() {
         return this.addressOne;
@@ -43,6 +45,14 @@ public class Geography implements Serializable
 
     public GeographyPoint getLocation() {
         return this.location;
+    }
+
+    public List<School> getSchools() {
+        return this.schools;
+    }
+
+    public School getSchools(final Integer index) {
+        return this.schools.get(index);
     }
 
     public String getMetroId() {
@@ -105,6 +115,10 @@ public class Geography implements Serializable
         this.location = location;
     }
 
+    public void setSchools(final List<School> schools) {
+        this.schools = schools;
+    }
+
     public void setMetroId(final String metroId) {
         this.metroId = metroId;
     }
@@ -139,5 +153,17 @@ public class Geography implements Serializable
 
     public void setZipExt(final String zipExt) {
         this.zipExt = zipExt;
+    }
+
+    public List<Neighborhood> getNeighborhoods() {
+        return this.neighborhoods;
+    }
+
+    public Neighborhood getNeighborhoods(final Integer index) {
+        return this.neighborhoods.get(index);
+    }
+
+    public void setNeighborhoods(final List<Neighborhood> neighborhoods) {
+        this.neighborhoods = neighborhoods;
     }
 }
