@@ -6,26 +6,9 @@ import java.util.List;
 @SuppressWarnings("serial")
 public class ApartmentProperty implements Serializable
 {
-    private List<Floorplan> floorplans;
-    private FloorplanSummary floorplanSummary;
-    private List<FloorplanSummary> floorplanSummaryByRoomCount;
     private List<Amenity> amenities;
-
-    public List<Floorplan> getFloorplans() {
-        return this.floorplans;
-    }
-
-    public Floorplan getFloorplans(final Integer index) {
-        return this.floorplans.get(index);
-    }
-
-    public FloorplanSummary getFloorplanSummary() {
-        return this.floorplanSummary;
-    }
-
-    public List<FloorplanSummary> getFloorplanSummaryByRoomCount() {
-        return this.floorplanSummaryByRoomCount;
-    }
+    private List<Floorplan> floorplans;
+    private FloorplanSummaryCollection floorplanSummary;
 
     public List<Amenity> getAmenities() {
         return this.amenities;
@@ -35,19 +18,27 @@ public class ApartmentProperty implements Serializable
         return this.amenities.get(index);
     }
 
+    public List<Floorplan> getFloorplans() {
+        return this.floorplans;
+    }
+
+    public Floorplan getFloorplans(final Integer index) {
+        return this.floorplans.get(index);
+    }
+
+    public FloorplanSummaryCollection getFloorplanSummary() {
+        return this.floorplanSummary;
+    }
+
+    public void setAmenities(final List<Amenity> amenities) {
+		this.amenities = amenities;
+	}
+
     public void setFloorplans(final List<Floorplan> floorplans) {
         this.floorplans = floorplans;
     }
 
-    public void setFloorplanSummary(final FloorplanSummary floorplanSummary) {
+    public void setFloorplanSummary(final FloorplanSummaryCollection floorplanSummary) {
         this.floorplanSummary = floorplanSummary;
     }
-
-    public void setFloorplanSummaryByRoomCount(final List<FloorplanSummary> floorplanSummaryByRoomCount) {
-        this.floorplanSummaryByRoomCount = floorplanSummaryByRoomCount;
-    }
-
-	public void setAmenities(final List<Amenity> amenities) {
-		this.amenities = amenities;
-	}
 }
