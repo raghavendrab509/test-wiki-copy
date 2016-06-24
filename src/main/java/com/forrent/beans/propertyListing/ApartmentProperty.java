@@ -2,14 +2,13 @@ package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Map;
 
 @SuppressWarnings("serial")
 public class ApartmentProperty implements Serializable
 {
     private List<Floorplan> floorplans;
     private FloorplanSummary floorplanSummary;
-    private Map<Integer, FloorplanSummary> floorplanSummaryByRoomCount;
+    private List<FloorplanSummary> floorplanSummaryByRoomCount;
     private List<Amenity> amenities;
 
     public List<Floorplan> getFloorplans() {
@@ -24,16 +23,16 @@ public class ApartmentProperty implements Serializable
         return this.floorplanSummary;
     }
 
-    public Map<Integer, FloorplanSummary> getFloorplanSummaryByRoomCount() {
+    public List<FloorplanSummary> getFloorplanSummaryByRoomCount() {
         return this.floorplanSummaryByRoomCount;
     }
-    
+
     public List<Amenity> getAmenities() {
-		return amenities;
+        return this.amenities;
     }
-    
+
     public Amenity getAmenities(final Integer index){
-    	return this.amenities.get(index);
+        return this.amenities.get(index);
     }
 
     public void setFloorplans(final List<Floorplan> floorplans) {
@@ -44,10 +43,10 @@ public class ApartmentProperty implements Serializable
         this.floorplanSummary = floorplanSummary;
     }
 
-    public void setFloorplanSummaryByRoomCount(final Map<Integer, FloorplanSummary> floorplanSummaryByRoomCount) {
+    public void setFloorplanSummaryByRoomCount(final List<FloorplanSummary> floorplanSummaryByRoomCount) {
         this.floorplanSummaryByRoomCount = floorplanSummaryByRoomCount;
     }
-    
+
 	public void setAmenities(final List<Amenity> amenities) {
 		this.amenities = amenities;
 	}
