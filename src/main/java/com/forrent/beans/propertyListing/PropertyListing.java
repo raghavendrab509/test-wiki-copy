@@ -83,6 +83,11 @@ public class PropertyListing implements Serializable
         return products;
     }
 
+    public Boolean hasProduct(Product product)
+    {
+        return this.products.contains(product);
+    }
+
     public void setAccount(final Account account) {
         this.account = account;
     }
