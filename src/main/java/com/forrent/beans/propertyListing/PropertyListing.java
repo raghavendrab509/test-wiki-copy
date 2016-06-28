@@ -19,6 +19,7 @@ public class PropertyListing implements Serializable
     private Detail detail;
     private FeaturedListingCollection featuredListings;
     private List<SiteText> siteTexts;
+    private List<Product> products;
 
     public Account getAccount() {
         return this.account;
@@ -77,6 +78,11 @@ public class PropertyListing implements Serializable
         return mainPhoneNumber;
     }
 
+    public List<Product> getProducts()
+    {
+        return products;
+    }
+
     public void setAccount(final Account account) {
         this.account = account;
     }
@@ -122,5 +128,10 @@ public class PropertyListing implements Serializable
     public void setMainPhoneNumber(PhoneNumber mainPhoneNumber)
     {
         this.mainPhoneNumber = mainPhoneNumber;
+    }
+
+    public void setProducts(List<Product> products)
+    {
+        this.products = products;
     }
 }
