@@ -8,7 +8,6 @@ import java.util.Optional;
 @SuppressWarnings("serial")
 public class PropertyListing implements Serializable
 {
-    private Context context;
     private Account account;
     private Geography geo;
     private String id;
@@ -73,11 +72,6 @@ public class PropertyListing implements Serializable
         return siteTexts;
     }
 
-    public Context getContext()
-    {
-        return context;
-    }
-
     public PhoneNumber getMainPhoneNumber()
     {
         return mainPhoneNumber;
@@ -123,11 +117,6 @@ public class PropertyListing implements Serializable
     public void setSiteTexts(List<SiteText> siteTexts)
     {
         this.siteTexts = siteTexts;
-    }
-
-    public void setContext(Context context)
-    {
-        this.context = context;
     }
 
     public void setMainPhoneNumber(PhoneNumber mainPhoneNumber)
