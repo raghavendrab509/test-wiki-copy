@@ -8,12 +8,14 @@ import java.util.Optional;
 @SuppressWarnings("serial")
 public class PropertyListing implements Serializable
 {
+    private Context context;
     private Account account;
     private Geography geo;
     private String id;
     private List<Image> images;
     private String name;
     private Map<String, PhoneNumber> phoneNumbers;
+    private PhoneNumber mainPhoneNumber;
     private ApartmentProperty property;
     private Detail detail;
     private FeaturedListingCollection featuredListings;
@@ -71,6 +73,16 @@ public class PropertyListing implements Serializable
         return siteTexts;
     }
 
+    public Context getContext()
+    {
+        return context;
+    }
+
+    public PhoneNumber getMainPhoneNumber()
+    {
+        return mainPhoneNumber;
+    }
+
     public void setAccount(final Account account) {
         this.account = account;
     }
@@ -111,5 +123,15 @@ public class PropertyListing implements Serializable
     public void setSiteTexts(List<SiteText> siteTexts)
     {
         this.siteTexts = siteTexts;
+    }
+
+    public void setContext(Context context)
+    {
+        this.context = context;
+    }
+
+    public void setMainPhoneNumber(PhoneNumber mainPhoneNumber)
+    {
+        this.mainPhoneNumber = mainPhoneNumber;
     }
 }
