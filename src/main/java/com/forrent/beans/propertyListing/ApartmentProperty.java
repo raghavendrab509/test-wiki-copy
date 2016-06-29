@@ -31,8 +31,8 @@ public class ApartmentProperty implements Serializable
     }
 
     public void setAmenities(final List<Amenity> amenities) {
-		this.amenities = amenities;
-	}
+        this.amenities = amenities;
+    }
 
     public void setFloorplans(final List<Floorplan> floorplans) {
         this.floorplans = floorplans;

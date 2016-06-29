@@ -2,8 +2,6 @@ package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
 
-import com.forrent.beans.propertyListing.Range;
-
 @SuppressWarnings("serial")
 public class FloorplanSummary implements Serializable
 {
