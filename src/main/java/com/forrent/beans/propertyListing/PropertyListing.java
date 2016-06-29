@@ -14,7 +14,6 @@ public class PropertyListing implements Serializable
     private List<Image> images;
     private String name;
     private Map<String, PhoneNumber> phoneNumbers;
-    private PhoneNumber mainPhoneNumber;
     private ApartmentProperty property;
     private Detail detail;
     private FeaturedListingCollection featuredListings;
@@ -73,11 +72,6 @@ public class PropertyListing implements Serializable
         return siteTexts;
     }
 
-    public PhoneNumber getMainPhoneNumber()
-    {
-        return mainPhoneNumber;
-    }
-
     public List<Product> getProducts()
     {
         return products;
@@ -128,11 +122,6 @@ public class PropertyListing implements Serializable
     public void setSiteTexts(List<SiteText> siteTexts)
     {
         this.siteTexts = siteTexts;
-    }
-
-    public void setMainPhoneNumber(PhoneNumber mainPhoneNumber)
-    {
-        this.mainPhoneNumber = mainPhoneNumber;
     }
 
     public void setProducts(List<Product> products)
