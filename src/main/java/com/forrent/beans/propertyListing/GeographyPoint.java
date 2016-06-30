@@ -1,12 +1,13 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("serial")
 public class GeographyPoint implements Serializable
 {
-    private List<Double> coordinates;
+    private List<Double> coordinates = new ArrayList<Double>();
     private final String type = "Point";
 
     public List<Double> getCoordinates() {

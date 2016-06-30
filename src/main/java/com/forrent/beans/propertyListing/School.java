@@ -3,8 +3,8 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class School implements Serializable {
-
+public class School implements Serializable
+{
     private String schoolId;
     private String educationLevel;
     private String schoolName;
