@@ -1,6 +1,8 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -8,17 +10,17 @@ import java.util.Optional;
 @SuppressWarnings("serial")
 public class PropertyListing implements Serializable
 {
-    private Account account;
-    private Geography geo;
+    private Account account = new Account();
+    private Geography geo = new Geography();
     private String id;
-    private List<Image> images;
+    private List<Image> images = new ArrayList<Image>();
     private String name;
-    private Map<String, PhoneNumber> phoneNumbers;
-    private ApartmentProperty property;
-    private Detail detail;
-    private FeaturedListingCollection featuredListings;
-    private List<SiteText> siteTexts;
-    private List<Product> products;
+    private Map<String, PhoneNumber> phoneNumbers = new HashMap<String, PhoneNumber>();
+    private ApartmentProperty property = new ApartmentProperty();;
+    private Detail detail = new Detail();
+    private FeaturedListingCollection featuredListings = new FeaturedListingCollection();
+    private List<SiteText> siteTexts = new ArrayList<SiteText>();
+    private List<Product> products = new ArrayList<Product>();
 
     public Account getAccount() {
         return this.account;
@@ -69,7 +71,7 @@ public class PropertyListing implements Serializable
 
     public List<SiteText> getSiteTexts()
     {
-        return siteTexts;
+        return this.siteTexts;
     }
 
     public List<Product> getProducts()
@@ -119,7 +121,7 @@ public class PropertyListing implements Serializable
         this.featuredListings = featuredListings;
     }
 
-    public void setSiteTexts(List<SiteText> siteTexts)
+    public void setSiteTexts(final List<SiteText> siteTexts)
     {
         this.siteTexts = siteTexts;
     }

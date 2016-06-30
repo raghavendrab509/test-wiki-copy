@@ -9,7 +9,6 @@ public class Image
     public static final String TYPE_SDET_PROPERTY_LOGO = "sdetpropertylogo";
     public static final String TYPE_KEYWORD_IMAGE = "Keyword Image";
 
-
     private String caption;
     private Integer displayOrder;
     private String fileName;

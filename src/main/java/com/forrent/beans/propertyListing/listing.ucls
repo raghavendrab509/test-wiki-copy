@@ -3,7 +3,7 @@
   realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="com.forrent.beans.propertyListing.Account" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Account.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="121" y="96"/>    
+    <position height="-1" width="-1" x="129" y="124"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -13,7 +13,7 @@
   <class id="2" language="java" name="com.forrent.beans.propertyListing.Geography" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Geography.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="122" y="349"/>    
+    <position height="-1" width="-1" x="122" y="392"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -33,7 +33,7 @@
   <class id="4" language="java" name="com.forrent.beans.propertyListing.ApartmentProperty" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/ApartmentProperty.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="770" y="123"/>    
+    <position height="-1" width="-1" x="834" y="123"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -43,7 +43,7 @@
   <class id="5" language="java" name="com.forrent.beans.propertyListing.Floorplan" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Floorplan.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="847" y="472"/>    
+    <position height="-1" width="-1" x="1140" y="677"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="false">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -53,7 +53,7 @@
   <class id="6" language="java" name="com.forrent.beans.propertyListing.PhoneNumber" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/PhoneNumber.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="509" y="752"/>    
+    <position height="-1" width="-1" x="509" y="758"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="false">      
       <attributes public="true" package="true" protected="true" private="true" static="false"/>      
@@ -62,7 +62,7 @@
   </class>  
   <class id="7" language="java" name="com.forrent.beans.propertyListing.Image" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Image.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="334" y="642"/>    
+    <position height="-1" width="-1" x="334" y="699"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="false">      
       <attributes public="true" package="true" protected="true" private="true" static="false"/>      
@@ -71,7 +71,7 @@
   </class>  
   <class id="8" language="java" name="com.forrent.beans.propertyListing.Amenity" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Amenity.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="629" y="315"/>    
+    <position height="-1" width="-1" x="718" y="305"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="false">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -80,7 +80,7 @@
   </class>  
   <class id="9" language="java" name="com.forrent.beans.propertyListing.Detail" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/Detail.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="124" y="654"/>    
+    <position height="-1" width="-1" x="125" y="745"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="false">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -90,7 +90,7 @@
   <class id="10" language="java" name="com.forrent.beans.propertyListing.FeaturedListingCollection" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/FeaturedListingCollection.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="615" y="519"/>    
+    <position height="-1" width="-1" x="729" y="537"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="false">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -101,7 +101,7 @@
     project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/FloorplanSummaryCollection.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1092" y="124"/>    
+    <position height="-1" width="-1" x="1213" y="124"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="false">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,7 +111,7 @@
   <class id="12" language="java" name="com.forrent.beans.propertyListing.FloorplanSummary" project="java-beans" 
     file="/java-beans/src/main/java/com/forrent/beans/propertyListing/FloorplanSummary.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1086" y="348"/>    
+    <position height="-1" width="-1" x="1219" y="338"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="false">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -120,142 +120,144 @@
   </class>  
   <association id="13">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="14" name="phoneNumbers">        
-        <position height="19" width="93" x="525" y="640"/>      
+      <attribute id="14" name="geo">        
+        <position height="19" width="29" x="323" y="189"/>      
       </attribute>      
-      <multiplicity id="15" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="106" y="348"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="16">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="17" name="detail">        
-        <position height="0" width="0" x="-9" y="21"/>      
-      </attribute>      
-      <multiplicity id="18" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-9" y="21"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="19">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="20" name="geo">        
-        <position height="0" width="0" x="-18" y="-21"/>      
-      </attribute>      
-      <multiplicity id="21" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-18" y="-21"/>      
+      <multiplicity id="15" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-18" y="22"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="22">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="23" name="floorplanSummary"/>      
-      <multiplicity id="24" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="25">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="26" name="all">        
-        <position height="19" width="21" x="1093" y="239"/>      
-      </attribute>      
-      <multiplicity id="27" minimum="0" maximum="1">        
-        <position height="17" width="25" x="1092" y="259"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="28">    
+  <association id="16">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="29" name="account">        
-        <position height="0" width="0" x="-2" y="-32"/>      
+      <attribute id="17" name="property">        
+        <position height="19" width="53" x="633" y="101"/>      
       </attribute>      
-      <multiplicity id="30" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-2" y="-32"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="31">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="32" name="property">        
-        <position height="19" width="53" x="569" y="101"/>      
-      </attribute>      
-      <multiplicity id="33" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-103" y="-11"/>      
+      <multiplicity id="18" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-39" y="-11"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="34">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="35" name="featuredListings">        
-        <position height="19" width="95" x="462" y="400"/>      
-      </attribute>      
-      <multiplicity id="36" minimum="0" maximum="1">        
-        <position height="17" width="25" x="585" y="405"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="37">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="38" name="amenities">        
-        <position height="19" width="61" x="608" y="210"/>      
-      </attribute>      
-      <multiplicity id="39" minimum="0" maximum="2147483647">        
-        <position height="17" width="23" x="678" y="211"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="40">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="41" name="floorplans">        
-        <position height="0" width="0" x="-21" y="178"/>      
-      </attribute>      
-      <multiplicity id="42" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="-21" y="178"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="43">    
+  <association id="19">    
     <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="44" name="byRooms">        
-        <position height="19" width="60" x="1005" y="237"/>      
+      <attribute id="20" name="byRooms">        
+        <position height="19" width="60" x="1130" y="236"/>      
       </attribute>      
-      <multiplicity id="45" minimum="0" maximum="2147483647">        
-        <position height="17" width="23" x="1047" y="258"/>      
+      <multiplicity id="21" minimum="0" maximum="2147483647">        
+        <position height="17" width="23" x="1168" y="251"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="12" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="46">    
+  <association id="22">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="23" name="amenities"/>      
+      <multiplicity id="24" minimum="0" maximum="2147483647">        
+        <position height="17" width="23" x="783" y="204"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="25">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="47" name="images">        
-        <position height="0" width="0" x="-299" y="252"/>      
+      <attribute id="26" name="featuredListings">        
+        <position height="19" width="95" x="576" y="418"/>      
       </attribute>      
-      <multiplicity id="48" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="-299" y="252"/>      
+      <multiplicity id="27" minimum="0" maximum="1">        
+        <position height="17" width="25" x="699" y="423"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="29" name="images">        
+        <position height="0" width="0" x="-299" y="309"/>      
+      </attribute>      
+      <multiplicity id="30" minimum="0" maximum="2147483647">        
+        <position height="17" width="23" x="364" y="596"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="32" name="account">        
+        <position height="0" width="0" x="6" y="-4"/>      
+      </attribute>      
+      <multiplicity id="33" minimum="0" maximum="1">        
+        <position height="0" width="0" x="6" y="-4"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="35" name="floorplanSummary">        
+        <position height="0" width="0" x="121" y="0"/>      
+      </attribute>      
+      <multiplicity id="36" minimum="0" maximum="1">        
+        <position height="0" width="0" x="121" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="37">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="38" name="all">        
+        <position height="19" width="21" x="1231" y="231"/>      
+      </attribute>      
+      <multiplicity id="39" minimum="0" maximum="1">        
+        <position height="17" width="25" x="1225" y="244"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="40">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="41" name="detail">        
+        <position height="0" width="0" x="-8" y="112"/>      
+      </attribute>      
+      <multiplicity id="42" minimum="0" maximum="1">        
+        <position height="17" width="25" x="187" y="633"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="43">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="44" name="phoneNumbers">        
+        <position height="19" width="93" x="525" y="646"/>      
+      </attribute>      
+      <multiplicity id="45" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="106" y="354"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="46">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="47" name="floorplans">        
+        <position height="0" width="0" x="272" y="383"/>      
+      </attribute>      
+      <multiplicity id="48" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="272" y="383"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
