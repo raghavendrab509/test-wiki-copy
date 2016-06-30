@@ -3,8 +3,8 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class Neighborhood implements Serializable {
-
+public class Neighborhood implements Serializable
+{
     private String neighborhoodId;
     private String name;
 

@@ -1,14 +1,15 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("serial")
 public class ApartmentProperty implements Serializable
 {
-    private List<Amenity> amenities;
-    private List<Floorplan> floorplans;
-    private FloorplanSummaryCollection floorplanSummary;
+    private List<Amenity> amenities = new ArrayList<Amenity>();
+    private List<Floorplan> floorplans  = new ArrayList<Floorplan>();
+    private FloorplanSummaryCollection floorplanSummary = new FloorplanSummaryCollection();
 
     public List<Amenity> getAmenities() {
         return this.amenities;

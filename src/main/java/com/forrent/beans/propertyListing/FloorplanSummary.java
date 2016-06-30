@@ -5,10 +5,10 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class FloorplanSummary implements Serializable
 {
-    private Range<Double> bathrooms;
-    private Range<Integer> bedrooms;
-    private Range<Integer> price;
-    private Range<Integer> squareFeet;
+    private Range<Double> bathrooms = new Range<Double>();
+    private Range<Integer> bedrooms = new Range<Integer>();
+    private Range<Integer> price = new Range<Integer>();
+    private Range<Integer> squareFeet = new Range<Integer>();
 
     public Range<Double> getBathrooms() {
         return this.bathrooms;

@@ -1,17 +1,19 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class Geography implements Serializable {
+public class Geography implements Serializable
+{
     private String addressOne;
     private String addressTwo;
     private String cityId;
     private String cityName;
     private String countryCode;
-    private GeographyPoint location;
-    private List<School> schools;
+    private GeographyPoint location = new GeographyPoint();
+    private List<School> schools = new ArrayList<School>();
     private String metroId;
     private String metroName;
     private String stateCode;
@@ -21,7 +23,7 @@ public class Geography implements Serializable {
     private String superCityName;
     private String zipCode;
     private String zipExt;
-    private List<Neighborhood> neighborhoods;
+    private List<Neighborhood> neighborhoods = new ArrayList<Neighborhood>();
 
     public String getAddressOne() {
         return this.addressOne;
