@@ -20,7 +20,7 @@ public class PropertyListing implements Serializable
     private Detail detail = new Detail();
     private FeaturedListingCollection featuredListings = new FeaturedListingCollection();
     private List<SiteText> siteTexts = new ArrayList<SiteText>();
-    private List<Product> products = new ArrayList<Product>();
+
 
     public Account getAccount() {
         return this.account;
@@ -74,16 +74,6 @@ public class PropertyListing implements Serializable
         return this.siteTexts;
     }
 
-    public List<Product> getProducts()
-    {
-        return products;
-    }
-
-    public Boolean hasProduct(Product product)
-    {
-        return this.products.contains(product);
-    }
-
     public void setAccount(final Account account) {
         this.account = account;
     }
@@ -124,10 +114,5 @@ public class PropertyListing implements Serializable
     public void setSiteTexts(final List<SiteText> siteTexts)
     {
         this.siteTexts = siteTexts;
-    }
-
-    public void setProducts(List<Product> products)
-    {
-        this.products = products;
     }
 }
