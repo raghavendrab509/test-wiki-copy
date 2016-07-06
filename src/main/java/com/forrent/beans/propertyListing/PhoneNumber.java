@@ -13,6 +13,8 @@ public class PhoneNumber implements Serializable
     public static final String TYPE_MARKETPLACE_NETWORK = "MplcNtwrk";
     public static final String TYPE_FB_CONNECT_1 = "FBCntct1";
     public static final String TYPE_FB_CONNECT_2 = "FBCntct2";
+    public static final String TYPE_FRC_ES_UPGRADE_NUMBER = "FRC_ES_Upg";
+    public static final String TYPE_FRU_PHONE_NUMBER = "FR-U_Num";
 
     private String areaCode;
     private String description;
