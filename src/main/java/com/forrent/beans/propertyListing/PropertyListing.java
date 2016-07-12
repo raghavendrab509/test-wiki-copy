@@ -19,7 +19,7 @@ public class PropertyListing implements Serializable
     private ApartmentProperty property = new ApartmentProperty();
     private Detail detail = new Detail();
     private FeaturedListingCollection featuredListings = new FeaturedListingCollection();
-    private List<SiteText> siteTexts = new ArrayList<SiteText>();
+    private Map<String, SiteText> siteTextCollection = new HashMap<String, SiteText>();
 
     public Account getAccount() {
         return this.account;
@@ -68,9 +68,9 @@ public class PropertyListing implements Serializable
         return this.featuredListings;
     }
 
-    public List<SiteText> getSiteTexts()
+    public Map<String, SiteText> getSiteTextCollection()
     {
-        return this.siteTexts;
+        return this.siteTextCollection;
     }
 
     public void setAccount(final Account account) {
@@ -110,8 +110,8 @@ public class PropertyListing implements Serializable
         this.featuredListings = featuredListings;
     }
 
-    public void setSiteTexts(final List<SiteText> siteTexts)
+    public void setSiteTextCollection(final Map<String, SiteText> siteTextCollection)
     {
-        this.siteTexts = siteTexts;
+        this.siteTextCollection = siteTextCollection;
     }
 }
