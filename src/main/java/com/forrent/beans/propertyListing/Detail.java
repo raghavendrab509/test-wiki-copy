@@ -1,6 +1,8 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class Detail implements Serializable
@@ -11,6 +13,7 @@ public class Detail implements Serializable
     private Integer searchWeightFru;
     private Integer searchWeightFrcMobile;
     private Integer relativePerformanceScore;
+    private List<Product> products = new ArrayList<Product>();
 
     public Boolean getPaid() {
         return this.paid;
@@ -44,6 +47,16 @@ public class Detail implements Serializable
         this.searchWeightFru = searchWeightFru;
     }
 
+    public List<Product> getProducts()
+    {
+        return products;
+    }
+
+    public Boolean hasProduct(Product product)
+    {
+        return this.products.contains(product);
+    }
+
     public Integer getSearchWeightFrcMobile() {
         return this.searchWeightFrcMobile;
     }
@@ -58,5 +71,10 @@ public class Detail implements Serializable
 
     public void setRelativePerformanceScore(final Integer relativePerformanceScore) {
         this.relativePerformanceScore = relativePerformanceScore;
+    }
+
+    public void setProducts(List<Product> products)
+    {
+        this.products = products;
     }
 }

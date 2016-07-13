@@ -16,10 +16,11 @@ public class PropertyListing implements Serializable
     private List<Image> images = new ArrayList<Image>();
     private String name;
     private Map<String, PhoneNumber> phoneNumbers = new HashMap<String, PhoneNumber>();
-    private ApartmentProperty property = new ApartmentProperty();
+    private ApartmentProperty property = new ApartmentProperty();;
     private Detail detail = new Detail();
     private FeaturedListingCollection featuredListings = new FeaturedListingCollection();
     private Map<String, SiteText> siteTextCollection = new HashMap<String, SiteText>();
+
 
     public Account getAccount() {
         return this.account;
