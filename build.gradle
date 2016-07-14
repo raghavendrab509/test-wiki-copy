@@ -9,21 +9,37 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'maven'
 
-ext {
-    // Open the Git repository in the current directory.
-    git = org.ajoberstar.grgit.Grgit.open(file('.'))
-
-    // Get commit id of HEAD.
-    revision = git.head().id
-}
-
-// Use abbreviatedId commit id in the version.
-version = "0.0.1.${git.head().abbreviatedId}"
+version = "0.0.1"
+group = "com.forrent"
 
 jar {
     baseName = 'java-beans'
     version = version
+}
+
+configurations {
+    deployerJars
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    deployerJars "org.apache.maven.wagon:wagon-ftp:2.2"
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            configuration = configurations.deployerJars
+            repository(url: "ftp://maven-repo.forrent.com/maven2/") {
+                 authentication(userName: "$ftpuser", password: "$ftppwd")
+            }
+        }
+    }
 }
 
 sourceCompatibility = 1.8
