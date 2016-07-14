@@ -1,32 +1,28 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
-import java.util.Map;
+import java.util.List;
 
 @SuppressWarnings("serial")
 public class SiteText implements Serializable
 {
-    private String id;
+    private List<String> en;
+    private List<String> es;
 
-    private Map<Locale, String> text;
-
-    public String getId()
-    {
-        return id;
+    public List<String> getEn() {
+        return en;
     }
 
-    public void setId(String id)
-    {
-        this.id = id;
+    public void setEn(final List<String> en) {
+        this.en = en;
     }
 
-    public Map<Locale, String> getText()
-    {
-        return text;
+    public List<String> getEs() {
+        return es;
     }
 
-    public void setText(Map<Locale, String> text)
-    {
-        this.text = text;
+    public void setEs(final List<String> es) {
+        this.es = es;
     }
+
 }
