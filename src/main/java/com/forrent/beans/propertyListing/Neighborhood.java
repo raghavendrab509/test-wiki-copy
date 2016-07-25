@@ -3,21 +3,22 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class Neighborhood implements Serializable
+public class Neighborhood implements IObjectWithId, Serializable
 {
-    private String neighborhoodId;
+    private String id;
     private String name;
 
-    public String getNeighborhoodId() {
-        return this.neighborhoodId;
-    }
-
-    public void setNeighborhoodId(final String neighborhoodId) {
-        this.neighborhoodId = neighborhoodId;
+    @Override
+    public String getId() {
+        return this.id;
     }
 
     public String getName() {
         return this.name;
+    }
+
+    public void setId(final String id) {
+        this.id = id;
     }
 
     public void setName(final String name) {

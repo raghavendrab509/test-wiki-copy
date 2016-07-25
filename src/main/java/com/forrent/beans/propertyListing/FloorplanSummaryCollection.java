@@ -1,12 +1,9 @@
 package com.forrent.beans.propertyListing;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class FloorplanSummaryCollection
 {
     private FloorplanSummary all = new FloorplanSummary();
-    private List<FloorplanSummary> byRooms = new ArrayList<FloorplanSummary>();
+    private ObjectWithIdCollection<FloorplanSummary> byRooms = new ObjectWithIdCollection<FloorplanSummary>();
 
     /**
      * Summary of all floorplans.
@@ -18,7 +15,7 @@ public class FloorplanSummaryCollection
     /**
      * Summaries of floorplans, grouped by room count.
      */
-    public List<FloorplanSummary> getByRooms() {
+    public ObjectWithIdCollection<FloorplanSummary> getByRooms() {
         return this.byRooms;
     }
 
@@ -26,7 +23,7 @@ public class FloorplanSummaryCollection
         this.all = all;
     }
 
-    public void setByRooms(final List<FloorplanSummary> byRooms) {
+    public void setByRooms(final ObjectWithIdCollection<FloorplanSummary> byRooms) {
         this.byRooms = byRooms;
     }
 }
