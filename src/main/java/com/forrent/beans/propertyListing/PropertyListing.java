@@ -42,10 +42,6 @@ public class PropertyListing implements Serializable
         return this.images;
     }
 
-    public Image getImages(final Integer index) {
-        return this.images.getContent().get(index);
-    }
-
     public String getName() {
         return this.name;
     }
