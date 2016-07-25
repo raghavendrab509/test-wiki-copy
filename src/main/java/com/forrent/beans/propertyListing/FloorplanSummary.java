@@ -3,10 +3,11 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class FloorplanSummary implements Serializable
+public class FloorplanSummary implements IObjectWithId, Serializable
 {
     private Range<Double> bathrooms = new Range<Double>();
     private Range<Integer> bedrooms = new Range<Integer>();
+    private String id;
     private Range<Integer> price = new Range<Integer>();
     private Range<Integer> squareFeet = new Range<Integer>();
 
@@ -16,6 +17,11 @@ public class FloorplanSummary implements Serializable
 
     public Range<Integer> getBedrooms() {
         return this.bedrooms;
+    }
+
+    @Override
+    public String getId() {
+        return this.id;
     }
 
     public Range<Integer> getPrice() {
@@ -32,6 +38,10 @@ public class FloorplanSummary implements Serializable
 
     public void setBedrooms(final Range<Integer> bedrooms) {
         this.bedrooms = bedrooms;
+    }
+
+    public void setId(final String id) {
+        this.id = id;
     }
 
     public void setPrice(final Range<Integer> price) {

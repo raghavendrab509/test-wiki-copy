@@ -1,6 +1,6 @@
 package com.forrent.beans.propertyListing;
 
-public class Image
+public class Image implements IObjectWithType
 {
     public static final String TYPE_COM_EMAILER = "comEmailer";
     public static final String TYPE_PROFILE_PHOTO = "profilePhoto";
@@ -31,6 +31,7 @@ public class Image
         return this.rotation;
     }
 
+    @Override
     public String getType() {
         return this.type;
     }
