@@ -59,16 +59,8 @@ public class Geography implements Serializable
         return this.neighborhoods;
     }
 
-    public Neighborhood getNeighborhoods(final Integer index) {
-        return this.neighborhoods.getContent().get(index);
-    }
-
     public ObjectWithIdCollection<School> getSchools() {
         return this.schools;
-    }
-
-    public School getSchools(final Integer index) {
-        return this.schools.getContent().get(index);
     }
 
     public String getStateCode() {
