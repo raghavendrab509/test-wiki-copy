@@ -7,7 +7,7 @@ public class School implements IObjectWithId, Serializable
 {
     private String educationLevel;
     private String id;
-    private String schoolName;
+    private String name;
 
     public String getEducationLevel() {
         return this.educationLevel;
@@ -18,8 +18,8 @@ public class School implements IObjectWithId, Serializable
         return this.id;
     }
 
-    public String getSchoolName() {
-        return this.schoolName;
+    public String getName() {
+        return this.name;
     }
 
     public void setEducationLevel(final String educationLevel) {
@@ -30,7 +30,7 @@ public class School implements IObjectWithId, Serializable
         this.id = schoolId;
     }
 
-    public void setSchoolName(final String schoolName) {
-        this.schoolName = schoolName;
+    public void setName(final String name) {
+        this.name = name;
     }
 }
