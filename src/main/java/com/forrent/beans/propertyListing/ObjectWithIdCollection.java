@@ -32,6 +32,13 @@ public class ObjectWithIdCollection<T extends IObjectWithId>
         }
     }
 
+    public void putAll(final List<T> objects)
+    {
+        for(final T object : objects) {
+            this.put(object);
+        }
+    }
+
     /**
      * Get object by id.
      */
