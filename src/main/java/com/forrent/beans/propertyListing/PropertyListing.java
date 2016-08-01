@@ -8,7 +8,7 @@ public class PropertyListing implements Serializable
 {
     private Account account = new Account();
     private Detail detail = new Detail();
-    private FeaturedListingCollection featuredListings = new FeaturedListingCollection();
+    private ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings = new ObjectWithIdAndTypeCollection<FeaturedListing>();
     private Geography geo = new Geography();
     private String id;
     private ObjectWithTypeCollection<Image> images = new ObjectWithTypeCollection<Image>();
@@ -25,8 +25,7 @@ public class PropertyListing implements Serializable
         return this.detail;
     }
 
-    public FeaturedListingCollection getFeaturedListings()
-    {
+    public ObjectWithIdAndTypeCollection<FeaturedListing> getFeaturedListings() {
         return this.featuredListings;
     }
 
@@ -71,8 +70,7 @@ public class PropertyListing implements Serializable
         this.detail = detail;
     }
 
-    public void setFeaturedListings(final FeaturedListingCollection featuredListings)
-    {
+    public void setFeaturedListings(final ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings) {
         this.featuredListings = featuredListings;
     }
 
