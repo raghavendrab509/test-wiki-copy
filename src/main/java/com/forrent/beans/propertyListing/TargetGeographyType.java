@@ -11,9 +11,10 @@ public enum TargetGeographyType
      * Create from DB key.
      */
     public static TargetGeographyType fromKey(final String key)
+            throws Exception
     {
         if (key == null) {
-            throw new NullPointerException();
+            throw new Exception("Key may not be null.");
         }
 
         switch (key.toLowerCase())
@@ -31,7 +32,7 @@ public enum TargetGeographyType
                 return SUPER_CITY;
 
             default:
-                throw new IllegalArgumentException("Could not create enum from key: " + key);
+                throw new Exception("Could not create enum TargetGeographyType key: " + key);
         }
     }
 }

@@ -21,6 +21,10 @@ public class ObjectWithTypeCollection<T extends IObjectWithType>
      */
     public void add(final T object)
     {
+        if (object.getType() == null) {
+            throw new NullPointerException("Type may not be null");
+        }
+
         ArrayList<Integer> indicies = this.types.get(object.getType());
 
         if (indicies == null) {

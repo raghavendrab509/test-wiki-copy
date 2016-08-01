@@ -16,9 +16,10 @@ public enum FeaturedListingType
      * Create from DB key.
      */
     public static FeaturedListingType fromKey(final String key)
+            throws Exception
     {
         if (key == null) {
-            throw new NullPointerException();
+            throw new Exception("Key may not be null.");
         }
 
         switch (key.toLowerCase())
@@ -51,7 +52,7 @@ public enum FeaturedListingType
                 return TICKER_AD_FRC;
 
             default:
-                throw new IllegalArgumentException("Could not create enum from key: " + key);
+                throw new Exception("Could not create enum FeaturedListingType key: " + key);
         }
     }
 }

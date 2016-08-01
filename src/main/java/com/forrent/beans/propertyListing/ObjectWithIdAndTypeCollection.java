@@ -93,6 +93,14 @@ public class ObjectWithIdAndTypeCollection<T extends IObjectWithId & IObjectWith
      */
     public void put(final T object)
     {
+        if (object.getId() == null) {
+            throw new NullPointerException("Id may not be null.");
+        }
+
+        if (object.getType() == null) {
+            throw new NullPointerException("Type may not be null.");
+        }
+
         final Integer index = this.ids.get(object.getId());
 
         if (index == null) {

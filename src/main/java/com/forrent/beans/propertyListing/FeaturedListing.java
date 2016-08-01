@@ -3,7 +3,7 @@ package com.forrent.beans.propertyListing;
 public class FeaturedListing implements IObjectWithId, IObjectWithType
 {
     private String id;
-    private TargetGeography targetGeo;
+    private TargetGeography targetGeo = new TargetGeography();
     private FeaturedListingType type;
 
     @Override
@@ -18,10 +18,6 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
     @Override
     public String getType() {
         return this.type.toString();
-    }
-
-    public FeaturedListingType getTypeEnum() {
-        return this.type;
     }
 
     public void setId(final String id) {
