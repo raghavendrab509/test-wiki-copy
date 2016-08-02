@@ -7,7 +7,7 @@ public class ApartmentProperty implements Serializable
 {
     private ObjectWithIdCollection<Amenity> amenities = new ObjectWithIdCollection<Amenity>();
     private ObjectWithIdCollection<Floorplan> floorplans  = new ObjectWithIdCollection<Floorplan>();
-    private FloorplanSummaryCollection floorplanSummary = new FloorplanSummaryCollection();
+    private ObjectWithIdCollection<FloorplanSummary> floorplanSummaries = new ObjectWithIdCollection<FloorplanSummary>();
 
     public ObjectWithIdCollection<Amenity> getAmenities() {
         return this.amenities;
@@ -17,8 +17,8 @@ public class ApartmentProperty implements Serializable
         return this.floorplans;
     }
 
-    public FloorplanSummaryCollection getFloorplanSummary() {
-        return this.floorplanSummary;
+    public ObjectWithIdCollection<FloorplanSummary> getFloorplanSummaries() {
+        return this.floorplanSummaries;
     }
 
     public void setAmenities(final ObjectWithIdCollection<Amenity> amenities) {
@@ -29,7 +29,7 @@ public class ApartmentProperty implements Serializable
         this.floorplans = floorplans;
     }
 
-    public void setFloorplanSummary(final FloorplanSummaryCollection floorplanSummary) {
-        this.floorplanSummary = floorplanSummary;
+    public void setFloorplanSummaries(final ObjectWithIdCollection<FloorplanSummary> floorplanSummary) {
+        this.floorplanSummaries = floorplanSummary;
     }
 }

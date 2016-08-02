@@ -22,6 +22,10 @@ public class ObjectWithIdCollection<T extends IObjectWithId>
      */
     public void put(final T object)
     {
+        if (object.getId() == null) {
+            throw new NullPointerException("Id may not be null.");
+        }
+
         final Integer index = this.ids.get(object.getId());
 
         if (index == null) {
@@ -29,6 +33,13 @@ public class ObjectWithIdCollection<T extends IObjectWithId>
             this.ids.put(object.getId(), this.content.size() - 1);
         } else {
             this.content.set(index, object);
+        }
+    }
+
+    public void putAll(final List<T> objects)
+    {
+        for(final T object : objects) {
+            this.put(object);
         }
     }
 

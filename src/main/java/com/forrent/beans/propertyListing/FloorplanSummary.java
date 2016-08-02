@@ -5,6 +5,8 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class FloorplanSummary implements IObjectWithId, Serializable
 {
+    public static final String ALL_ID = "ALL";
+
     private Range<Double> bathrooms = new Range<Double>();
     private Range<Integer> bedrooms = new Range<Integer>();
     private String id;
