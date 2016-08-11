@@ -3,10 +3,11 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class Amenity implements Serializable
+public class Amenity implements IObjectWithId, Serializable
 {
     private String category;
-    private String name;
+    private String id;
+    private final Translated<String> name = new Translated<String>();
     private Boolean searchable;
     private String searchableCategory;
     private String websiteCode;
@@ -15,7 +16,12 @@ public class Amenity implements Serializable
         return this.category;
     }
 
-    public String getName() {
+    @Override
+    public String getId() {
+        return this.id;
+    }
+
+    public Translated<String> getName() {
         return this.name;
     }
 
@@ -35,8 +41,18 @@ public class Amenity implements Serializable
         this.category = category;
     }
 
-    public void setName(final String name) {
-        this.name = name;
+    public void setId(final String id) {
+        this.id = id;
+    }
+
+    public void setName(final String text, final String locale)
+    {
+        if (Locale.valueOf(locale) == Locale.EN) {
+            this.name.setEn(text);
+        } else {
+            this.name.setEs(text);
+        }
+
     }
 
     public void setSearchable(final Boolean searchable) {

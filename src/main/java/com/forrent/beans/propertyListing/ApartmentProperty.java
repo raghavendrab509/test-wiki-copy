@@ -1,45 +1,35 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 @SuppressWarnings("serial")
 public class ApartmentProperty implements Serializable
 {
-    private List<Amenity> amenities = new ArrayList<Amenity>();
-    private List<Floorplan> floorplans  = new ArrayList<Floorplan>();
-    private FloorplanSummaryCollection floorplanSummary = new FloorplanSummaryCollection();
+    private ObjectWithIdCollection<Amenity> amenities = new ObjectWithIdCollection<Amenity>();
+    private ObjectWithIdCollection<Floorplan> floorplans  = new ObjectWithIdCollection<Floorplan>();
+    private ObjectWithIdCollection<FloorplanSummary> floorplanSummaries = new ObjectWithIdCollection<FloorplanSummary>();
 
-    public List<Amenity> getAmenities() {
+    public ObjectWithIdCollection<Amenity> getAmenities() {
         return this.amenities;
     }
 
-    public Amenity getAmenities(final Integer index){
-        return this.amenities.get(index);
-    }
-
-    public List<Floorplan> getFloorplans() {
+    public ObjectWithIdCollection<Floorplan> getFloorplans() {
         return this.floorplans;
     }
 
-    public Floorplan getFloorplans(final Integer index) {
-        return this.floorplans.get(index);
+    public ObjectWithIdCollection<FloorplanSummary> getFloorplanSummaries() {
+        return this.floorplanSummaries;
     }
 
-    public FloorplanSummaryCollection getFloorplanSummary() {
-        return this.floorplanSummary;
-    }
-
-    public void setAmenities(final List<Amenity> amenities) {
+    public void setAmenities(final ObjectWithIdCollection<Amenity> amenities) {
         this.amenities = amenities;
     }
 
-    public void setFloorplans(final List<Floorplan> floorplans) {
+    public void setFloorplans(final ObjectWithIdCollection<Floorplan> floorplans) {
         this.floorplans = floorplans;
     }
 
-    public void setFloorplanSummary(final FloorplanSummaryCollection floorplanSummary) {
-        this.floorplanSummary = floorplanSummary;
+    public void setFloorplanSummaries(final ObjectWithIdCollection<FloorplanSummary> floorplanSummary) {
+        this.floorplanSummaries = floorplanSummary;
     }
 }

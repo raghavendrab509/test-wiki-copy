@@ -3,33 +3,34 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class School implements Serializable
+public class School implements IObjectWithId, Serializable
 {
-    private String schoolId;
     private String educationLevel;
-    private String schoolName;
-
-    public String getSchoolId() {
-        return this.schoolId;
-    }
-
-    public void setSchoolId(final String schoolId) {
-        this.schoolId = schoolId;
-    }
+    private String id;
+    private String name;
 
     public String getEducationLevel() {
         return this.educationLevel;
+    }
+
+    @Override
+    public String getId() {
+        return this.id;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public void setEducationLevel(final String educationLevel) {
         this.educationLevel = educationLevel;
     }
 
-    public String getSchoolName() {
-        return this.schoolName;
+    public void setId(final String schoolId) {
+        this.id = schoolId;
     }
 
-    public void setSchoolName(final String schoolName) {
-        this.schoolName = schoolName;
+    public void setName(final String name) {
+        this.name = name;
     }
 }

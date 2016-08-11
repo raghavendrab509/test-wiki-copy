@@ -1,28 +1,48 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class SiteText implements Serializable
+public class SiteText implements IObjectWithId, Serializable
 {
-    private List<String> en;
-    private List<String> es;
+    private String id;
+    private String name;
+    private final Translated<List<String>> text = new Translated<List<String>>();
 
-    public List<String> getEn() {
-        return en;
+    public SiteText() {
+        this.text.setEn(new ArrayList<String>());
+        this.text.setEs(new ArrayList<String>());
     }
 
-    public void setEn(final List<String> en) {
-        this.en = en;
+    public void addText(final String text, final String locale)
+    {
+        if (Locale.valueOf(locale) == Locale.EN) {
+            this.text.getEn().add(text);
+        } else {
+            this.text.getEs().add(text);
+        }
     }
 
-    public List<String> getEs() {
-        return es;
+    public Translated<List<String>> getText() {
+        return this.text;
     }
 
-    public void setEs(final List<String> es) {
-        this.es = es;
+    @Override
+    public String getId() {
+        return this.id;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public void setId(final String id) {
+        this.id = id;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
 }
