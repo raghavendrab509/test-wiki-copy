@@ -12,32 +12,26 @@ apply plugin: 'eclipse'
 apply plugin: 'maven'
 
 version = "0.0.1"
-group = "com.forrent"
-
 jar {
-    baseName = 'java-beans'
+    baseName = "java-beans"
     version = version
-}
-
-configurations {
-    deployerJars
 }
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    deployerJars "org.apache.maven.wagon:wagon-ftp:2.2"
-}
+
 
 uploadArchives {
     repositories {
         mavenDeployer {
-            configuration = configurations.deployerJars
-            repository(url: "ftp://maven-repo.forrent.com/maven2/") {
-                 authentication(userName: "$ftpuser", password: "$ftppwd")
+            repository(url: "http://dsfrcsatis01.frmsystems.net:8080/repository/internal/") {
+                 authentication(userName: "frc_maven_repo", password: "FRCarchive1")
             }
+            pom.version = version
+            pom.artifactId = "java-beans"
+            pom.groupId = "com.forrent"
         }
     }
 }
