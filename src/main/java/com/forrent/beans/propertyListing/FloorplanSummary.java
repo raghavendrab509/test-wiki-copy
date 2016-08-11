@@ -3,19 +3,27 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class FloorplanSummary implements Serializable
+public class FloorplanSummary implements IObjectWithId, Serializable
 {
-    private Range<Double> bathrooms = new Range<Double>();
-    private Range<Integer> bedrooms = new Range<Integer>();
+    public static final String ALL_ID = "ALL";
+
+    private Range<Double> baths = new Range<Double>();
+    private Range<Integer> beds = new Range<Integer>();
+    private String id;
     private Range<Integer> price = new Range<Integer>();
     private Range<Integer> squareFeet = new Range<Integer>();
 
-    public Range<Double> getBathrooms() {
-        return this.bathrooms;
+    public Range<Double> getBaths() {
+        return this.baths;
     }
 
-    public Range<Integer> getBedrooms() {
-        return this.bedrooms;
+    public Range<Integer> getBeds() {
+        return this.beds;
+    }
+
+    @Override
+    public String getId() {
+        return this.id;
     }
 
     public Range<Integer> getPrice() {
@@ -26,12 +34,16 @@ public class FloorplanSummary implements Serializable
         return this.squareFeet;
     }
 
-    public void setBathrooms(final Range<Double> bathrooms) {
-        this.bathrooms = bathrooms;
+    public void setBaths(final Range<Double> bathrooms) {
+        this.baths = bathrooms;
     }
 
-    public void setBedrooms(final Range<Integer> bedrooms) {
-        this.bedrooms = bedrooms;
+    public void setBeds(final Range<Integer> bedrooms) {
+        this.beds = bedrooms;
+    }
+
+    public void setId(final String id) {
+        this.id = id;
     }
 
     public void setPrice(final Range<Integer> price) {
