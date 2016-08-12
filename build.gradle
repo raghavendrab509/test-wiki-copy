@@ -9,21 +9,31 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'maven'
 
-ext {
-    // Open the Git repository in the current directory.
-    git = org.ajoberstar.grgit.Grgit.open(file('.'))
-
-    // Get commit id of HEAD.
-    revision = git.head().id
+version = "0.0.1"
+jar {
+    baseName = "java-beans"
+    version = version
 }
 
-// Use abbreviatedId commit id in the version.
-version = "0.0.1.${git.head().abbreviatedId}"
+repositories {
+    mavenCentral()
+}
 
-jar {
-    baseName = 'java-beans'
-    version = version
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://dsfrcsatis01.frmsystems.net:8080/repository/internal/") {
+                 authentication(userName: "frc_maven_repo", password: "FRCarchive1")
+            }
+            pom.version = version
+            pom.artifactId = "java-beans"
+            pom.groupId = "com.forrent"
+        }
+    }
 }
 
 sourceCompatibility = 1.8
