@@ -7,3 +7,8 @@ Please increment the version number in [build.gradle](build.gradle) according to
 -----
 
 Initial versioning, simple listing object scaffolding.
+
+0.0.2
+-----
+
+ProprertyManagementComapany ("pmc") object added.
