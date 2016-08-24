@@ -3,19 +3,20 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class PropertyManagementCompany implements Serializable {
+public class PropertyManagementCompany implements IObjectWithId, Serializable {
 
-	private Integer id;
+	private String id;
 	private String name;
 	private String url;
 	private String type;
 	private String listingCount;
 
-	public Integer getId() {
+	@Override
+	public String getId() {
 		return this.id;
 	}
 
-	public void setId(final Integer id) {
+	public void setId(final String id) {
 		this.id = id;
 	}
 
