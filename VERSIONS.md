@@ -17,3 +17,8 @@ ProprertyManagementComapany ("pmc") object added.
 -----
 
 listingCount in "pmc" object is updated to integer.
+
+0.0.4
+-----
+
+Moved "pmc" object inside the details.
