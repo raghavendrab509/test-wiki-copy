@@ -12,3 +12,13 @@ Initial versioning, simple listing object scaffolding.
 -----
 
 ProprertyManagementComapany ("pmc") object added.
+
+0.0.3
+-----
+
+listingCount in "pmc" object is updated to integer.
+
+0.0.4
+-----
+
+Moved "pmc" object inside the details.
