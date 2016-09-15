@@ -15,6 +15,7 @@ public class Detail implements Serializable
     private Integer relativePerformanceScore;
     private List<Product> products = new ArrayList<Product>();
     private PropertyManagementCompany pmc;
+    private GuestCard guestCard;
 
     public Boolean getPaid() {
         return this.paid;
@@ -86,4 +87,14 @@ public class Detail implements Serializable
     public void setPmc(final PropertyManagementCompany pmc) {
         this.pmc = pmc;
     }
+
+    public GuestCard getGuestCard() {
+        return this.guestCard;
+    }
+
+    public void setGuestCard(final GuestCard guestCard) {
+        this.guestCard = guestCard;
+    }
+
+
 }
