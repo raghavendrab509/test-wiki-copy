@@ -27,3 +27,8 @@ Moved "pmc" object inside the details.
 -----
 
 "guestCard" object added to listings inside details.
+
+0.0.6
+-----
+
+"facebookId" added to listings inside details.
