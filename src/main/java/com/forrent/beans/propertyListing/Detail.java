@@ -13,6 +13,7 @@ public class Detail implements Serializable
     private Integer searchWeightFru;
     private Integer searchWeightFrcMobile;
     private Integer relativePerformanceScore;
+    private String facebookId;
     private List<Product> products = new ArrayList<Product>();
 
     public Boolean getPaid() {
@@ -49,10 +50,10 @@ public class Detail implements Serializable
 
     public List<Product> getProducts()
     {
-        return products;
+        return this.products;
     }
 
-    public Boolean hasProduct(Product product)
+    public Boolean hasProduct(final Product product)
     {
         return this.products.contains(product);
     }
@@ -73,8 +74,16 @@ public class Detail implements Serializable
         this.relativePerformanceScore = relativePerformanceScore;
     }
 
-    public void setProducts(List<Product> products)
+    public void setProducts(final List<Product> products)
     {
         this.products = products;
+    }
+
+    public String getFacebookId() {
+        return facebookId;
+    }
+
+    public void setFacebookId(String facebookId) {
+        this.facebookId = facebookId;
     }
 }
