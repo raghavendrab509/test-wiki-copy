@@ -9,7 +9,7 @@ public class PropertyManagementCompany implements IObjectWithId, Serializable {
 	private String name;
 	private String url;
 	private String type;
-	private String listingCount;
+	private Integer listingCount;
 
 	@Override
 	public String getId() {
@@ -44,11 +44,11 @@ public class PropertyManagementCompany implements IObjectWithId, Serializable {
 		this.type = type;
 	}
 
-	public String getListingCount() {
+	public Integer getListingCount() {
 		return this.listingCount;
 	}
 
-	public void setListingCount(final String listingCount) {
+	public void setListingCount(final Integer listingCount) {
 		this.listingCount = listingCount;
 	}
 
