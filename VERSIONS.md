@@ -22,3 +22,13 @@ listingCount in "pmc" object is updated to integer.
 -----
 
 Moved "pmc" object inside the details.
+
+0.0.5
+-----
+
+"guestCard" object added to listings inside details.
+
+0.0.6
+-----
+
+"facebookId" added to listings inside details.

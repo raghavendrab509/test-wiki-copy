@@ -13,8 +13,10 @@ public class Detail implements Serializable
     private Integer searchWeightFru;
     private Integer searchWeightFrcMobile;
     private Integer relativePerformanceScore;
+    private String facebookId;
     private List<Product> products = new ArrayList<Product>();
     private PropertyManagementCompany pmc;
+    private GuestCard guestCard;
 
     public Boolean getPaid() {
         return this.paid;
@@ -79,11 +81,27 @@ public class Detail implements Serializable
         this.products = products;
     }
 
+    public String getFacebookId() {
+        return this.facebookId;
+    }
+
+    public void setFacebookId(final String facebookId) {
+        this.facebookId = facebookId;
+    }
+
     public PropertyManagementCompany getPmc() {
         return this.pmc;
     }
 
     public void setPmc(final PropertyManagementCompany pmc) {
         this.pmc = pmc;
+    }
+
+    public GuestCard getGuestCard() {
+        return this.guestCard;
+    }
+
+    public void setGuestCard(final GuestCard guestCard) {
+        this.guestCard = guestCard;
     }
 }
