@@ -11,7 +11,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
-version = "0.0.1"
+version = "0.0.2"
 jar {
     baseName = "java-beans"
     version = version
@@ -26,7 +26,7 @@ repositories {
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "http://dsfrcsatis01.frmsystems.net:8080/repository/internal/") {
+            repository(url: "https://mavenrepo.forrent.com/repository/internal/") {
                  authentication(userName: "frc_maven_repo", password: "FRCarchive1")
             }
             pom.version = version
