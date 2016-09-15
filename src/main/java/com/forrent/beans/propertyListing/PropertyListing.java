@@ -16,7 +16,6 @@ public class PropertyListing implements Serializable
     private ObjectWithIdCollection<PhoneNumber> phoneNumbers = new ObjectWithIdCollection<PhoneNumber>();
     private ApartmentProperty property = new ApartmentProperty();
     private ObjectWithIdCollection<SiteText> siteTexts = new ObjectWithIdCollection<SiteText>();
-    private PropertyManagementCompany pmc;
 
     public Account getAccount() {
         return this.account;
@@ -102,14 +101,5 @@ public class PropertyListing implements Serializable
     public void setSiteTexts(final ObjectWithIdCollection<SiteText> siteTexts) {
         this.siteTexts = siteTexts;
     }
-
-	public PropertyManagementCompany getPmc() {
-		return this.pmc;
-	}
-
-	public void setPmc(final PropertyManagementCompany pmc) {
-		this.pmc = pmc;
-	}
-
 
 }
