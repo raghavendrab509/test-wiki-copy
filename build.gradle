@@ -11,7 +11,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
-version = "0.0.6"
+version = "0.0.7"
 jar {
     baseName = "java-beans"
     version = version
