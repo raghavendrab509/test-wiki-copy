@@ -7,20 +7,6 @@ buildscript {
     }
 }
 
-ext {
-    // Open the Git repository in the current directory.
-    git = org.ajoberstar.grgit.Grgit.open(file('.'))
-
-    // Get commit id of HEAD.
-    revision = git.head().abbreviatedId
-    
-    //current branch
-    branchName = git.branch.getCurrent().fullName.replace('/', '_')
-    
-    isRelease = (branchName != null) ? true : false
-    mVersion = "0.0.6"
-}
-
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
@@ -28,25 +14,59 @@ apply plugin: 'maven'
 // Change build directory so clean doesn't delete build/hooks
 buildDir = 'gradle-build'
 
-version = isRelease ? mVersion + '.' + branchName + '_' + revision : "0.0.6"
+//version = isRelease ? mVersion + '.' + branchName + '_' + revision : "0.0.6"
+version = "0.0.6"
+
+ext {
+
+    props = new Properties() 
+    propsFile = new File("gradle.properties")
+    props.load(propsFile.newDataInputStream())
+    versionBuild = props.getProperty('artifactBuildNumber')
+    majorVersion = props.getProperty('artifactMajorVersion')
+    
+    // Open the Git repository in the current directory.
+    git = org.ajoberstar.grgit.Grgit.open(file('.'))
+
+    // Get commit id of HEAD.
+    revision = git.head().abbreviatedId
+    
+    //current branch
+    branchName = git.branch.getCurrent().fullName.replace('/', '_').replaceAll('refs_heads_', "")
+    
+    if(branchName.startsWith("deploy") || branchName.startsWith("review")) {
+       incrementBuildNumber()
+       git.commit(message: 'Increment Build Number')
+       git.push()
+       if(branchName.startsWith("deploy")) {
+           git.checkout(branch: 'master')
+           git.merge(head: branchName.replace('_', '/'))
+           git.push()
+       }
+       
+    }
+    
+    branchName = (branchName.equalsIgnoreCase("deploy_next")) ? "RELEASE" : branchName + '_' + revision
+    
+}
+
 jar {
     baseName = "java-beans"
-    version = version
+    version = majorVersion
 }
 
 repositories {
     mavenCentral()
 }
 
-
-
 uploadArchives {
+    //tasks.incrementBuildNumber.execute()
     repositories {
         mavenDeployer {
             repository(url: "https://mavenrepo.forrent.com/repository/internal/") {
                  authentication(userName: "frc_maven_repo", password: "FRCarchive1")
             }
-            pom.version = version
+            pom.version = majorVersion + '-' + versionBuild + '-' + branchName
             pom.artifactId = "java-beans"
             pom.groupId = "com.forrent"
         }
@@ -56,15 +76,16 @@ uploadArchives {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-// +-------+
-// | Tasks |
-// +-------+
-
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
 
-task preDeploy << {
-    println branchName
+void incrementBuildNumber() {
+    versionBuild = props.getProperty('artifactBuildNumber')
+    Integer nextbuildnum = ( (versionBuild as BigDecimal) + 1 )
+    versionBuild = nextbuildnum.toString()
+    props.setProperty("artifactBuildNumber", versionBuild)
+    props.store(propsFile.newWriter(), null)
+    props.load(propsFile.newDataInputStream())
 }
 
