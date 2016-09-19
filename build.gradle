@@ -14,9 +14,6 @@ apply plugin: 'maven'
 // Change build directory so clean doesn't delete build/hooks
 buildDir = 'gradle-build'
 
-//version = isRelease ? mVersion + '.' + branchName + '_' + revision : "0.0.6"
-version = "0.0.6"
-
 ext {
 
     props = new Properties() 
