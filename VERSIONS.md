@@ -32,3 +32,8 @@ Moved "pmc" object inside the details.
 -----
 
 "facebookId" added to listings inside details.
+
+0.0.7
+-----
+
+Added "Spotlight" details to listings inside property.
