@@ -1,21 +1,13 @@
 package com.forrent.beans.propertyListing;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Spotlight {
 
     private String image;
     private String imagePath;
     private String imageName;
     private String coupon;
-    private Translated<List<String>> spotlightText;
+    private Translated<String> spotlightText;
     private Boolean isCustom;
-
-    public Spotlight() {
-        this.spotlightText.setEn(new ArrayList<String>());
-        this.spotlightText.setEs(new ArrayList<String>());
-    }
 
     public String getImage() {
         return this.image;
@@ -49,16 +41,16 @@ public class Spotlight {
         this.coupon = coupon;
     }
 
-    public Translated<List<String>> getSpotlightText() {
+    public Translated<String> getSpotlightText() {
         return this.spotlightText;
     }
 
     public void addSpotlightText(final String text, final String locale)
     {
         if (Locale.valueOf(locale) == Locale.EN) {
-            this.spotlightText.getEn().add(text);
+            this.spotlightText.setEn(text);
         } else {
-            this.spotlightText.getEs().add(text);
+            this.spotlightText.setEs(text);
         }
     }
 
