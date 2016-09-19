@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'org.ajoberstar:grgit:1.6.0'
+        classpath 'org.ajoberstar:grgit:1.7.0'
     }
 }
 
@@ -23,7 +23,8 @@ ext {
     majorVersion = props.getProperty('artifactMajorVersion')
     
     // Open the Git repository in the current directory.
-    git = org.ajoberstar.grgit.Grgit.open(file('.'))
+    credentials = new org.ajoberstar.grgit.Credentials(username: 'silver.ibenye', password: '04143Closer!')
+    git = org.ajoberstar.grgit.Grgit.open(dir: file('.'), creds: credentials)
 
     // Get commit id of HEAD.
     revision = git.head().abbreviatedId
@@ -31,9 +32,10 @@ ext {
     //current branch
     branchName = git.branch.getCurrent().fullName.replace('/', '_').replaceAll('refs_heads_', "")
     
-    if(branchName.startsWith("deploy") || branchName.startsWith("review")) {
+    if(branchName.startsWith("deploy") || branchName.startsWith("auto")) {
        incrementBuildNumber()
-       git.commit(message: 'Increment Build Number')
+       //git.add(update: false)
+       git.commit(message: 'Increment Build Number', all:true)
        git.push()
        if(branchName.startsWith("deploy")) {
            git.checkout(branch: 'master')
