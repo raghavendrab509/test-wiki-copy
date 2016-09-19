@@ -23,8 +23,9 @@ ext {
     majorVersion = props.getProperty('artifactMajorVersion')
     
     // Open the Git repository in the current directory.
-    credentials = new org.ajoberstar.grgit.Credentials(username: 'silver.ibenye', password: '04143Closer!')
-    git = org.ajoberstar.grgit.Grgit.open(dir: file('.'), creds: credentials)
+    
+    //credentials = new org.ajoberstar.grgit.Credentials(username: 'silver.ibenye', password: '04143Closer!')
+    git = org.ajoberstar.grgit.Grgit.open(dir: file('.'))
 
     // Get commit id of HEAD.
     revision = git.head().abbreviatedId
@@ -34,7 +35,6 @@ ext {
     
     if(branchName.startsWith("deploy") || branchName.startsWith("auto")) {
        incrementBuildNumber()
-       //git.add(update: false)
        git.commit(message: 'Increment Build Number', all:true)
        git.push()
        if(branchName.startsWith("deploy")) {
