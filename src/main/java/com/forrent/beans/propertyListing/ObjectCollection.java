@@ -33,11 +33,4 @@ public class ObjectCollection<T>
         return Collections.unmodifiableList(this.content);
     }
 
-    /**
-     * Does object exist in this collection.
-     */
-    public Boolean contains(final T object)
-    {
-        return this.content.contains(object);
-    }
 }
