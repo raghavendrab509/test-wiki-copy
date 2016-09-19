@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+# This should be run as root, from the project root directory
+
+docker  run -d \
+        -p 4040:4040 \
+        --name java-beans \
+        java-beans 

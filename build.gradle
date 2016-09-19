@@ -7,11 +7,28 @@ buildscript {
     }
 }
 
+ext {
+    // Open the Git repository in the current directory.
+    git = org.ajoberstar.grgit.Grgit.open(file('.'))
+
+    // Get commit id of HEAD.
+    revision = git.head().abbreviatedId
+    
+    //current branch
+    branchName = git.branch.getCurrent().fullName.replace('/', '_')
+    
+    isRelease = (branchName != null) ? true : false
+    mVersion = "0.0.6"
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
-version = "0.0.6"
+// Change build directory so clean doesn't delete build/hooks
+buildDir = 'gradle-build'
+
+version = isRelease ? mVersion + '.' + branchName + '_' + revision : "0.0.6"
 jar {
     baseName = "java-beans"
     version = version
@@ -39,6 +56,15 @@ uploadArchives {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+// +-------+
+// | Tasks |
+// +-------+
+
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
+
+task preDeploy << {
+    println branchName
+}
+

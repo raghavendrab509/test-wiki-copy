@@ -5,6 +5,6 @@
 .idea/
 
 bin/
-build/
+gradle-build/
 
 .DS_Store
