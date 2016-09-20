@@ -38,7 +38,12 @@ Moved "pmc" object inside the details.
 
 Added "Spotlight" details to listings inside property.
 
-0.0.7.1
+0.0.8
 --------
 
 Initialized spotlight text with new object.
+
+0.0.9
+------
+
+Added build task to increment version number

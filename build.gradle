@@ -20,8 +20,10 @@ ext {
     props = new Properties() 
     propsFile = new File("gradle.properties")
     props.load(propsFile.newDataInputStream())
-    versionBuild = props.getProperty('artifactBuildNumber')
-    majorVersion = props.getProperty('artifactMajorVersion')
+    majorVersion = props.getProperty('MAJOR')
+    minorVersion = props.getProperty('MINOR')
+    patchVersion = props.getProperty('PATCH')
+    version = majorVersion + '.' + minorVersion + '.' + patchVersion
     
     // Open the Git repository in the current directory.
     
@@ -29,19 +31,19 @@ ext {
     git = org.ajoberstar.grgit.Grgit.open(dir: file('.'))
 
     // Get commit id of HEAD.
-    revision = git.head().abbreviatedId
+    commitHash = git.head().abbreviatedId
     
     //current branch
     branchName = git.branch.getCurrent().fullName.replace('/', '_').replaceAll('refs_heads_', "")
     
-    branchName = (branchName.equalsIgnoreCase("master")) ? "RELEASE" : branchName + '_' + revision
+    branchName = (branchName.equalsIgnoreCase("master")) ? "" : '-' + branchName + '_' + commitHash
     
 }
 
 
 jar {
     baseName = "java-beans"
-    version = majorVersion
+    version = version
 }
 
 repositories {
@@ -55,7 +57,7 @@ uploadArchives {
             repository(url: "https://mavenrepo.forrent.com/repository/internal/") {
                  authentication(userName: System.properties['repo.username'], password: System.properties['repo.password'])
             }
-            pom.version = majorVersion + '-' + versionBuild + '-' + branchName
+            pom.version = version + branchName
             pom.artifactId = "java-beans"
             pom.groupId = "com.forrent"
         }
@@ -69,10 +71,10 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
 
-task incrementBuildNumber << {
-    versionBuild = props.getProperty('artifactBuildNumber')
-    Integer nextbuildnum = ( (versionBuild as BigDecimal) + 1 )
-    props.setProperty("artifactBuildNumber", nextbuildnum.toString())
+task incrementPatchNumber << {
+    patchVersion = props.getProperty('PATCH')
+    Integer nextPatchNum = ( (patchVersion as BigDecimal) + 1 )
+    props.setProperty("PATCH", nextPatchNum.toString())
     props.store(propsFile.newWriter(), null)
 }
 
