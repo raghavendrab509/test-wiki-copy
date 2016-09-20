@@ -11,6 +11,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
+
 // Change build directory so clean doesn't delete build/hooks
 buildDir = 'gradle-build'
 
@@ -36,6 +37,7 @@ ext {
     branchName = (branchName.equalsIgnoreCase("master")) ? "RELEASE" : branchName + '_' + revision
     
 }
+
 
 jar {
     baseName = "java-beans"
