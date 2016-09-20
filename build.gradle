@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'org.ajoberstar:grgit:1.6.0'
+        classpath 'org.ajoberstar:grgit:1.7.0'
     }
 }
 
@@ -11,25 +11,51 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
-version = "0.0.7.1"
+
+// Change build directory so clean doesn't delete build/hooks
+buildDir = 'gradle-build'
+
+ext {
+
+    props = new Properties() 
+    propsFile = new File("gradle.properties")
+    props.load(propsFile.newDataInputStream())
+    versionBuild = props.getProperty('artifactBuildNumber')
+    majorVersion = props.getProperty('artifactMajorVersion')
+    
+    // Open the Git repository in the current directory.
+    
+    //credentials = new org.ajoberstar.grgit.Credentials(username: 'silver.ibenye', password: '04143Closer!')
+    git = org.ajoberstar.grgit.Grgit.open(dir: file('.'))
+
+    // Get commit id of HEAD.
+    revision = git.head().abbreviatedId
+    
+    //current branch
+    branchName = git.branch.getCurrent().fullName.replace('/', '_').replaceAll('refs_heads_', "")
+    
+    branchName = (branchName.equalsIgnoreCase("master")) ? "RELEASE" : branchName + '_' + revision
+    
+}
+
+
 jar {
     baseName = "java-beans"
-    version = version
+    version = majorVersion
 }
 
 repositories {
     mavenCentral()
 }
 
-
-
 uploadArchives {
+    //tasks.incrementBuildNumber.execute()
     repositories {
         mavenDeployer {
             repository(url: "https://mavenrepo.forrent.com/repository/internal/") {
-                 authentication(userName: "frc_maven_repo", password: "FRCarchive1")
+                 authentication(userName: System.properties['repo.username'], password: System.properties['repo.password'])
             }
-            pom.version = version
+            pom.version = majorVersion + '-' + versionBuild + '-' + branchName
             pom.artifactId = "java-beans"
             pom.groupId = "com.forrent"
         }
@@ -42,3 +68,11 @@ targetCompatibility = 1.8
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
+
+task incrementBuildNumber << {
+    versionBuild = props.getProperty('artifactBuildNumber')
+    Integer nextbuildnum = ( (versionBuild as BigDecimal) + 1 )
+    props.setProperty("artifactBuildNumber", nextbuildnum.toString())
+    props.store(propsFile.newWriter(), null)
+}
+
