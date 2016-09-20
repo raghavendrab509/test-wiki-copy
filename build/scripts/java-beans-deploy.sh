@@ -22,9 +22,9 @@ git checkout $working_branch
 
 if [ $working_branch='master' ]
 then
-   ./gradlew incrementBuildNumber
+   ./gradlew incrementPatchNumber
    
-   git commit -a -m "Increment Version Build Number"
+   git commit -a -m "Increment Version Patch Number"
    
    git push origin master
    
