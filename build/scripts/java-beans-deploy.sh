@@ -22,15 +22,18 @@ then
    
    git commit -a -m "Increment Version Build Number"
    
-   git push remote origin "deploy/next"
+   git push origin deploy/next
    
-   git checkout "master"
+   git checkout master
    
-   git merge "deploy/next"
+   git merge deploy/next
    
    git push origin master
    
 fi
 
 ./gradlew clean build uploadArchives -Drepo.username=frc_maven_repo -Drepo.password=FRCarchive1
+
+cd ..
+rm -rf java-beans/
 
