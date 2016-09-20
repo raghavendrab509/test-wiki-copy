@@ -35,13 +35,13 @@ ext {
     
     if(branchName.startsWith("deploy") || branchName.startsWith("auto")) {
        incrementBuildNumber()
-       git.commit(message: 'Increment Build Number', all:true)
-       git.push()
-       if(branchName.startsWith("deploy")) {
-           git.checkout(branch: 'master')
-           git.merge(head: branchName.replace('_', '/'))
-           git.push()
-       }
+       //git.commit(message: 'Increment Build Number', all:true)
+       //git.push()
+       //if(branchName.startsWith("deploy")) {
+       //    git.checkout(branch: 'master')
+       //    git.merge(head: branchName.replace('_', '/'))
+       //    git.push()
+       //}
        
     }
     
@@ -63,7 +63,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository(url: "https://mavenrepo.forrent.com/repository/internal/") {
-                 authentication(userName: "frc_maven_repo", password: "FRCarchive1")
+                 authentication(userName: System.properties['repo.username'], password: System.properties['repo.password'])
             }
             pom.version = majorVersion + '-' + versionBuild + '-' + branchName
             pom.artifactId = "java-beans"
