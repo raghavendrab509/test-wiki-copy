@@ -14,7 +14,7 @@ After your code has been reviewed and merged into master, download and run this 
 
 It will increment the build number and upload a RELEASE version of the jar file
 
-If you want to upload version of your review branch run the script but this time pass in the name of your review branch as argument
+If you want to upload a version of your review branch run the script but this time pass in the name of your review branch as argument
 
 `./java-beans-deploy review/COR-1222`
 
