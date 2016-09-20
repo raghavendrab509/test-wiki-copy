@@ -33,19 +33,7 @@ ext {
     //current branch
     branchName = git.branch.getCurrent().fullName.replace('/', '_').replaceAll('refs_heads_', "")
     
-    if(branchName.startsWith("deploy") || branchName.startsWith("review")) {
-       incrementBuildNumber()
-       //git.commit(message: 'Increment Build Number', all:true)
-       //git.push()
-       //if(branchName.startsWith("deploy")) {
-       //    git.checkout(branch: 'master')
-       //    git.merge(head: branchName.replace('_', '/'))
-       //    git.push()
-       //}
-       
-    }
-    
-    branchName = (branchName.equalsIgnoreCase("deploy_next")) ? "RELEASE" : branchName + '_' + revision
+    branchName = (branchName.equalsIgnoreCase("master")) ? "RELEASE" : branchName + '_' + revision
     
 }
 
@@ -79,12 +67,10 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
 
-void incrementBuildNumber() {
+task incrementBuildNumber << {
     versionBuild = props.getProperty('artifactBuildNumber')
     Integer nextbuildnum = ( (versionBuild as BigDecimal) + 1 )
-    versionBuild = nextbuildnum.toString()
-    props.setProperty("artifactBuildNumber", versionBuild)
+    props.setProperty("artifactBuildNumber", nextbuildnum.toString())
     props.store(propsFile.newWriter(), null)
-    props.load(propsFile.newDataInputStream())
 }
 
