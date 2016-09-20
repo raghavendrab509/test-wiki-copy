@@ -33,7 +33,7 @@ ext {
     //current branch
     branchName = git.branch.getCurrent().fullName.replace('/', '_').replaceAll('refs_heads_', "")
     
-    if(branchName.startsWith("deploy") || branchName.startsWith("auto")) {
+    if(branchName.startsWith("deploy") || branchName.startsWith("review")) {
        incrementBuildNumber()
        //git.commit(message: 'Increment Build Number', all:true)
        //git.push()
