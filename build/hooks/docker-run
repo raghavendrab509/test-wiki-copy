@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-set -e
-
-# This should be run as root, from the project root directory
-
-docker  run -d\
-        --name java-beans \
-        java-beans 
