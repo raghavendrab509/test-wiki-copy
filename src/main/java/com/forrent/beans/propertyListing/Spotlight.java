@@ -6,7 +6,7 @@ public class Spotlight {
     private String imagePath;
     private String imageName;
     private String coupon;
-    private Translated<String> spotlightText;
+    private final Translated<String> spotlightText = new Translated<String>();
     private Boolean isCustom;
 
     public String getImage() {

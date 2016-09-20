@@ -37,3 +37,8 @@ Moved "pmc" object inside the details.
 -----
 
 Added "Spotlight" details to listings inside property.
+
+0.0.7.1
+--------
+
+Initialized spotlight text with new object.
