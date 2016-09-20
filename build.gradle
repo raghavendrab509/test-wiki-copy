@@ -23,7 +23,6 @@ ext {
     majorVersion = props.getProperty('MAJOR')
     minorVersion = props.getProperty('MINOR')
     patchVersion = props.getProperty('PATCH')
-    version = majorVersion + '.' + minorVersion + '.' + patchVersion
     
     // Open the Git repository in the current directory.
     
@@ -40,7 +39,7 @@ ext {
     
 }
 
-
+version = majorVersion + '.' + minorVersion + '.' + patchVersion
 jar {
     baseName = "java-beans"
     version = version
