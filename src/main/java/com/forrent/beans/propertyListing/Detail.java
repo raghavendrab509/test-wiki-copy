@@ -18,7 +18,7 @@ public class Detail implements Serializable
     private Boolean hasSpecials;
     private Boolean hasVerizonFios;
     private Boolean hasBrokerFees;
-    private List<String> translations = new ArrayList<>();
+    private List<Locale> translations = new ArrayList<>();
     private Boolean hasVideo;
     private Boolean hasAerialVideo;
     private PropertyManagementCompany pmc;
