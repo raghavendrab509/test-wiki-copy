@@ -101,4 +101,5 @@ public class PropertyListing implements Serializable
     public void setSiteTexts(final ObjectWithIdCollection<SiteText> siteTexts) {
         this.siteTexts = siteTexts;
     }
+
 }

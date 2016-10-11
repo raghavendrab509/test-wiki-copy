@@ -13,6 +13,7 @@ public class Detail implements Serializable
     private Integer searchWeightFru;
     private Integer searchWeightFrcMobile;
     private Integer relativePerformanceScore;
+    private String facebookId;
     private List<Product> products = new ArrayList<Product>();
     private Boolean hasSpecials;
     private Boolean hasVerizonFios;
@@ -20,6 +21,8 @@ public class Detail implements Serializable
     private List<String> translations = new ArrayList<>();
     private Boolean hasVideo;
     private Boolean hasAerialVideo;
+    private PropertyManagementCompany pmc;
+    private GuestCard guestCard;
 
     public Boolean getPaid() {
         return this.paid;
@@ -55,7 +58,7 @@ public class Detail implements Serializable
 
     public List<Product> getProducts()
     {
-        return products;
+        return this.products;
     }
 
     public Boolean getHasSpecials()
@@ -88,7 +91,7 @@ public class Detail implements Serializable
         return hasAerialVideo;
     }
 
-    public Boolean hasProduct(Product product)
+    public Boolean hasProduct(final Product product)
     {
         return this.products.contains(product);
     }
@@ -109,7 +112,7 @@ public class Detail implements Serializable
         this.relativePerformanceScore = relativePerformanceScore;
     }
 
-    public void setProducts(List<Product> products)
+    public void setProducts(final List<Product> products)
     {
         this.products = products;
     }
@@ -142,5 +145,29 @@ public class Detail implements Serializable
     public void setHasAerialVideo(final Boolean hasAerialVideo)
     {
         this.hasAerialVideo = hasAerialVideo;
+    }
+
+    public String getFacebookId() {
+        return this.facebookId;
+    }
+
+    public void setFacebookId(final String facebookId) {
+        this.facebookId = facebookId;
+    }
+
+    public PropertyManagementCompany getPmc() {
+        return this.pmc;
+    }
+
+    public void setPmc(final PropertyManagementCompany pmc) {
+        this.pmc = pmc;
+    }
+
+    public GuestCard getGuestCard() {
+        return this.guestCard;
+    }
+
+    public void setGuestCard(final GuestCard guestCard) {
+        this.guestCard = guestCard;
     }
 }
