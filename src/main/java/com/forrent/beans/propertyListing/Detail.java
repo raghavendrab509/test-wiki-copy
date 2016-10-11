@@ -76,7 +76,7 @@ public class Detail implements Serializable
         return hasBrokerFees;
     }
 
-    public List<String> getTranslations()
+    public List<Locale> getTranslations()
     {
         return translations;
     }
@@ -132,7 +132,7 @@ public class Detail implements Serializable
         this.hasBrokerFees = hasBrokerFees;
     }
 
-    public void setTranslations(final List<String> translations)
+    public void setTranslations(final List<Locale> translations)
     {
         this.translations = translations;
     }
