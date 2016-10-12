@@ -91,11 +91,6 @@ public class Detail implements Serializable
         return hasAerialVideo;
     }
 
-    public Boolean hasProduct(final Product product)
-    {
-        return this.products.contains(product);
-    }
-
     public Integer getSearchWeightFrcMobile() {
         return this.searchWeightFrcMobile;
     }
