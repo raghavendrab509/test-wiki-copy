@@ -10,6 +10,10 @@ ForRent Java Beans useful across multiple code bases.
 
 After your code has been reviewed and merged into master, download and run this file https://github.dominionenterprises.com/ForRentAPI/java-beans/blob/master/build/scripts/java-beans-deploy.sh
 
+Note: Don't run `java-beans-deploy.sh` from java-beans repository. Copy it somewhere else.
+---
+
+
 `./java-beans-deploy`
 
 It will increment the build number and upload a RELEASE version of the jar file
