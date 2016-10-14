@@ -47,3 +47,8 @@ Initialized spotlight text with new object.
 ------
 
 Added build task to increment version number
+
+0.0.10
+------
+
+Added "products" and computed fields (hasSpecials, hasVerizonFios, hasBrokerFees, translations, hasVideo, hasAerialVideo) inside details.
