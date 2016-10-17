@@ -52,3 +52,8 @@ Added build task to increment version number
 ------
 
 Added "products" and computed fields (hasSpecials, hasVerizonFios, hasBrokerFees, translations, hasVideo, hasAerialVideo) inside details.
+
+0.0.11
+------
+
+Added "vanityUrl" inside details.
