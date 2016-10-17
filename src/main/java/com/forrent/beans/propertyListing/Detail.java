@@ -23,6 +23,7 @@ public class Detail implements Serializable
     private Boolean hasAerialVideo;
     private PropertyManagementCompany pmc;
     private GuestCard guestCard;
+    private String vanityUrl;
 
     public Boolean getPaid() {
         return this.paid;
@@ -63,32 +64,32 @@ public class Detail implements Serializable
 
     public Boolean getHasSpecials()
     {
-        return hasSpecials;
+        return this.hasSpecials;
     }
 
     public Boolean getHasVerizonFios()
     {
-        return hasVerizonFios;
+        return this.hasVerizonFios;
     }
 
     public Boolean getHasBrokerFees()
     {
-        return hasBrokerFees;
+        return this.hasBrokerFees;
     }
 
     public List<Locale> getTranslations()
     {
-        return translations;
+        return this.translations;
     }
 
     public Boolean getHasVideo()
     {
-        return hasVideo;
+        return this.hasVideo;
     }
 
     public Boolean getHasAerialVideo()
     {
-        return hasAerialVideo;
+        return this.hasAerialVideo;
     }
 
     public Integer getSearchWeightFrcMobile() {
@@ -164,5 +165,13 @@ public class Detail implements Serializable
 
     public void setGuestCard(final GuestCard guestCard) {
         this.guestCard = guestCard;
+    }
+
+    public String getVanityUrl() {
+        return this.vanityUrl;
+    }
+
+    public void setVanityUrl(final String vanityUrl) {
+        this.vanityUrl = vanityUrl;
     }
 }
