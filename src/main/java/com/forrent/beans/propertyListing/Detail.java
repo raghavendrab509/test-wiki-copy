@@ -13,6 +13,7 @@ public class Detail implements Serializable
     private Integer searchWeightFru;
     private Integer searchWeightFrcMobile;
     private Integer relativePerformanceScore;
+    private String vanityUrl;
     private String facebookId;
     private List<Product> products = new ArrayList<Product>();
     private Boolean hasSpecials;
@@ -23,7 +24,6 @@ public class Detail implements Serializable
     private Boolean hasAerialVideo;
     private PropertyManagementCompany pmc;
     private GuestCard guestCard;
-    private String vanityUrl;
 
     public Boolean getPaid() {
         return this.paid;
