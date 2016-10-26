@@ -11,7 +11,7 @@ public class PropertyReview implements IObjectWithId,Serializable{
     private String foundDate;
     private final Translated<String> snippet = new Translated<String>();
     private String key;
-    private String title;
+    private final Translated<String> title = new Translated<String>();
     private String sourceName;
     private String listingTag;
     private String link;
@@ -71,12 +71,17 @@ public class PropertyReview implements IObjectWithId,Serializable{
         this.key = key;
     }
 
-    public String getTitle() {
+    public Translated<String> getTitle() {
         return this.title;
     }
 
-    public void setTitle(final String title) {
-        this.title = title;
+    public void addTitle(final String text, final String locale)
+    {
+        if (Locale.valueOf(locale) == Locale.EN) {
+            this.title.setEn(text);
+        } else {
+            this.title.setEs(text);
+        }
     }
 
     public String getSourceName() {
