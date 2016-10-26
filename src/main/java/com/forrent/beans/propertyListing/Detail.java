@@ -13,8 +13,15 @@ public class Detail implements Serializable
     private Integer searchWeightFru;
     private Integer searchWeightFrcMobile;
     private Integer relativePerformanceScore;
+    private String vanityUrl;
     private String facebookId;
     private List<Product> products = new ArrayList<Product>();
+    private Boolean hasSpecials;
+    private Boolean hasVerizonFios;
+    private Boolean hasBrokerFees;
+    private List<Locale> translations = new ArrayList<>();
+    private Boolean hasVideo;
+    private Boolean hasAerialVideo;
     private PropertyManagementCompany pmc;
     private GuestCard guestCard;
 
@@ -55,9 +62,34 @@ public class Detail implements Serializable
         return this.products;
     }
 
-    public Boolean hasProduct(final Product product)
+    public Boolean getHasSpecials()
     {
-        return this.products.contains(product);
+        return this.hasSpecials;
+    }
+
+    public Boolean getHasVerizonFios()
+    {
+        return this.hasVerizonFios;
+    }
+
+    public Boolean getHasBrokerFees()
+    {
+        return this.hasBrokerFees;
+    }
+
+    public List<Locale> getTranslations()
+    {
+        return this.translations;
+    }
+
+    public Boolean getHasVideo()
+    {
+        return this.hasVideo;
+    }
+
+    public Boolean getHasAerialVideo()
+    {
+        return this.hasAerialVideo;
     }
 
     public Integer getSearchWeightFrcMobile() {
@@ -79,6 +111,36 @@ public class Detail implements Serializable
     public void setProducts(final List<Product> products)
     {
         this.products = products;
+    }
+
+    public void setHasSpecials(final Boolean hasSpecials)
+    {
+        this.hasSpecials = hasSpecials;
+    }
+
+    public void setHasVerizonFios(final Boolean hasVerizonFios)
+    {
+        this.hasVerizonFios = hasVerizonFios;
+    }
+
+    public void setHasBrokerFees(final Boolean hasBrokerFees)
+    {
+        this.hasBrokerFees = hasBrokerFees;
+    }
+
+    public void setTranslations(final List<Locale> translations)
+    {
+        this.translations = translations;
+    }
+
+    public void setHasVideo(final Boolean hasVideo)
+    {
+        this.hasVideo = hasVideo;
+    }
+
+    public void setHasAerialVideo(final Boolean hasAerialVideo)
+    {
+        this.hasAerialVideo = hasAerialVideo;
     }
 
     public String getFacebookId() {
@@ -103,5 +165,13 @@ public class Detail implements Serializable
 
     public void setGuestCard(final GuestCard guestCard) {
         this.guestCard = guestCard;
+    }
+
+    public String getVanityUrl() {
+        return this.vanityUrl;
+    }
+
+    public void setVanityUrl(final String vanityUrl) {
+        this.vanityUrl = vanityUrl;
     }
 }

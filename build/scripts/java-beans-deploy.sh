@@ -1,36 +1,37 @@
 #!/usr/bin/env bash
 
-WORKING_BRANCH = "deploy/next"
+
+
+working_branch='master'
 
 if [ $1 ]
 then
-   WORKING_BRANCH = $1
+   working_branch=$1
 fi
+
+echo $working_branch
 
 git clone git@github.dominionenterprises.com:ForRentAPI/java-beans.git
 
 cd java-beans
 
-git checkout $WORKING_BRANCH
+git checkout $working_branch
 
 
 
 
-if [ $WORKING_BRANCH == "deploy/next" ]
+if [ $working_branch='master' ]
 then
-   ./gradlew incrementBuildNumber
+   ./gradlew incrementPatchNumber
    
-   git commit -a -m "Increment Version Build Number"
-   
-   git push remote origin "deploy/next"
-   
-   git checkout "master"
-   
-   git merge "deploy/next"
+   git commit -a -m "Increment Version Patch Number"
    
    git push origin master
    
 fi
 
 ./gradlew clean build uploadArchives -Drepo.username=frc_maven_repo -Drepo.password=FRCarchive1
+
+cd ..
+rm -rf java-beans/
 
