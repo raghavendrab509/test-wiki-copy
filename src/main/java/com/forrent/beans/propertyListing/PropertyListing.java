@@ -16,6 +16,7 @@ public class PropertyListing implements Serializable
     private ObjectWithIdCollection<PhoneNumber> phoneNumbers = new ObjectWithIdCollection<PhoneNumber>();
     private ApartmentProperty property = new ApartmentProperty();
     private ObjectWithIdCollection<SiteText> siteTexts = new ObjectWithIdCollection<SiteText>();
+    private PropertyReview reviews = new PropertyReview();
 
     public Account getAccount() {
         return this.account;
@@ -102,4 +103,11 @@ public class PropertyListing implements Serializable
         this.siteTexts = siteTexts;
     }
 
+    public PropertyReview getReviews() {
+        return this.reviews;
+    }
+
+    public void setReviews(final PropertyReview reviews) {
+        this.reviews = reviews;
+    }
 }
