@@ -9,7 +9,7 @@ public class PropertyReview implements IObjectWithId,Serializable{
     private String publishDate;
     private String author;
     private String foundDate;
-    private String snippet;
+    private final Translated<String> snippet = new Translated<String>();
     private String key;
     private String title;
     private String sourceName;
@@ -50,12 +50,17 @@ public class PropertyReview implements IObjectWithId,Serializable{
         this.foundDate = foundDate;
     }
 
-    public String getSnippet() {
+    public Translated<String> getSnippet() {
         return this.snippet;
     }
 
-    public void setSnippet(final String snippet) {
-        this.snippet = snippet;
+    public void addSnippet(final String text, final String locale)
+    {
+        if (Locale.valueOf(locale) == Locale.EN) {
+            this.snippet.setEn(text);
+        } else {
+            this.snippet.setEs(text);
+        }
     }
 
     public String getKey() {
