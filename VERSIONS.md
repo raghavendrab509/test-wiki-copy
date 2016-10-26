@@ -68,3 +68,8 @@ Added "Profile Reviews" to listing object.
 
 Modified Property Review "Snippet" text to Translated.
 
+0.0.15
+------
+
+Modified Property Review "Title" text to Translated.
+
