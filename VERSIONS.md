@@ -57,3 +57,19 @@ Added "products" and computed fields (hasSpecials, hasVerizonFios, hasBrokerFees
 ------
 
 Added "vanityUrl" inside details.
+
+0.0.13
+------
+
+Added "Profile Reviews" to listing object.
+
+0.0.14
+------
+
+Modified Property Review "Snippet" text to Translated.
+
+0.0.15
+------
+
+Modified Property Review "Title" text to Translated.
+

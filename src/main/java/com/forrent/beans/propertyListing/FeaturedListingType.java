@@ -24,7 +24,7 @@ public enum FeaturedListingType
 
         switch (key.toLowerCase())
         {
-            case "frc city showcase":
+            case "cityshowcase":
                 return CITY_SHOWCASE_FRC;
 
             case "frc featured property":
