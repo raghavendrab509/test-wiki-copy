@@ -5,6 +5,7 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
     private String id;
     private TargetGeography targetGeo = new TargetGeography();
     private FeaturedListingType type;
+    private String videoId;
 
     @Override
     public String getId() {
@@ -20,6 +21,10 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
         return this.type.toString();
     }
 
+    public String getVideoId() {
+        return this.videoId;
+    }
+
     public void setId(final String id) {
         this.id = id;
     }
@@ -30,5 +35,9 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
 
     public void setType(final FeaturedListingType type) {
         this.type = type;
+    }
+
+    public void setVideoId(final String videoId) {
+        this.videoId = videoId;
     }
 }

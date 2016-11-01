@@ -10,7 +10,8 @@ public enum FeaturedListingType
     MOBILE_EXCLUSIVE,
     MOBILE_SELECT,
     PREFERRED,
-    TICKER_AD_FRC;
+    TICKER_AD_FRC,
+    COMMUNITY_SPOTLIGHT;
 
     /**
      * Create from DB key.
@@ -50,6 +51,9 @@ public enum FeaturedListingType
 
             case "frc ticker ad":
                 return TICKER_AD_FRC;
+
+            case "community_spotlight":
+                return COMMUNITY_SPOTLIGHT;
 
             default:
                 throw new Exception("Could not create enum FeaturedListingType key: " + key);
