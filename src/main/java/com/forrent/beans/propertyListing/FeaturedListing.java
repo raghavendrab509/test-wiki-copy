@@ -5,7 +5,7 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
     private String id;
     private TargetGeography targetGeo = new TargetGeography();
     private FeaturedListingType type;
-    private OptionalFields OptionalFields;
+    private OptionalFields optionalFields;
 
     @Override
     public String getId() {
@@ -22,7 +22,7 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
     }
 
     public OptionalFields getOptionalFields() {
-        return this.OptionalFields;
+        return this.optionalFields;
     }
 
     public void setId(final String id) {
@@ -38,7 +38,7 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
     }
 
     public void setOptionalFields(final OptionalFields optionalFields) {
-        this.OptionalFields = optionalFields;
+        this.optionalFields = optionalFields;
     }
 
     public class OptionalFields {
