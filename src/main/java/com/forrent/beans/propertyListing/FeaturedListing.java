@@ -5,7 +5,7 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
     private String id;
     private TargetGeography targetGeo = new TargetGeography();
     private FeaturedListingType type;
-    private String videoId;
+    private OptionalFields OptionalFields;
 
     @Override
     public String getId() {
@@ -21,8 +21,8 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
         return this.type.toString();
     }
 
-    public String getVideoId() {
-        return this.videoId;
+    public OptionalFields getOptionalFields() {
+        return this.OptionalFields;
     }
 
     public void setId(final String id) {
@@ -37,7 +37,22 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
         this.type = type;
     }
 
-    public void setVideoId(final String videoId) {
-        this.videoId = videoId;
+    public void setOptionalFields(final OptionalFields optionalFields) {
+        this.OptionalFields = optionalFields;
+    }
+
+    public class OptionalFields {
+
+        private String videoId;
+
+
+        public String getVideoId() {
+            return this.videoId;
+        }
+
+        public void setVideoId(final String videoId) {
+            this.videoId = videoId;
+        }
+
     }
 }
