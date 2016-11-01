@@ -73,3 +73,10 @@ Modified Property Review "Snippet" text to Translated.
 
 Modified Property Review "Title" text to Translated.
 
+0.0.16
+------
+
+Added new field 'videoId' to FeaturedListing object.
+
+Added new field 'COMMUNITY_SPOTLIGHT' to FeaturedListingType object.
+
