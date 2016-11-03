@@ -80,8 +80,3 @@ Added new field 'videoId' to FeaturedListing object.
 
 Added new field 'COMMUNITY_SPOTLIGHT' to FeaturedListingType object.
 
-0.0.17
-------
-
-Added context to property details
-
