@@ -6,5 +6,6 @@
 
 bin/
 gradle-build/
+build
 
 .DS_Store
