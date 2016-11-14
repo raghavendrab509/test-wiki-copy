@@ -83,4 +83,9 @@ Added new field 'COMMUNITY_SPOTLIGHT' to FeaturedListingType object.
 0.0.17
 ------
 
-Added context to property details
+Added context to property details.
+
+0.0.18
+------
+
+Change context's enum FRCM to MFRC.
