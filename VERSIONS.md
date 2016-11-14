@@ -89,3 +89,8 @@ Added context to property details.
 ------
 
 Change context's enum FRCM to MFRC.
+
+0.0.19
+------
+
+Refactor floorplan image names.
