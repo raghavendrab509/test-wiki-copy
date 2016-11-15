@@ -30,7 +30,7 @@ then
    
 fi
 
-./gradlew clean build uploadArchives -Drepo.username=frc_maven_repo -Drepo.password=FRCarchive1
+./gradlew clean build uploadArchives -Drepo.username=frc_maven_repo -Drepo.password=FRCarchive2
 
 cd ..
 rm -rf java-beans/
