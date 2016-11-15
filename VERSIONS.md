@@ -88,7 +88,7 @@ Added context to property details.
 0.0.18
 ------
 
-Change context's enum FRCM to MFRC.
+Changed context's enum FRCM to MFRC.
 
 0.0.19
 ------
