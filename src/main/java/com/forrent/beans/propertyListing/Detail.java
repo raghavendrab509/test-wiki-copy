@@ -24,7 +24,7 @@ public class Detail implements Serializable
     private Boolean hasAerialVideo;
     private PropertyManagementCompany pmc;
     private GuestCard guestCard;
-    private List<Context> context = new ArrayList<>();
+    private List<Context> contexts = new ArrayList<>();
 
     public Boolean getPaid() {
         return this.paid;
@@ -175,14 +175,14 @@ public class Detail implements Serializable
     public void setVanityUrl(final String vanityUrl) {
         this.vanityUrl = vanityUrl;
     }
-    
-    public void setContext(final List<Context> context)
+
+    public List<Context> getContexts()
     {
-        this.context = context;
+        return contexts;
     }
-    
-    public List<Context> getContext()
+
+    public void setContexts(final List<Context> contexts)
     {
-        return this.context;
+        this.contexts = contexts;
     }
 }

@@ -1,96 +1,85 @@
 Versions
 ========
 
-Please increment the version number in [build.gradle](build.gradle) according to the rules [semantic versioning](http://semver.org/).
+The version number increments every time you deploy the repository to Archiva.
 
-0.0.1
------
+To increment version number manually make change in the [gradle.properties](gradle.properties) according to the rules of [semantic versioning](http://semver.org/).
 
-Initial versioning, simple listing object scaffolding.
 
-0.0.2
------
-
-ProprertyManagementComapany ("pmc") object added.
-
-0.0.3
------
-
-listingCount in "pmc" object is updated to integer.
-
-0.0.4
------
-
-Moved "pmc" object inside the details.
-
-0.0.5
------
-
-"guestCard" object added to listings inside details.
-
-0.0.6
------
-
-"facebookId" added to listings inside details.
-
-0.0.7
------
-
-Added "Spotlight" details to listings inside property.
-
-0.0.8
---------
-
-Initialized spotlight text with new object.
-
-0.0.9
+0.0.20
 ------
+Made context property plural.
 
-Added build task to increment version number
-
-0.0.10
+0.0.19
 ------
+Refactor floorplan image names.
 
-Added "products" and computed fields (hasSpecials, hasVerizonFios, hasBrokerFees, translations, hasVideo, hasAerialVideo) inside details.
-
-0.0.11
+0.0.18
 ------
+Changed context's enum FRCM to MFRC.
 
-Added "vanityUrl" inside details.
-
-0.0.13
+0.0.17
 ------
-
-Added "Profile Reviews" to listing object.
-
-0.0.14
-------
-
-Modified Property Review "Snippet" text to Translated.
-
-0.0.15
-------
-
-Modified Property Review "Title" text to Translated.
+Added context to property details.
 
 0.0.16
 ------
-
 Added new field 'videoId' to FeaturedListing object.
 
 Added new field 'COMMUNITY_SPOTLIGHT' to FeaturedListingType object.
 
-0.0.17
+0.0.15
 ------
+Modified Property Review "Title" text to Translated.
 
-Added context to property details.
-
-0.0.18
+0.0.14
 ------
+Modified Property Review "Snippet" text to Translated.
 
-Changed context's enum FRCM to MFRC.
-
-0.0.19
+0.0.13
 ------
+Added "Profile Reviews" to listing object.
 
-Refactor floorplan image names.
+0.0.11
+------
+Added "vanityUrl" inside details.
+
+0.0.10
+------
+Added "products" and computed fields (hasSpecials, hasVerizonFios, hasBrokerFees, translations, hasVideo, hasAerialVideo) inside details.
+
+0.0.9
+------
+Added build task to increment version number
+
+0.0.8
+--------
+Initialized spotlight text with new object.
+
+0.0.7
+-----
+Added "Spotlight" details to listings inside property.
+
+0.0.6
+-----
+"facebookId" added to listings inside details.
+
+0.0.5
+-----
+"guestCard" object added to listings inside details.
+
+0.0.4
+-----
+Moved "pmc" object inside the details.
+
+0.0.3
+-----
+listingCount in "pmc" object is updated to integer.
+
+0.0.2
+-----
+ProprertyManagementComapany ("pmc") object added.
+
+0.0.1
+-----
+Initial versioning, simple listing object scaffolding.
