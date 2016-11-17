@@ -3,19 +3,19 @@ package com.forrent.beans.propertyListing;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class PropertyReview implements IObjectWithId,Serializable{
-
+public class PropertyReview implements IObjectWithId, Serializable
+{
     private String id;
     private String publishDate;
     private String author;
     private String foundDate;
-    private final Translated<String> snippet = new Translated<String>();
+    private final Translated<String> snippet = new Translated<>();
     private String key;
-    private final Translated<String> title = new Translated<String>();
+    private final Translated<String> title = new Translated<>();
     private String sourceName;
     private String listingTag;
     private String link;
-    private Double score;
+    private Double rating;
 
     @Override
 	public String getId() {
@@ -108,11 +108,11 @@ public class PropertyReview implements IObjectWithId,Serializable{
         this.link = link;
     }
 
-    public Double getScore() {
-        return this.score;
+    public Double getRating() {
+        return this.rating;
     }
 
-    public void setScore(final Double score) {
-        this.score = score;
+    public void setRating(final Double rating) {
+        this.rating = rating;
     }
 }
