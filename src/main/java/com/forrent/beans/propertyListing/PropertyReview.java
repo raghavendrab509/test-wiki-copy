@@ -1,14 +1,15 @@
 package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
+import java.util.Date;
 
 @SuppressWarnings("serial")
 public class PropertyReview implements IObjectWithId, Serializable
 {
     private String id;
-    private String publishDate;
+    private Date publishDate;
     private String author;
-    private String foundDate;
+    private Date foundDate;
     private final Translated<String> snippet = new Translated<>();
     private String key;
     private final Translated<String> title = new Translated<>();
@@ -26,11 +27,11 @@ public class PropertyReview implements IObjectWithId, Serializable
         this.id = id;
     }
 
-    public String getPublishDate() {
+    public Date getPublishDate() {
         return this.publishDate;
     }
 
-    public void setPublishDate(final String publishDate) {
+    public void setPublishDate(final Date publishDate) {
         this.publishDate = publishDate;
     }
 
@@ -42,11 +43,11 @@ public class PropertyReview implements IObjectWithId, Serializable
         this.author = author;
     }
 
-    public String getFoundDate() {
+    public Date getFoundDate() {
         return this.foundDate;
     }
 
-    public void setFoundDate(final String foundDate) {
+    public void setFoundDate(final Date foundDate) {
         this.foundDate = foundDate;
     }
 
