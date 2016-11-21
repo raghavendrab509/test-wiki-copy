@@ -5,6 +5,10 @@ The version number increments every time you deploy the repository to Archiva.
 
 To increment version number manually make change in the [gradle.properties](gradle.properties) according to the rules of [semantic versioning](http://semver.org/).
 
+0.0.22
+------
+Use Date objects for timestamp fields.
+
 0.0.21
 ------
 Renamed review.rating field for consistency.
