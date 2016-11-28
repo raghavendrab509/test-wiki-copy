@@ -6,21 +6,16 @@ import java.util.Optional;
 @SuppressWarnings("serial")
 public class PropertyListing implements Serializable
 {
-    private Account account = new Account();
     private Detail detail = new Detail();
-    private ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings = new ObjectWithIdAndTypeCollection<FeaturedListing>();
+    private ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings = new ObjectWithIdAndTypeCollection<>();
     private Geography geo = new Geography();
     private String id;
-    private ObjectWithTypeCollection<Image> images = new ObjectWithTypeCollection<Image>();
+    private ObjectWithTypeCollection<Image> images = new ObjectWithTypeCollection<>();
     private String name;
-    private ObjectWithIdCollection<PhoneNumber> phoneNumbers = new ObjectWithIdCollection<PhoneNumber>();
+    private ObjectWithIdCollection<PhoneNumber> phoneNumbers = new ObjectWithIdCollection<>();
     private ApartmentProperty property = new ApartmentProperty();
-    private ObjectWithIdCollection<SiteText> siteTexts = new ObjectWithIdCollection<SiteText>();
+    private ObjectWithIdCollection<SiteText> siteTexts = new ObjectWithIdCollection<>();
     private PropertyReviewsCollection reviews = new PropertyReviewsCollection();
-
-    public Account getAccount() {
-        return this.account;
-    }
 
     public Detail getDetail() {
         return this.detail;
@@ -61,10 +56,6 @@ public class PropertyListing implements Serializable
 
     public ObjectWithIdCollection<SiteText> getSiteTexts() {
         return this.siteTexts;
-    }
-
-    public void setAccount(final Account account) {
-        this.account = account;
     }
 
     public void setDetail(final Detail detail) {
