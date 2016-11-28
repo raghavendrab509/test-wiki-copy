@@ -2,13 +2,18 @@ package com.forrent.beans.propertyListing;
 
 import java.io.Serializable;
 
+/**
+ * Information about the physical apartment building a listing is associated with.
+ */
 @SuppressWarnings("serial")
 public class ApartmentProperty implements Serializable
 {
-    private ObjectWithIdCollection<Amenity> amenities = new ObjectWithIdCollection<Amenity>();
-    private ObjectWithIdCollection<Floorplan> floorplans  = new ObjectWithIdCollection<Floorplan>();
-    private ObjectWithIdCollection<FloorplanSummary> floorplanSummaries = new ObjectWithIdCollection<FloorplanSummary>();
-    private ObjectCollection<Spotlight> spotlights = new ObjectCollection<Spotlight>();
+    private ObjectWithIdCollection<Amenity> amenities = new ObjectWithIdCollection<>();
+    private ObjectWithIdCollection<Floorplan> floorplans  = new ObjectWithIdCollection<>();
+    private ObjectWithIdCollection<FloorplanSummary> floorplanSummaries = new ObjectWithIdCollection<>();
+    private ObjectCollection<Spotlight> spotlights = new ObjectCollection<>();
+    private Integer yearBuilt;
+    private Integer yearRemodeled;
 
     public ObjectWithIdCollection<Amenity> getAmenities() {
         return this.amenities;
@@ -26,6 +31,14 @@ public class ApartmentProperty implements Serializable
         return this.spotlights;
     }
 
+    public Integer getYearBuilt() {
+        return this.yearBuilt;
+    }
+
+    public Integer getYearRemodeled() {
+        return this.yearRemodeled;
+    }
+
     public void setAmenities(final ObjectWithIdCollection<Amenity> amenities) {
         this.amenities = amenities;
     }
@@ -40,5 +53,13 @@ public class ApartmentProperty implements Serializable
 
     public void setSpotlights(final ObjectCollection<Spotlight> spotlights) {
         this.spotlights = spotlights;
+    }
+
+    public void setYearBuilt(final Integer yearBuilt) {
+        this.yearBuilt = yearBuilt;
+    }
+
+    public void setYearRemodeled(final Integer yearRemodeled) {
+        this.yearRemodeled = yearRemodeled;
     }
 }
