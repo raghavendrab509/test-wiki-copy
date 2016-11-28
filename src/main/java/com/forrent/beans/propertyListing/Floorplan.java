@@ -5,28 +5,29 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class Floorplan implements IObjectWithId, Serializable
 {
-    private String id;
-    private String name;
     private Boolean active;
     private String applicationFees;
     private Double baths;
     private Integer beds;
     private Double brokerFee;
     private Double deposit;
-    private String leaseTerms;
-    private Boolean perBedPricing;
-    private String phone;
-    private Range<Integer> price = new Range<Integer>();
-    private Integer rentableUnits;
-    private String requestToHoldUrl;
-    private Range<Integer> squareFeet = new Range<Integer>();
-    private Translated<String> summary = new Translated<String>();
-    private Integer units;
+    private String depositDescription;
+    private String id;
     private String image2d;
     private String image3d;
-    private String imageModel;
     private String imageInsideView;
+    private String imageModel;
     private String imageRoomPlanner;
+    private String leaseTerms;
+    private String name;
+    private Boolean perBedPricing;
+    private String phone;
+    private Range<Integer> price = new Range<>();
+    private Integer rentableUnits;
+    private String requestToHoldUrl;
+    private Range<Integer> squareFeet = new Range<>();
+    private Translated<String> summary = new Translated<>();
+    private Integer units;
 
     public Boolean getActive() {
         return this.active;
@@ -52,9 +53,33 @@ public class Floorplan implements IObjectWithId, Serializable
         return this.deposit;
     }
 
+    public String getDepositDescription() {
+        return this.depositDescription;
+    }
+
     @Override
     public String getId() {
         return this.id;
+    }
+
+    public String getImage2d() {
+        return this.image2d;
+    }
+
+    public String getImage3d() {
+        return this.image3d;
+    }
+
+    public String getImageInsideView() {
+        return this.imageInsideView;
+    }
+
+    public String getImageModel() {
+        return this.imageModel;
+    }
+
+    public String getImageRoomPlanner() {
+        return this.imageRoomPlanner;
     }
 
     public String getLeaseTerms() {
@@ -97,31 +122,6 @@ public class Floorplan implements IObjectWithId, Serializable
         return this.units;
     }
 
-    public String getImage2d()
-    {
-        return this.image2d;
-    }
-
-    public String getImage3d()
-    {
-        return this.image3d;
-    }
-
-    public String getImageModel()
-    {
-        return this.imageModel;
-    }
-
-    public String getImageInsideView()
-    {
-        return this.imageInsideView;
-    }
-
-    public String getImageRoomPlanner()
-    {
-        return this.imageRoomPlanner;
-    }
-
     public Boolean isActive() {
         return this.active;
     }
@@ -154,8 +154,32 @@ public class Floorplan implements IObjectWithId, Serializable
         this.deposit = deposit;
     }
 
+    public void setDepositDescription(final String depositDescription) {
+        this.depositDescription = depositDescription;
+    }
+
     public void setId(final String id) {
         this.id = id;
+    }
+
+    public void setImage2d(final String image2d) {
+        this.image2d = image2d;
+    }
+
+    public void setImage3d(final String image3d) {
+        this.image3d = image3d;
+    }
+
+    public void setImageInsideView(final String imageInsideView) {
+        this.imageInsideView = imageInsideView;
+    }
+
+    public void setImageModel(final String imageModel) {
+        this.imageModel = imageModel;
+    }
+
+    public void setImageRoomPlanner(final String imageRoomPlanner) {
+        this.imageRoomPlanner = imageRoomPlanner;
     }
 
     public void setLeaseTerms(final String leaseTerms) {
@@ -196,30 +220,5 @@ public class Floorplan implements IObjectWithId, Serializable
 
     public void setUnits(final Integer units) {
         this.units = units;
-    }
-
-    public void setImage2d(final String image2d)
-    {
-        this.image2d = image2d;
-    }
-
-    public void setImage3d(final String image3d)
-    {
-        this.image3d = image3d;
-    }
-
-    public void setImageModel(final String imageModel)
-    {
-        this.imageModel = imageModel;
-    }
-
-    public void setImageInsideView(final String imageInsideView)
-    {
-        this.imageInsideView = imageInsideView;
-    }
-
-    public void setImageRoomPlanner(final String imageRoomPlanner)
-    {
-        this.imageRoomPlanner = imageRoomPlanner;
     }
 }
