@@ -14,7 +14,12 @@ git clone git@github.dominionenterprises.com:ForRentAPI/java-beans.git $tmp_dir
 
 cd $tmp_dir
 
-git checkout $working_branch
+# Exit if specified branch doesn't exist
+if ! git checkout $working_branch
+    then
+    rm -rf ../$tmp_dir
+    exit 1
+fi
 
 if [ $working_branch='master' ]
 then
