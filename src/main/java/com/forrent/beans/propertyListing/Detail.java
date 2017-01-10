@@ -10,7 +10,7 @@ public class Detail implements Serializable
     private Account account = new Account();
     private List<Context> contexts = new ArrayList<>();
     private String facebookId;
-    private GuestCard guestCard;
+    private GuestCardSettings guestCard;
     private Boolean hasAerialVideo;
     private Boolean hasBrokerFees;
     private Boolean hasSpecials;
@@ -40,7 +40,7 @@ public class Detail implements Serializable
         return this.facebookId;
     }
 
-    public GuestCard getGuestCard() {
+    public GuestCardSettings getGuestCard() {
         return this.guestCard;
     }
 
@@ -124,7 +124,7 @@ public class Detail implements Serializable
         this.facebookId = facebookId;
     }
 
-    public void setGuestCard(final GuestCard guestCard) {
+    public void setGuestCard(final GuestCardSettings guestCard) {
         this.guestCard = guestCard;
     }
 
