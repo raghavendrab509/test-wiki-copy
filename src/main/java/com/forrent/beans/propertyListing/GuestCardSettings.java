@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("serial")
-public class GuestCard implements Serializable{
+public class GuestCardSettings implements Serializable{
 
-    private List<Recipient> recipients = new ArrayList<Recipient>();
+    private List<Recipient> recipients = new ArrayList<>();
     private GuestCardText text;
     private String emailFormat;
-    private final List<String> requiredFields = new ArrayList<String>();
-    private List<OptIns> optIns = new ArrayList<OptIns>();
+    private List<GuestCardField> requiredFields = new ArrayList<>();
+    private List<OptIns> optIns = new ArrayList<>();
 
     public List<Recipient> getRecipients() {
         return this.recipients;
@@ -37,7 +37,7 @@ public class GuestCard implements Serializable{
         this.emailFormat = emailFormat;
     }
 
-    public List<String> getRequiredFields() {
+    public List<GuestCardField> getRequiredFields() {
         return this.requiredFields;
     }
 
@@ -49,15 +49,15 @@ public class GuestCard implements Serializable{
        this.optIns = optIns;
     }
 
-    public void addRecipient(final Recipient recipient){
+    public void addRecipient(final Recipient recipient) {
         this.recipients.add(recipient);
     }
 
-    public void addRequiredField(final String requiredField){
-        this.requiredFields.add(requiredField);
+    public void setRequiredFields(final List<GuestCardField> requiredFields) {
+        this.requiredFields = requiredFields;
     }
 
-    public void addOptIns(final OptIns optIns){
+    public void addOptIns(final OptIns optIns) {
         this.optIns.add(optIns);
     }
 
