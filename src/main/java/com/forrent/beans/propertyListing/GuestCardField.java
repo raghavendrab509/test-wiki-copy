@@ -1,5 +1,8 @@
 package com.forrent.beans.propertyListing;
 
+/**
+ * Identify fields on a guest card.
+ */
 public enum GuestCardField
 {
     bathrooms,
@@ -7,5 +10,4 @@ public enum GuestCardField
     comments,
     moveDate,
     phone;
-
 }
