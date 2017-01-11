@@ -23,20 +23,19 @@ ext {
     majorVersion = props.getProperty('MAJOR')
     minorVersion = props.getProperty('MINOR')
     patchVersion = props.getProperty('PATCH')
-    
+
     // Open the Git repository in the current directory.
-    
-    //credentials = new org.ajoberstar.grgit.Credentials(username: 'silver.ibenye', password: '04143Closer!')
+
+    // credentials = new org.ajoberstar.grgit.Credentials(username: 'silver.ibenye', password: '04143Closer!')
     git = org.ajoberstar.grgit.Grgit.open(dir: file('.'))
 
     // Get commit id of HEAD.
     commitHash = git.head().abbreviatedId
-    
-    //current branch
+
+    // current branch
     branchName = git.branch.getCurrent().fullName.replace('/', '_').replaceAll('refs_heads_', "")
-    
+
     branchName = (branchName.equalsIgnoreCase("master")) ? "" : '-' + branchName + '_' + commitHash
-    
 }
 
 version = majorVersion + '.' + minorVersion + '.' + patchVersion
@@ -77,3 +76,18 @@ task incrementPatchNumber << {
     props.store(propsFile.newWriter(), null)
 }
 
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}
