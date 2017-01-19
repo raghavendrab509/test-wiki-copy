@@ -13,7 +13,7 @@ public class ObjectCollection<T>
 
     /**
      * Add object .
-     * @param object
+     * @param object Object
      */
     public void add(final T object)
     {
@@ -27,6 +27,8 @@ public class ObjectCollection<T>
 
     /**
      * Get ordered list of objects.
+     *
+     * @return List&lt;T&gt;
      */
     public List<T> getContent()
     {
