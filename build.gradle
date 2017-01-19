@@ -1,44 +1,14 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'org.ajoberstar:grgit:1.7.0'
-    }
-}
-
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 // Change build directory so clean doesn't delete build/hooks
 buildDir = 'gradle-build'
 
-ext {
-
-    props = new Properties() 
-    propsFile = new File("gradle.properties")
-    props.load(propsFile.newDataInputStream())
-    majorVersion = props.getProperty('MAJOR')
-    minorVersion = props.getProperty('MINOR')
-    patchVersion = props.getProperty('PATCH')
-
-    // Open the Git repository in the current directory.
-
-    // credentials = new org.ajoberstar.grgit.Credentials(username: 'silver.ibenye', password: '04143Closer!')
-    git = org.ajoberstar.grgit.Grgit.open(dir: file('.'))
-
-    // Get commit id of HEAD.
-    commitHash = git.head().abbreviatedId
-
-    // current branch
-    branchName = git.branch.getCurrent().fullName.replace('/', '_').replaceAll('refs_heads_', "")
-
-    branchName = (branchName.equalsIgnoreCase("master")) ? "" : '-' + branchName + '_' + commitHash
-}
-
-version = majorVersion + '.' + minorVersion + '.' + patchVersion
+version = tag_name
 jar {
     baseName = "java-beans"
     version = version
@@ -49,33 +19,21 @@ repositories {
 }
 
 uploadArchives {
-    //tasks.incrementBuildNumber.execute()
     repositories {
         mavenDeployer {
             repository(url: "https://mavenrepo.forrent.com/repository/internal/") {
-                 authentication(userName: System.properties['repo.username'], password: System.properties['repo.password'])
+                 authentication(userName: maven_repo_username, password: maven_repo_password)
             }
-            pom.version = version + branchName
+            pom.version = version
             pom.artifactId = "java-beans"
             pom.groupId = "com.forrent"
         }
     }
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
-
-task incrementPatchNumber << {
-    patchVersion = props.getProperty('PATCH')
-    Integer nextPatchNum = ( (patchVersion as BigDecimal) + 1 )
-    props.setProperty("PATCH", nextPatchNum.toString())
-    props.store(propsFile.newWriter(), null)
-}
-
 
 task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
