@@ -12,17 +12,30 @@ ForRent Java Beans useful across multiple code bases.
 
 == Uploading Jar file to mavenrepo.forrent.com ==
 
-After your code has been reviewed and merged into master, download and run `build/scripts/java-beans-deploy.sh` to increment the build number and upload a RELEASE version of the jar file.
+You can upload the jar file either from Jenkins or from command line on your local machine.
 
-[source,sh]
-----
-./build/scripts/java-beans-deploy.sh
-----
+=== Uploading from Jenkins ===
 
-If you want to upload a version of your review branch run the script but this time pass in the name of your review branch as argument
+Create a tag based off of the master branch or any branch.
 
-[source,sh]
-----
-./java-beans-deploy review/COR-1222`
-----
+* If creating a tag based off of master the tag name should follow the semantic versioning convention `\d.\d.\d`. For example 0.0.1.
+* If creating a tag based off of other branches the tag name should be as follows `\d.\d.\d-.*`. For example 0.0.1-COR-4345.
+
+Then log into Jenkins and run the "Deploy_Engage121_SDK_to_Maven_Repo" job. The job expects three parameters;
+
+* tag_name: The name of the tag you created.
+* maven_repo_username: The mavenrepo.forrent.com username
+* maven_repo_password: The mavenrepo.forrent.com password
+
+=== Uploading from local machine ===
+
+Uploading from your local machine is helpful especially when you want to quickly test your changes.
+
+To do this open the gradle.properties file and modify accordingly.
+
+* Set the tag_name to a value like so `\d.\d.\d-.*`. For example 0.0.1-COR-4345.
+* Set the maven_repo_username and maven_repo_password
+
+And then run `./gradlew uploadArchives`
+
 
