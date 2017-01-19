@@ -9,6 +9,10 @@ public enum TargetGeographyType
 
     /**
      * Create from DB key.
+     *
+     * @param key Key
+     * @return TargetGeographyType
+     * @throws Exception Throws java.lang.Exception
      */
     public static TargetGeographyType fromKey(final String key)
             throws Exception

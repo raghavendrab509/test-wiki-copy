@@ -1,11 +1,6 @@
 package com.forrent.beans.propertyListing;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * Data structure that stores objects in an ordered list but allows lookups via a map
@@ -19,6 +14,9 @@ public class ObjectWithIdAndTypeCollection<T extends IObjectWithId & IObjectWith
 
     /**
      * Does object with given id exist in this collection.
+     *
+     * @param id Id
+     * @return Boolean
      */
     public Boolean contains(final String id)
     {
@@ -27,6 +25,8 @@ public class ObjectWithIdAndTypeCollection<T extends IObjectWithId & IObjectWith
 
     /**
      * Get ordered list of objects.
+     *
+     * @return List&lt;T&gt;
      */
     public List<T> getContent()
     {
@@ -35,6 +35,9 @@ public class ObjectWithIdAndTypeCollection<T extends IObjectWithId & IObjectWith
 
     /**
      * Get object by id.
+     *
+     * @param id Id
+     * @return Optional&lt;T&gt;
      */
     public Optional<T> getId(final String id)
     {
@@ -48,6 +51,8 @@ public class ObjectWithIdAndTypeCollection<T extends IObjectWithId & IObjectWith
 
     /**
      * Get map of ids and indices.
+     *
+     * @return Map&lt;String, Integer&gt;
      */
     public Map<String, Integer> getIds() {
         return Collections.unmodifiableMap(this.ids);
@@ -55,6 +60,9 @@ public class ObjectWithIdAndTypeCollection<T extends IObjectWithId & IObjectWith
 
     /**
      * Get objects of given type.
+     *
+     * @param type Type
+     * @return Optional&lt;List&lt;T&gt;&gt;
      */
     public Optional<List<T>> getType(final String type)
     {
@@ -73,6 +81,8 @@ public class ObjectWithIdAndTypeCollection<T extends IObjectWithId & IObjectWith
 
     /**
      * Get map of types and indices.
+     *
+     * @return Map&lt;String, List&lt;Integer&gt;&gt;
      */
     public Map<String, List<Integer>> getTypes()
     {
@@ -81,6 +91,9 @@ public class ObjectWithIdAndTypeCollection<T extends IObjectWithId & IObjectWith
 
     /**
      * Get index of a given id.
+     *
+     * @param id Id
+     * @return Integer
      */
     public Integer indexOf(final String id)
     {
@@ -89,7 +102,8 @@ public class ObjectWithIdAndTypeCollection<T extends IObjectWithId & IObjectWith
 
     /**
      * Add object or update if already present.
-     * @param object
+     *
+     * @param object Object
      */
     public void put(final T object)
     {
