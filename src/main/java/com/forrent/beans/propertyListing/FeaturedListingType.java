@@ -15,6 +15,10 @@ public enum FeaturedListingType
 
     /**
      * Create from DB key.
+     *
+     * @param key Key
+     * @return FeaturedListingType
+     * @throws Exception Throws java.lang.Exception
      */
     public static FeaturedListingType fromKey(final String key)
             throws Exception

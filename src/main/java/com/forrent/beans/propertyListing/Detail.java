@@ -11,6 +11,7 @@ public class Detail implements Serializable
     private List<Context> contexts = new ArrayList<>();
     private String facebookId;
     private GuestCardSettings guestCard;
+    private Boolean isActive;
     private Boolean hasAerialVideo;
     private Boolean hasBrokerFees;
     private Boolean hasSpecials;
@@ -42,6 +43,11 @@ public class Detail implements Serializable
 
     public GuestCardSettings getGuestCard() {
         return this.guestCard;
+    }
+
+    public Boolean getIsActive()
+    {
+        return this.isActive;
     }
 
     public Boolean getHasAerialVideo()
@@ -126,6 +132,11 @@ public class Detail implements Serializable
 
     public void setGuestCard(final GuestCardSettings guestCard) {
         this.guestCard = guestCard;
+    }
+
+    public void setIsActive(final Boolean isActive)
+    {
+        this.isActive = isActive;
     }
 
     public void setHasAerialVideo(final Boolean hasAerialVideo)

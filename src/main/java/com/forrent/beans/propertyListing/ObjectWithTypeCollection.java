@@ -1,11 +1,6 @@
 package com.forrent.beans.propertyListing;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * Data structure that stores objects in an ordered list but allows lookup of groups of objects
@@ -18,6 +13,8 @@ public class ObjectWithTypeCollection<T extends IObjectWithType>
 
     /**
      * Add object to collection.
+     *
+     * @param object Object
      */
     public void add(final T object)
     {
@@ -38,6 +35,9 @@ public class ObjectWithTypeCollection<T extends IObjectWithType>
 
     /**
      * Get objects of given type.
+     *
+     * @param type Type
+     * @return Optional&lt;List&lt;T&gt;&gt;
      */
     public Optional<List<T>> get(final String type)
     {
@@ -56,6 +56,8 @@ public class ObjectWithTypeCollection<T extends IObjectWithType>
 
     /**
      * Get ordered list of objects.
+     *
+     * @return List&lt;T&gt;
      */
     public List<T> getContent()
     {
@@ -64,6 +66,8 @@ public class ObjectWithTypeCollection<T extends IObjectWithType>
 
     /**
      * Get map of types and indices.
+     *
+     * @return Map&lt;String, List&lt;Integer&gt;&gt;
      */
     public Map<String, List<Integer>> getTypes() {
         return Collections.unmodifiableMap(this.types);
@@ -71,6 +75,9 @@ public class ObjectWithTypeCollection<T extends IObjectWithType>
 
     /**
      * Get list of indices associated with type.
+     *
+     * @param type Type
+     * @return List&lt;Integer&gt;
      */
     public List<Integer> indiciesOf(final String type)
     {
@@ -79,6 +86,9 @@ public class ObjectWithTypeCollection<T extends IObjectWithType>
 
     /**
      * Don any objects of given type exist in this collection.
+     *
+     * @param type Type
+     * @return Boolean
      */
     public Boolean contains(final String type)
     {
