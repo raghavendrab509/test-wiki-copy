@@ -1,20 +1,18 @@
 package com.forrent.beans.propertyListing;
 
-import java.io.Serializable;
-
-@SuppressWarnings("serial")
-public class Geography implements Serializable
+public class Geography
 {
     private String addressOne;
     private String addressTwo;
+    private String areaName;
     private String cityId;
     private String cityName;
     private String countryCode;
     private GeographyPoint location = new GeographyPoint();
     private String metroId;
     private String metroName;
-    private ObjectWithIdCollection<Neighborhood> neighborhoods = new ObjectWithIdCollection<Neighborhood>();
-    private ObjectWithIdCollection<School> schools = new ObjectWithIdCollection<School>();
+    private ObjectWithIdCollection<Neighborhood> neighborhoods = new ObjectWithIdCollection<>();
+    private ObjectWithIdCollection<School> schools = new ObjectWithIdCollection<>();
     private String stateCode;
     private String stateId;
     private String stateName;
@@ -29,6 +27,10 @@ public class Geography implements Serializable
 
     public String getAddressTwo() {
         return this.addressTwo;
+    }
+
+    public String getAreaName() {
+        return this.areaName;
     }
 
     public String getCityId() {
@@ -75,6 +77,9 @@ public class Geography implements Serializable
         return this.stateName;
     }
 
+    /**
+     * Also known as Area Id.
+     */
     public String getSuperCityId() {
         return this.superCityId;
     }
@@ -97,6 +102,10 @@ public class Geography implements Serializable
 
     public void setAddressTwo(final String addressTwo) {
         this.addressTwo = addressTwo;
+    }
+
+    public void setAreaName(final String areaName) {
+        this.areaName = areaName;
     }
 
     public void setCityId(final String cityId) {
