@@ -1,9 +1,6 @@
 package com.forrent.beans.propertyListing;
 
-import java.io.Serializable;
-
-@SuppressWarnings("serial")
-public class PhoneNumber implements IObjectWithId, Serializable
+public class PhoneNumber implements IObjectWithId
 {
     public static final String TYPE_APARTMENT_FAX = "AprtmntFax";
     public static final String TYPE_FB_CONNECT_1 = "FBCntct1";
@@ -13,6 +10,7 @@ public class PhoneNumber implements IObjectWithId, Serializable
     public static final String TYPE_LOCAL = "LocPhnNum";
     public static final String TYPE_MARKETPLACE_NETWORK = "MplcNtwrk";
     public static final String TYPE_MOBILE_NUMBER = "Mobile";
+    public static final String TYPE_SEM_NUMBER = "SEMPhnNum";
     public static final String TYPE_TEXT_MESSAGE = "TxtMsg";
     public static final String TYPE_TOLLFREE_INTERNET = "TollFreeIn";
     public static final String TYPE_TOLLFREE_LOCAL = "LocTollFre";
@@ -56,6 +54,7 @@ public class PhoneNumber implements IObjectWithId, Serializable
     public void setDescription(final String description) {
         this.description = description;
     }
+
     public void setExtension(final String extension) {
         this.extension = extension;
     }

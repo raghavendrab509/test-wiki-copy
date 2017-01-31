@@ -1,6 +1,11 @@
 package com.forrent.beans.propertyListing;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 /**
  * Data structure that stores objects in an ordered list but allows lookup of groups of objects
@@ -8,8 +13,8 @@ import java.util.*;
  */
 public class ObjectWithTypeCollection<T extends IObjectWithType>
 {
-    private final List<T> content = new ArrayList<T>();
-    private final Map<String, ArrayList<Integer>> types = new HashMap<String, ArrayList<Integer>>();
+    private final List<T> content = new ArrayList<>();
+    private final Map<String, ArrayList<Integer>> types = new HashMap<>();
 
     /**
      * Add object to collection.
@@ -25,12 +30,17 @@ public class ObjectWithTypeCollection<T extends IObjectWithType>
         ArrayList<Integer> indicies = this.types.get(object.getType());
 
         if (indicies == null) {
-            indicies = new ArrayList<Integer>();
+            indicies = new ArrayList<>();
         }
 
         this.content.add(object);
         indicies.add(this.content.size() - 1);
         this.types.put(object.getType(), indicies);
+    }
+
+    public void add(final List<T> objects)
+    {
+        objects.stream().forEach(this::add);
     }
 
     /**
@@ -46,7 +56,7 @@ public class ObjectWithTypeCollection<T extends IObjectWithType>
             return Optional.empty();
         }
 
-        final List<T> objects = new ArrayList<T>();
+        final List<T> objects = new ArrayList<>();
         for (final Integer index : indicies) {
             objects.add(this.content.get(index));
         }

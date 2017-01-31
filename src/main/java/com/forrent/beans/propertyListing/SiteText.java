@@ -1,32 +1,43 @@
 package com.forrent.beans.propertyListing;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("serial")
-public class SiteText implements IObjectWithId, Serializable
+public class SiteText implements IObjectWithId
 {
     private String id;
     private String name;
-    private final Translated<List<String>> text = new Translated<List<String>>();
+    private Translated<List<String>> text = new Translated<>();
 
-    public SiteText() {
+    public SiteText()
+    {
         this.text.setEn(new ArrayList<String>());
         this.text.setEs(new ArrayList<String>());
     }
 
-    public void addText(final String text, final String locale)
+    public SiteText(final String id, final String name)
     {
-        if (Locale.valueOf(locale) == Locale.EN) {
+        this.id = id;
+        this.name = name;
+
+        this.text.setEn(new ArrayList<String>());
+        this.text.setEs(new ArrayList<String>());
+    }
+
+    public SiteText addText(final String text, final Locale locale)
+    {
+        if (locale == Locale.EN) {
             this.text.getEn().add(text);
         } else {
             this.text.getEs().add(text);
         }
+
+        return this;
     }
 
-    public Translated<List<String>> getText() {
-        return this.text;
+    public SiteText addText(final String text, final String locale)
+    {
+        return this.addText(text, Locale.valueOf(locale));
     }
 
     @Override
@@ -38,11 +49,19 @@ public class SiteText implements IObjectWithId, Serializable
         return this.name;
     }
 
+    public Translated<List<String>> getText() {
+        return this.text;
+    }
+
     public void setId(final String id) {
         this.id = id;
     }
 
     public void setName(final String name) {
         this.name = name;
+    }
+
+    public void setText(final Translated<List<String>> text) {
+        this.text = text;
     }
 }

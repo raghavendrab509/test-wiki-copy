@@ -1,22 +1,20 @@
 package com.forrent.beans.propertyListing;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("serial")
-public class Detail implements Serializable
+public class Detail
 {
     private Account account = new Account();
     private List<Context> contexts = new ArrayList<>();
     private String facebookId;
     private GuestCardSettings guestCard;
-    private Boolean isActive;
     private Boolean hasAerialVideo;
     private Boolean hasBrokerFees;
     private Boolean hasSpecials;
     private Boolean hasVerizonFios;
     private Boolean hasVideo;
+    private Boolean isActive;
     private Boolean paid;
     private PropertyManagementCompany pmc;
     private List<Product> products = new ArrayList<>();
@@ -45,11 +43,6 @@ public class Detail implements Serializable
         return this.guestCard;
     }
 
-    public Boolean getIsActive()
-    {
-        return this.isActive;
-    }
-
     public Boolean getHasAerialVideo()
     {
         return this.hasAerialVideo;
@@ -73,6 +66,11 @@ public class Detail implements Serializable
     public Boolean getHasVideo()
     {
         return this.hasVideo;
+    }
+
+    public Boolean getIsActive()
+    {
+        return this.isActive;
     }
 
     public Boolean getPaid() {
@@ -108,6 +106,7 @@ public class Detail implements Serializable
         return this.searchWeightFru;
     }
 
+
     public List<Locale> getTranslations()
     {
         return this.translations;
@@ -134,11 +133,6 @@ public class Detail implements Serializable
         this.guestCard = guestCard;
     }
 
-    public void setIsActive(final Boolean isActive)
-    {
-        this.isActive = isActive;
-    }
-
     public void setHasAerialVideo(final Boolean hasAerialVideo)
     {
         this.hasAerialVideo = hasAerialVideo;
@@ -162,6 +156,11 @@ public class Detail implements Serializable
     public void setHasVideo(final Boolean hasVideo)
     {
         this.hasVideo = hasVideo;
+    }
+
+    public void setIsActive(final Boolean isActive)
+    {
+        this.isActive = isActive;
     }
 
     public void setPaid(final Boolean paid) {
