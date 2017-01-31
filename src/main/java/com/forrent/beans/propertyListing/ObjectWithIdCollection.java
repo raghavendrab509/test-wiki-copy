@@ -1,6 +1,11 @@
 package com.forrent.beans.propertyListing;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 /**
  * Data structure that stores objects in an ordered list but allows lookups via a map
@@ -8,8 +13,8 @@ import java.util.*;
  */
 public class ObjectWithIdCollection<T extends IObjectWithId>
 {
-    private final List<T> content = new ArrayList<T>();
-    private final Map<String, Integer> ids = new HashMap<String, Integer>();
+    private final List<T> content = new ArrayList<>();
+    private final Map<String, Integer> ids = new HashMap<>();
 
     /**
      * Add object or update if already present.

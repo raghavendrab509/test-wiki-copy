@@ -23,9 +23,14 @@ public class Translated<T>
 
     public void set(final T value, final String locale)
     {
-        if (Locale.valueOf(locale) == Locale.EN) {
+        this.set(value, Locale.valueOf(locale));
+    }
+
+    public void set(final T value, final Locale locale)
+    {
+        if (locale == Locale.EN) {
             this.en = value;
-        } else if (Locale.valueOf(locale) == Locale.ES) {
+        } else if (locale == Locale.ES) {
             this.es = value;
         }
     }

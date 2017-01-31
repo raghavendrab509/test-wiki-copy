@@ -14,6 +14,7 @@ public class PropertyListing implements Serializable
     private String name;
     private ObjectWithIdCollection<PhoneNumber> phoneNumbers = new ObjectWithIdCollection<>();
     private ApartmentProperty property = new ApartmentProperty();
+    private Resources resources = new Resources();
     private ObjectWithIdCollection<SiteText> siteTexts = new ObjectWithIdCollection<>();
     private PropertyReviewsCollection reviews = new PropertyReviewsCollection();
 
@@ -100,5 +101,13 @@ public class PropertyListing implements Serializable
 
     public void setReviews(final PropertyReviewsCollection reviews) {
         this.reviews = reviews;
+    }
+
+    public Resources getResources() {
+        return this.resources;
+    }
+
+    public void setResources(final Resources resources) {
+        this.resources = resources;
     }
 }
