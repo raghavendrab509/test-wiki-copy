@@ -70,4 +70,11 @@ public class PhoneNumber implements IObjectWithId
     public void setTracked(final Boolean tracked) {
         this.tracked = tracked;
     }
+
+    /**
+     * Format as e.164 international number.
+     */
+    public String toInternational() {
+        return "+1" + this.areaCode + this.number;
+    }
 }

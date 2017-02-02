@@ -5,6 +5,10 @@ The version number increments every time you deploy the repository to Archiva.
 
 To increment version number manually make change in the `gradle.properties` according to the rules of http://semver.org/[semantic versioning].
 
+== 1.2.0 ==
+
+ * Add `PhoneNumber.toInternational()`
+
 == 1.1.0 ==
 
  * New fields: resources.videos, siteTexts['seoName'], phoneNumbers['semPhone'], and geo fields.

@@ -1,9 +1,6 @@
 package com.forrent.beans.propertyListing;
 
-import java.io.Serializable;
-
-@SuppressWarnings("serial")
-public class Neighborhood implements IObjectWithId, Serializable
+public class Neighborhood implements IObjectWithId
 {
     private String id;
     private String name;
