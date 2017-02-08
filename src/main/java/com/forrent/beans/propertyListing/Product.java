@@ -41,29 +41,13 @@ public class Product
     }
 
     @Override
-    public boolean equals(final Object obj)
+    public boolean equals(final Object o)
     {
-        if (this == obj) {
-            return true;
-        }
+        if (this == o) return true;
+        if (o == null || this.getClass() != o.getClass()) return false;
 
-        if (obj == null) {
-            return false;
-        }
+        final Product product = (Product) o;
 
-        if (this.getClass() != obj.getClass()) {
-            return false;
-        }
-
-        final Product other = (Product) obj;
-        if (this.code == null) {
-            if (other.code != null) {
-                return false;
-            }
-        } else if (!this.code.equals(other.code)) {
-            return false;
-        }
-
-        return true;
+        return this.code != null ? this.code.equals(product.code) : product.code == null;
     }
 }
