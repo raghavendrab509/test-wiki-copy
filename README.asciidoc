@@ -21,7 +21,7 @@ Create a tag based off of the master branch or any branch.
 * If creating a tag based off of master the tag name should follow the semantic versioning convention `\d.\d.\d`. For example 0.0.1.
 * If creating a tag based off of other branches the tag name should be as follows `\d.\d.\d-.*`. For example 0.0.1-COR-4345.
 
-Then log into Jenkins and run the "Deploy_Engage121_SDK_to_Maven_Repo" job. The job expects three parameters;
+Then log into Jenkins and run the "Deploy_Java-Beans_To_Maven" job. The job expects three parameters;
 
 * tag_name: The name of the tag you created.
 * maven_repo_username: The mavenrepo.forrent.com username
