@@ -45,6 +45,7 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
 
         private String videoId;
 
+        private String headline;
 
         public String getVideoId() {
             return this.videoId;
@@ -54,5 +55,14 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
             this.videoId = videoId;
         }
 
+        public String getHeadline()
+        {
+            return headline;
+        }
+
+        public void setHeadline(final String headline)
+        {
+            this.headline = headline;
+        }
     }
 }
