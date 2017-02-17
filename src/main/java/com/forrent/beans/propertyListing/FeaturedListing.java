@@ -44,7 +44,6 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
     public class OptionalFields {
 
         private String videoId;
-
         private String headline;
 
         public String getVideoId() {
