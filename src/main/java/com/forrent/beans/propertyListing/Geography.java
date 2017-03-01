@@ -1,5 +1,8 @@
 package com.forrent.beans.propertyListing;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Geography
 {
     private String addressOne;
@@ -9,6 +12,7 @@ public class Geography
     private String cityName;
     private String countryCode;
     private GeographyPoint location = new GeographyPoint();
+    private List<Double> locationPoint = new ArrayList<Double>();
     private String metroId;
     private String metroName;
     private ObjectWithIdCollection<Neighborhood> neighborhoods = new ObjectWithIdCollection<>();
@@ -47,6 +51,11 @@ public class Geography
 
     public GeographyPoint getLocation() {
         return this.location;
+    }
+
+    public List<Double> getLocationPoint()
+    {
+        return locationPoint;
     }
 
     public String getMetroId() {
@@ -122,6 +131,11 @@ public class Geography
 
     public void setLocation(final GeographyPoint location) {
         this.location = location;
+    }
+
+    public void setLocationPoint(final List<Double> locationPoint)
+    {
+        this.locationPoint = locationPoint;
     }
 
     public void setMetroId(final String metroId) {
