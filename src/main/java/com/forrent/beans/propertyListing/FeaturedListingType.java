@@ -7,6 +7,7 @@ public enum FeaturedListingType
     FEATURED_PROPERTY_FRU,
     HERO_VIDEO,
     MARQUEE,
+    MARQUEE_FRU,
     MOBILE_EXCLUSIVE,
     MOBILE_SELECT,
     PREFERRED,
@@ -37,6 +38,9 @@ public enum FeaturedListingType
 
             case "frufeatprop":
                 return FEATURED_PROPERTY_FRU;
+
+            case "frumarquee":
+                return MARQUEE_FRU;
 
             case "herovideo":
                 return HERO_VIDEO;
