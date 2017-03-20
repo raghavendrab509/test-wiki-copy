@@ -17,7 +17,7 @@ public class Detail
     private Boolean isActive;
     private Boolean paid;
     private PropertyManagementCompany pmc;
-    private List<Product> products = new ArrayList<>();
+    private List<String> products = new ArrayList<>();
     private Integer relativePerformanceScore;
     private Integer searchWeightFrc;
     private Integer searchWeightFrcEs;
@@ -81,7 +81,7 @@ public class Detail
         return this.pmc;
     }
 
-    public List<Product> getProducts()
+    public List<String> getProducts()
     {
         return this.products;
     }
@@ -171,7 +171,7 @@ public class Detail
         this.pmc = pmc;
     }
 
-    public void setProducts(final List<Product> products)
+    public void setProducts(final List<String> products)
     {
         this.products = products;
     }
