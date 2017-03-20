@@ -6,6 +6,7 @@ The version number increments every time you deploy the repository to Archiva.
 To increment version number manually make change in the `gradle.properties` according to the rules of http://semver.org/[semantic versioning].
 
 == 1.6.0 ==
+
  * Make detail.products a string array instead of an array of Products object
  
 == 1.5.0 ==
