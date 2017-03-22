@@ -9,6 +9,10 @@ To increment version number manually make change in the `gradle.properties` acco
 
  * Add FRU Marquee Ad
 
+== 1.6.2 ==
+
+* Put back the products field but mark it as deprecated
+
 == 1.6.1 ==
 
 * Rename products field to productCodes
