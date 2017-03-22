@@ -17,6 +17,11 @@ public class Detail
     private Boolean isActive;
     private Boolean paid;
     private PropertyManagementCompany pmc;
+    /**
+     * @deprecated
+     */
+    @Deprecated
+    private List<Product> products = new ArrayList<>();
     private List<String> productCodes = new ArrayList<>();
     private Integer relativePerformanceScore;
     private Integer searchWeightFrc;
@@ -79,6 +84,11 @@ public class Detail
 
     public PropertyManagementCompany getPmc() {
         return this.pmc;
+    }
+
+    public List<Product> getProducts()
+    {
+        return this.products;
     }
 
     public List<String> getProductCodes()
@@ -171,6 +181,11 @@ public class Detail
         this.pmc = pmc;
     }
 
+    public void setProducts(final List<Product> products)
+    {
+        this.products = products;
+    }
+
     public void setProductCodes(final List<String> products)
     {
         this.productCodes = products;
@@ -204,4 +219,5 @@ public class Detail
     public void setVanityUrl(final String vanityUrl) {
         this.vanityUrl = vanityUrl;
     }
+
 }
