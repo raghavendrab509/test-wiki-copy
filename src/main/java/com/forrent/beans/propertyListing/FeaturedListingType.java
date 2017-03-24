@@ -2,7 +2,9 @@ package com.forrent.beans.propertyListing;
 
 public enum FeaturedListingType
 {
+    AD_PROSPECTOR,
     CITY_SHOWCASE_FRC,
+    COMMUNITY_SPOTLIGHT,
     FEATURED_PROPERTY_FRC,
     FEATURED_PROPERTY_FRU,
     HERO_VIDEO,
@@ -11,8 +13,7 @@ public enum FeaturedListingType
     MOBILE_EXCLUSIVE,
     MOBILE_SELECT,
     PREFERRED,
-    TICKER_AD_FRC,
-    COMMUNITY_SPOTLIGHT;
+    TICKER_AD_FRC;
 
     /**
      * Create from DB key.
@@ -30,11 +31,20 @@ public enum FeaturedListingType
 
         switch (key.toLowerCase())
         {
+            case "adprospector":
+                return AD_PROSPECTOR;
+
             case "cityshowcase":
                 return CITY_SHOWCASE_FRC;
 
+            case "community_spotlight":
+                return COMMUNITY_SPOTLIGHT;
+
             case "frc featured property":
                 return FEATURED_PROPERTY_FRC;
+
+            case "frc ticker ad":
+                return TICKER_AD_FRC;
 
             case "frufeatprop":
                 return FEATURED_PROPERTY_FRU;
@@ -56,12 +66,6 @@ public enum FeaturedListingType
 
             case "preferred_ad":
                 return PREFERRED;
-
-            case "frc ticker ad":
-                return TICKER_AD_FRC;
-
-            case "community_spotlight":
-                return COMMUNITY_SPOTLIGHT;
 
             default:
                 throw new Exception("Could not create enum FeaturedListingType key: " + key);
