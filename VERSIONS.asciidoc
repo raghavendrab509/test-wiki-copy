@@ -5,9 +5,13 @@ The version number increments every time you deploy the repository to Archiva.
 
 To increment version number manually make change in the `gradle.properties` according to the rules of http://semver.org/[semantic versioning].
 
-== 1.7.2 ==
+== 1.9.0 ==
 
 * Add FRU Paid derived derived product
+
+== 1.8.0 ==
+
+ * Add Ad Prospector Ad
 
 == 1.7.1 ==
 
