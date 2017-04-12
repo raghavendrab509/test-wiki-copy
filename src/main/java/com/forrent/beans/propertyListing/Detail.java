@@ -8,6 +8,7 @@ public class Detail
     private Account account = new Account();
     private List<Context> contexts = new ArrayList<>();
     private String facebookId;
+    private String listhubId;
     private GuestCardSettings guestCard;
     private Boolean hasAerialVideo;
     private Boolean hasBrokerFees;
@@ -42,6 +43,10 @@ public class Detail
 
     public String getFacebookId() {
         return this.facebookId;
+    }
+    
+    public String getListhubId() {
+        return this.listhubId;
     }
 
     public GuestCardSettings getGuestCard() {
@@ -137,6 +142,10 @@ public class Detail
 
     public void setFacebookId(final String facebookId) {
         this.facebookId = facebookId;
+    }
+    
+    public void setListhubId(final String listhubId) {
+        this.listhubId = listhubId;
     }
 
     public void setGuestCard(final GuestCardSettings guestCard) {
