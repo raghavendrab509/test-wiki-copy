@@ -1,5 +1,7 @@
 package com.forrent.beans.propertyListing;
 
+import com.forrent.beans.common.ObjectWithIdCollection;
+
 import java.io.Serializable;
 
 @SuppressWarnings("serial")

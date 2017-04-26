@@ -1,5 +1,7 @@
 package com.forrent.beans.propertyListing;
 
+import com.forrent.beans.common.ObjectWithIdCollection;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,7 +57,7 @@ public class Geography
 
     public List<Double> getLocationPoint()
     {
-        return locationPoint;
+        return this.locationPoint;
     }
 
     public String getMetroId() {
