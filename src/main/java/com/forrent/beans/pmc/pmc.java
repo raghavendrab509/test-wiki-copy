@@ -51,15 +51,18 @@ public class pmc implements Serializable
         this.name = name;
     }
 
-    public void setDetail(final Detail detail) {
+    public void setDetail(final Detail detail)
+    {
         this.detail = detail;
     }
 
-    public void setFeaturedListings(final ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings) {
+    public void setFeaturedListings(final ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings)
+    {
         this.featuredListings = featuredListings;
     }
 
-    public void setImages(final ObjectWithTypeCollection<Image> images) {
+    public void setImages(final ObjectWithTypeCollection<Image> images)
+    {
         this.images = images;
     }
 
