@@ -1,4 +1,4 @@
-package com.forrent.beans.propertyListing;
+package com.forrent.beans.common;
 
 public class FeaturedListing implements IObjectWithId, IObjectWithType
 {
@@ -45,6 +45,8 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
 
         private String videoId;
         private String headline;
+        private String filterType;
+        private String filterId;
 
         public String getVideoId() {
             return this.videoId;
@@ -56,12 +58,32 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
 
         public String getHeadline()
         {
-            return headline;
+            return this.headline;
         }
 
         public void setHeadline(final String headline)
         {
             this.headline = headline;
+        }
+
+        public String getFilterType()
+        {
+            return filterType;
+        }
+
+        public void setFilterType(String filterType)
+        {
+            this.filterType = filterType;
+        }
+
+        public String getFilterId()
+        {
+            return filterId;
+        }
+
+        public void setFilterId(String filterId)
+        {
+            this.filterId = filterId;
         }
     }
 }

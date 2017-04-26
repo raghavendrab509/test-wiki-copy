@@ -1,4 +1,4 @@
-package com.forrent.beans.propertyListing;
+package com.forrent.beans.common;
 
 public enum TargetGeographyType
 {
