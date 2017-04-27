@@ -14,6 +14,8 @@ public class PhoneNumber implements IObjectWithId
     public static final String TYPE_TEXT_MESSAGE = "TxtMsg";
     public static final String TYPE_TOLLFREE_INTERNET = "TollFreeIn";
     public static final String TYPE_TOLLFREE_LOCAL = "LocTollFre";
+    public static final String TYPE_TEST_1 = "Test1";
+    public static final String TYPE_TEST_2 = "Test2";
 
     private String areaCode;
     private String description;
