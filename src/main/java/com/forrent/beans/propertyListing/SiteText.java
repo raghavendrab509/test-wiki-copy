@@ -1,5 +1,7 @@
 package com.forrent.beans.propertyListing;
 
+import com.forrent.beans.common.IObjectWithId;
+
 import java.util.ArrayList;
 import java.util.List;
 

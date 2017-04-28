@@ -1,17 +1,23 @@
 package com.forrent.beans.propertyListing;
 
+import com.forrent.beans.common.FeaturedListing;
+import com.forrent.beans.common.Image;
+import com.forrent.beans.common.ObjectWithIdAndTypeCollection;
+import com.forrent.beans.common.ObjectWithIdCollection;
+import com.forrent.beans.common.ObjectWithTypeCollection;
+
 import java.io.Serializable;
 import java.util.Optional;
 
 @SuppressWarnings("serial")
 public class PropertyListing implements Serializable
 {
+    private String id;
+    private String name;
     private Detail detail = new Detail();
     private ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings = new ObjectWithIdAndTypeCollection<>();
     private Geography geo = new Geography();
-    private String id;
     private ObjectWithTypeCollection<Image> images = new ObjectWithTypeCollection<>();
-    private String name;
     private ObjectWithIdCollection<PhoneNumber> phoneNumbers = new ObjectWithIdCollection<>();
     private ApartmentProperty property = new ApartmentProperty();
     private Resources resources = new Resources();

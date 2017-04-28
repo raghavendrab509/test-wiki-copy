@@ -1,5 +1,7 @@
 package com.forrent.beans.propertyListing;
 
+import com.forrent.beans.common.IObjectWithId;
+
 public class PhoneNumber implements IObjectWithId
 {
     public static final String TYPE_APARTMENT_FAX = "AprtmntFax";
