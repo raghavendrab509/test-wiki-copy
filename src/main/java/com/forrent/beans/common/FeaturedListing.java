@@ -1,5 +1,7 @@
 package com.forrent.beans.common;
 
+import java.util.List;
+
 public class FeaturedListing implements IObjectWithId, IObjectWithType
 {
     private String id;
@@ -46,7 +48,10 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
         private String videoId;
         private String headline;
         private String filterType;
-        private String filterId;
+        private List<String> filterId;
+        private String desktopImageFileName;
+        private String mobileImageFileName;
+        private String logoImageFileName;
 
         public String getVideoId() {
             return this.videoId;
@@ -68,22 +73,52 @@ public class FeaturedListing implements IObjectWithId, IObjectWithType
 
         public String getFilterType()
         {
-            return filterType;
+            return this.filterType;
         }
 
-        public void setFilterType(String filterType)
+        public void setFilterType(final String filterType)
         {
             this.filterType = filterType;
         }
 
-        public String getFilterId()
+        public List<String> getFilterId()
         {
-            return filterId;
+            return this.filterId;
         }
 
-        public void setFilterId(String filterId)
+        public void setFilterId(final List<String> filterId)
         {
             this.filterId = filterId;
+        }
+
+        public String getDesktopImageFileName()
+        {
+            return this.desktopImageFileName;
+        }
+
+        public void setDesktopImageFileName(final String imageFileName)
+        {
+            this.desktopImageFileName = imageFileName;
+        }
+
+        public String getMobileImageFileName()
+        {
+            return this.mobileImageFileName;
+        }
+
+        public void setMobileImageFileName(final String mobileImageFileName)
+        {
+            this.mobileImageFileName = mobileImageFileName;
+        }
+
+        public String getLogoImageFileName()
+        {
+            return this.logoImageFileName;
+        }
+
+        public void setLogoImageFileName(final String logoImageFileName)
+        {
+            this.logoImageFileName = logoImageFileName;
         }
     }
 }

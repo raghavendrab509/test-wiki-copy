@@ -8,7 +8,7 @@ import com.forrent.beans.common.ObjectWithTypeCollection;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class pmc implements Serializable
+public class PMC implements Serializable
 {
     private String id;
     private String name;
