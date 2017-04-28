@@ -12,7 +12,7 @@ public class Detail
     private String fax;
     private Integer listingCount;
     private String discountNotes;
-    private String displayProfileLink;
+    private Boolean displayProfileLink;
     private Integer externalMappingId;
 
     public String getEmail()
@@ -87,11 +87,11 @@ public class Detail
     {
         this.discountNotes = discountNotes;
     }
-    public String getDisplayProfileLink()
+    public Boolean getDisplayProfileLink()
     {
         return this.displayProfileLink;
     }
-    public void setDisplayProfileLink(final String displayProfileLink)
+    public void setDisplayProfileLink(final Boolean displayProfileLink)
     {
         this.displayProfileLink = displayProfileLink;
     }
