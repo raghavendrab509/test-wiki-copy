@@ -1,6 +1,6 @@
 package com.forrent.beans.pmc;
 
-public class Detail
+public class PMCDetail
 {
     private String email;
     private String url;
