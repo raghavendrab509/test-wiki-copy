@@ -1,69 +1,26 @@
 package com.forrent.beans.pmc;
 
-import com.forrent.beans.common.FeaturedListing;
-import com.forrent.beans.common.Image;
-import com.forrent.beans.common.ObjectWithIdAndTypeCollection;
-import com.forrent.beans.common.ObjectWithTypeCollection;
-
-import java.io.Serializable;
+import com.forrent.beans.common.PropertyListingEntity;
+import com.forrent.beans.common.PropertyListingEntityType;
 
 @SuppressWarnings("serial")
-public class PMC implements Serializable
+public class PMC extends PropertyListingEntity
 {
-    private String id;
-    private String name;
-    private Detail detail = new Detail();
-    private ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings = new ObjectWithIdAndTypeCollection<>();
-    private ObjectWithTypeCollection<Image> images = new ObjectWithTypeCollection<>();
+    private PMCDetail pmcDetail = new PMCDetail();
 
-    public String getId()
+    public PMC()
     {
-        return this.id;
+        this.entityType = PropertyListingEntityType.PMC;
     }
 
-    public String getName()
+    public PMCDetail getPmcDetail()
     {
-        return this.name;
+        return this.pmcDetail;
     }
 
-    public Detail getDetail()
+    public void setPmcDetail(final PMCDetail detail)
     {
-        return this.detail;
-    }
-
-    public ObjectWithIdAndTypeCollection<FeaturedListing> getFeaturedListings()
-    {
-        return this.featuredListings;
-    }
-
-    public ObjectWithTypeCollection<Image> getImages()
-    {
-        return this.images;
-    }
-
-    public void setId(final String id)
-    {
-        this.id = id;
-    }
-
-    public void setName(final String name)
-    {
-        this.name = name;
-    }
-
-    public void setDetail(final Detail detail)
-    {
-        this.detail = detail;
-    }
-
-    public void setFeaturedListings(final ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings)
-    {
-        this.featuredListings = featuredListings;
-    }
-
-    public void setImages(final ObjectWithTypeCollection<Image> images)
-    {
-        this.images = images;
+        this.pmcDetail = detail;
     }
 
 }
