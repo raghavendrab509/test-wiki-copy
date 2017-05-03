@@ -1,6 +1,6 @@
 package com.forrent.beans.common;
 
-public enum PropertyListingEntityType
+public enum ListingType
 {
     PMC,
     PROPERTY_LISTING

@@ -1,16 +1,16 @@
 package com.forrent.beans.pmc;
 
-import com.forrent.beans.common.PropertyListingEntity;
-import com.forrent.beans.common.PropertyListingEntityType;
+import com.forrent.beans.common.Listing;
+import com.forrent.beans.common.ListingType;
 
 @SuppressWarnings("serial")
-public class PMC extends PropertyListingEntity
+public class PropertyManagementCommunityListing extends Listing
 {
     private PMCDetail pmcDetail = new PMCDetail();
 
-    public PMC()
+    public PropertyManagementCommunityListing()
     {
-        this.entityType = PropertyListingEntityType.PMC;
+        this.listingType = ListingType.PMC;
     }
 
     public PMCDetail getPmcDetail()

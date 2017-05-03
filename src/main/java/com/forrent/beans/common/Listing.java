@@ -3,11 +3,11 @@ package com.forrent.beans.common;
 import java.io.Serializable;
 
 @SuppressWarnings("serial")
-public class PropertyListingEntity implements Serializable
+public abstract class Listing implements Serializable
 {
     protected String id;
     protected String name;
-    protected PropertyListingEntityType entityType;
+    protected ListingType listingType;
     protected ObjectWithIdAndTypeCollection<FeaturedListing> featuredListings = new ObjectWithIdAndTypeCollection<>();
     protected ObjectWithTypeCollection<Image> images = new ObjectWithTypeCollection<>();
 
@@ -27,13 +27,13 @@ public class PropertyListingEntity implements Serializable
     {
         this.name = name;
     }
-    public PropertyListingEntityType getEntityType()
+    public ListingType getListingType()
     {
-        return this.entityType;
+        return this.listingType;
     }
-    public void setEntityType(final PropertyListingEntityType entityType)
+    public void setListingType(final ListingType entityType)
     {
-        this.entityType = entityType;
+        this.listingType = entityType;
     }
     public ObjectWithIdAndTypeCollection<FeaturedListing> getFeaturedListings()
     {

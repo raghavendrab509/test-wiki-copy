@@ -1,13 +1,13 @@
 package com.forrent.beans.propertyListing;
 
 import com.forrent.beans.common.ObjectWithIdCollection;
-import com.forrent.beans.common.PropertyListingEntity;
-import com.forrent.beans.common.PropertyListingEntityType;
+import com.forrent.beans.common.Listing;
+import com.forrent.beans.common.ListingType;
 
 import java.util.Optional;
 
 @SuppressWarnings("serial")
-public class PropertyListing extends PropertyListingEntity
+public class PropertyListing extends Listing
 {
     private Detail detail = new Detail();
     private Geography geo = new Geography();
@@ -19,7 +19,7 @@ public class PropertyListing extends PropertyListingEntity
 
     public PropertyListing()
     {
-        this.entityType = PropertyListingEntityType.PROPERTY_LISTING;
+        this.listingType = ListingType.PROPERTY_LISTING;
     }
 
     public Detail getDetail() {
