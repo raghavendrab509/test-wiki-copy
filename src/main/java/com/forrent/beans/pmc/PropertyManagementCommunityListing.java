@@ -6,21 +6,21 @@ import com.forrent.beans.common.ListingType;
 @SuppressWarnings("serial")
 public class PropertyManagementCommunityListing extends Listing
 {
-    private PMCDetail pmcDetail = new PMCDetail();
+    private PMCDetail detail = new PMCDetail();
 
     public PropertyManagementCommunityListing()
     {
         this.listingType = ListingType.PMC;
     }
 
-    public PMCDetail getPmcDetail()
+    public PMCDetail getDetail()
     {
-        return this.pmcDetail;
+        return this.detail;
     }
 
-    public void setPmcDetail(final PMCDetail detail)
+    public void setDetail(final PMCDetail detail)
     {
-        this.pmcDetail = detail;
+        this.detail = detail;
     }
 
 }
