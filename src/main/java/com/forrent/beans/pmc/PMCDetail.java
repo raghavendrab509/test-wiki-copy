@@ -10,6 +10,7 @@ public class PMCDetail
     private String zip;
     private String phone;
     private String fax;
+    private Boolean isActive;
     private Integer listingCount;
     private String discountNotes;
     private Boolean displayProfileLink;
@@ -110,6 +111,14 @@ public class PMCDetail
     public void setListingCount(final Integer listingCount)
     {
         this.listingCount = listingCount;
+    }
+    public Boolean getIsActive()
+    {
+        return this.isActive;
+    }
+    public void setIsActive(final Boolean isActive)
+    {
+        this.isActive = isActive;
     }
 
 }
