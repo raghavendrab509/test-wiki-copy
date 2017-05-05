@@ -1,5 +1,8 @@
 package com.forrent.beans.propertyListing;
 
+import com.forrent.beans.common.Context;
+import com.forrent.beans.common.Locale;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,7 +47,7 @@ public class Detail
     public String getFacebookId() {
         return this.facebookId;
     }
-    
+
     public String getListhubId() {
         return this.listhubId;
     }
@@ -143,7 +146,7 @@ public class Detail
     public void setFacebookId(final String facebookId) {
         this.facebookId = facebookId;
     }
-    
+
     public void setListhubId(final String listhubId) {
         this.listhubId = listhubId;
     }

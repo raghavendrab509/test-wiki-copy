@@ -1,6 +1,7 @@
 package com.forrent.beans.propertyListing;
 
 import com.forrent.beans.common.IObjectWithId;
+import com.forrent.beans.common.Locale;
 
 import java.util.ArrayList;
 import java.util.List;
