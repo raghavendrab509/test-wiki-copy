@@ -1,5 +1,13 @@
 package com.forrent.beans.pmc;
 
+
+
+import com.forrent.beans.common.Context;
+import com.forrent.beans.common.Locale;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class PMCDetail
 {
     private String email;
@@ -15,6 +23,8 @@ public class PMCDetail
     private String discountNotes;
     private Boolean displayProfileLink;
     private Integer externalMappingId;
+    private List<Context> contexts = new ArrayList<>();
+    private List<Locale> translations = new ArrayList<>();
 
     public String getEmail()
     {
@@ -119,6 +129,22 @@ public class PMCDetail
     public void setIsActive(final Boolean isActive)
     {
         this.isActive = isActive;
+    }
+    public List<Context> getContexts()
+    {
+        return this.contexts;
+    }
+    public void setContexts(final List<Context> contexts)
+    {
+        this.contexts = contexts;
+    }
+    public List<Locale> getTranslations()
+    {
+        return this.translations;
+    }
+    public void setTranslations(final List<Locale> translations)
+    {
+        this.translations = translations;
     }
 
 }

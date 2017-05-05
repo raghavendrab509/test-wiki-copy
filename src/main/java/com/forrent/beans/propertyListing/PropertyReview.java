@@ -1,6 +1,7 @@
 package com.forrent.beans.propertyListing;
 
 import com.forrent.beans.common.IObjectWithId;
+import com.forrent.beans.common.Locale;
 
 import java.io.Serializable;
 import java.util.Date;

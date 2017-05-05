@@ -1,5 +1,7 @@
 package com.forrent.beans.propertyListing;
 
+import com.forrent.beans.common.Locale;
+
 public class Spotlight {
 
     private String image;
