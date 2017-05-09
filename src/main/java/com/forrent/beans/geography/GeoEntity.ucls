@@ -30,8 +30,8 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.forrent.beans.geography.entity.PropertyCountCollection" project="java-beans" 
-    file="/java-beans/src/main/java/com/forrent/beans/geography/entity/PropertyCountCollection.java" binary="false" 
+  <class id="4" language="java" name="com.forrent.beans.geography.entity.ListingCountCollection" project="java-beans" 
+    file="/java-beans/src/main/java/com/forrent/beans/geography/entity/ListingCountCollection.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="219" y="404"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

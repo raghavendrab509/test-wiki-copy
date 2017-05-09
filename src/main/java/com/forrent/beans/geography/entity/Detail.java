@@ -6,7 +6,7 @@ public class Detail
     private Address address;
     private String findUri;
     private Character firstLetter;
-    private PropertyCountCollection propertyCounts = new PropertyCountCollection();
+    private  ListingCountCollection listingCounts = new ListingCountCollection();
     private SchoolInfo schoolInfo = new SchoolInfo();
     private String vanityName;
     private String website;
@@ -27,8 +27,8 @@ public class Detail
         return this.firstLetter;
     }
 
-    public PropertyCountCollection getPropertyCounts() {
-        return this.propertyCounts;
+    public ListingCountCollection getListingCounts() {
+        return this.listingCounts;
     }
 
     public SchoolInfo getSchoolInfo() {
@@ -59,8 +59,8 @@ public class Detail
         this.firstLetter = firstLetter;
     }
 
-    public void setPropertyCounts(final PropertyCountCollection propertyCounts) {
-        this.propertyCounts = propertyCounts;
+    public void setPropertyCounts(final ListingCountCollection listingCounts) {
+        this.listingCounts = listingCounts;
     }
 
     public void setSchoolInfo(final SchoolInfo schoolInfo) {

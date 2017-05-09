@@ -1,6 +1,6 @@
 package com.forrent.beans.geography.entity;
 
-public class PropertyCountCollection
+public class ListingCountCollection
 {
     private Integer frcEnglish;
     private Integer frcSpanish;
