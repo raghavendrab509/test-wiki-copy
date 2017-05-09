@@ -1,5 +1,7 @@
 package com.forrent.beans.propertyListing;
 
+import com.forrent.beans.common.IObjectWithId;
+
 public class Neighborhood implements IObjectWithId
 {
     private String id;

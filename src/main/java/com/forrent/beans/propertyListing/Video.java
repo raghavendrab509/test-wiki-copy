@@ -1,5 +1,8 @@
 package com.forrent.beans.propertyListing;
 
+import com.forrent.beans.common.IObjectWithId;
+import com.forrent.beans.common.Locale;
+
 /**
  * Information about a video resource.
  */

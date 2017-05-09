@@ -5,6 +5,22 @@ The version number increments every time you deploy the repository to Archiva.
 
 To increment version number manually make change in the `gradle.properties` according to the rules of http://semver.org/[semantic versioning].
 
+== 1.11.3 ==
+* Add Locale and Context to PMCDetail
+
+== 1.11.2 ==
+* Add isActive field to the PMCDetail object 
+
+== 1.11.1 ==
+* Make the PMC and PropertyListing objects extend an Abstract Class
+
+== 1.11.0 ==
+* Add PMC Object 
+
+== 1.10.1 ==
+
+* Add Test1 and Test2 phone number types
+
 == 1.10.0 ==
 
 * Add Listhub ID to Detail class
