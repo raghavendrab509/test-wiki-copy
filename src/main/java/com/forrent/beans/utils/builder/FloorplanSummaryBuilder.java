@@ -34,7 +34,7 @@ public class FloorplanSummaryBuilder
         return floorplanSummary;
     }
 
-    private Range<Integer> buildBedroomsRange(final List<Floorplan> floorplans)
+    public Range<Integer> buildBedroomsRange(final List<Floorplan> floorplans)
     {
         Integer low = null;
         Integer high = null;
@@ -66,7 +66,7 @@ public class FloorplanSummaryBuilder
         }
     }
 
-    private Range<Double> buildBathroomsRange(final List<Floorplan> floorplans)
+    public Range<Double> buildBathroomsRange(final List<Floorplan> floorplans)
     {
         Double low = null;
         Double high = null;
@@ -98,7 +98,7 @@ public class FloorplanSummaryBuilder
         }
     }
 
-    private Range<Integer> buildPricesRange(final List<Floorplan> floorplans)
+    public Range<Integer> buildPricesRange(final List<Floorplan> floorplans)
     {
         Integer low = null;
         Integer high = null;
@@ -132,7 +132,7 @@ public class FloorplanSummaryBuilder
         }
     }
 
-    private Range<Integer> buildSquareFeetRange(final List<Floorplan> floorplans)
+    public Range<Integer> buildSquareFeetRange(final List<Floorplan> floorplans)
     {
         Integer low = null;
         Integer high = null;
@@ -166,7 +166,7 @@ public class FloorplanSummaryBuilder
         }
     }
 
-    private List<FloorplanSummary> buildByRoomCount(final List<Floorplan> floorplans)
+    public List<FloorplanSummary> buildByRoomCount(final List<Floorplan> floorplans)
     {
         final List<FloorplanSummary> byRoomCount = new ArrayList<FloorplanSummary>();
 
@@ -179,7 +179,7 @@ public class FloorplanSummaryBuilder
         return byRoomCount;
     }
 
-    private TreeSet<Integer> getRoomCounts(final List<Floorplan> floorplans)
+    public TreeSet<Integer> getRoomCounts(final List<Floorplan> floorplans)
     {
         final TreeSet<Integer> counts = new TreeSet<Integer>();
 
@@ -192,7 +192,7 @@ public class FloorplanSummaryBuilder
         return counts;
     }
 
-    private List<Floorplan> filterByRoomCount(final Integer roomCount, final List<Floorplan> floorplans)
+    public List<Floorplan> filterByRoomCount(final Integer roomCount, final List<Floorplan> floorplans)
     {
         final List<Floorplan> byRoomCount = new ArrayList<Floorplan>();
 
