@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class FloorplanSummary implements IObjectWithId, Serializable
 {
     public static final String ALL_ID = "ALL";
+    public static final String MATCHING = "MATCHING";
 
     private Range<Double> baths = new Range<Double>();
     private Range<Integer> beds = new Range<Integer>();
