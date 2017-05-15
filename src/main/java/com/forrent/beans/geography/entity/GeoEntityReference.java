@@ -3,22 +3,24 @@ package com.forrent.beans.geography.entity;
 import com.forrent.beans.geography.GeoType;
 import com.forrent.beans.geography.id.GeoId;
 
-class GeoEntityReference
+public class GeoEntityReference
 {
-    private final GeoId id;
-    private final String name;
+    private GeoId id;
+    private String name;
+    private GeoType type;
 
     public GeoEntityReference(final GeoId id, final String name) {
         this.id = id;
         this.name = name;
-    }
-
-    public GeoId getId() {
-        return this.id;
+        this.type = id.getGeoType();
     }
 
     public GeoType getGeoType() {
         return this.id.getGeoType();
+    }
+
+    public GeoId getId() {
+        return this.id;
     }
 
     public String getKey() {
@@ -27,5 +29,21 @@ class GeoEntityReference
 
     public String getName() {
         return this.name;
+    }
+
+    public GeoType getType() {
+        return this.type;
+    }
+
+    public void setId(final GeoId id) {
+        this.id = id;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public void setType(final GeoType type) {
+        this.type = type;
     }
 }

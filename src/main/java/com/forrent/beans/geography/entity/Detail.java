@@ -1,12 +1,15 @@
 package com.forrent.beans.geography.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Detail
 {
     private String abbreviation;
     private Address address;
     private String findUri;
     private Character firstLetter;
-    private  ListingCountCollection listingCounts = new ListingCountCollection();
+    private List<ListingCount> listingCounts = new ArrayList<>();
     private SchoolInfo schoolInfo = new SchoolInfo();
     private String vanityName;
     private String website;
@@ -27,7 +30,7 @@ public class Detail
         return this.firstLetter;
     }
 
-    public ListingCountCollection getListingCounts() {
+    public List<ListingCount> getListingCounts() {
         return this.listingCounts;
     }
 
@@ -59,7 +62,7 @@ public class Detail
         this.firstLetter = firstLetter;
     }
 
-    public void setPropertyCounts(final ListingCountCollection listingCounts) {
+    public void setPropertyCounts(final List<ListingCount> listingCounts) {
         this.listingCounts = listingCounts;
     }
 

@@ -13,7 +13,7 @@ public class GeoEntity
     private String displayName;
     private GeoId id;
     private Point point = new Point();
-    private RelationshipCollection related = new RelationshipCollection();
+    private final List<Relationship> relationships = new ArrayList<>();
     private GeoType type;
 
     public List<String> getAliases() {
@@ -35,8 +35,8 @@ public class GeoEntity
         return this.point;
     }
 
-    public RelationshipCollection getRelated() {
-        return this.related;
+    public List<Relationship> getRelationships() {
+        return this.relationships;
     }
 
     public GeoType getType() {
@@ -65,10 +65,6 @@ public class GeoEntity
 
     public void setPoint(final Point point) {
         this.point = point;
-    }
-
-    public void setRelated(final RelationshipCollection related) {
-        this.related = related;
     }
 
     public void setType(final GeoType type) {
