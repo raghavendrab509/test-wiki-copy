@@ -28,7 +28,7 @@ public class GeoId
             throw new IllegalArgumentException(String.format("%s is not a valid geo id.", id));
         }
 
-        this.geoType = GeoType.valueOf(parts[0].toUpperCase());
+        this.geoType = GeoType.valueOf(parts[0].toLowerCase());
         this.key = parts[1];
     }
 
@@ -51,6 +51,6 @@ public class GeoId
     @Override
     public String toString()
     {
-        return String.format("%s.%s", this.geoType.toLowerCase(), this.key);
+        return String.format("%s.%s", this.geoType.toString(), this.key);
     }
 }

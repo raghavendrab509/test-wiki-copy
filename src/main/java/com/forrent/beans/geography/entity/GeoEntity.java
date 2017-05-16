@@ -9,11 +9,13 @@ import com.forrent.beans.geography.id.GeoId;
 public class GeoEntity
 {
     private List<String> aliases = new ArrayList<>();
-    private Detail detail;
+    private Detail detail = new Detail();
     private String displayName;
     private GeoId id;
-    private Point point = new Point();
-    private final List<Relationship> relationships = new ArrayList<>();
+    private Point location = new Point();
+    private String name;
+    private List<Relationship> relationships = new ArrayList<>();
+    private String state;
     private GeoType type;
 
     public List<String> getAliases() {
@@ -23,6 +25,7 @@ public class GeoEntity
     public Detail getDetail() {
         return this.detail;
     }
+
     public String getDisplayName() {
         return this.displayName;
     }
@@ -31,12 +34,20 @@ public class GeoEntity
         return this.id;
     }
 
-    public Point getPoint() {
-        return this.point;
+    public Point getLocation() {
+        return this.location;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public List<Relationship> getRelationships() {
         return this.relationships;
+    }
+
+    public String getState() {
+        return this.state;
     }
 
     public GeoType getType() {
@@ -63,8 +74,20 @@ public class GeoEntity
         this.id = id;
     }
 
-    public void setPoint(final Point point) {
-        this.point = point;
+    public void setLocation(final Point location) {
+        this.location = location;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public void setRelationships(final List<Relationship> relationships) {
+        this.relationships = relationships;
+    }
+
+    public void setState(final String state) {
+        this.state = state;
     }
 
     public void setType(final GeoType type) {

@@ -3,6 +3,9 @@ package com.forrent.beans.geography.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.forrent.beans.common.Context;
+import com.forrent.beans.common.Locale;
+
 public class Detail
 {
     private String abbreviation;
@@ -32,6 +35,17 @@ public class Detail
 
     public List<ListingCount> getListingCounts() {
         return this.listingCounts;
+    }
+
+    public Integer getListingCount(final Context context, final Locale locale)
+    {
+        for(final ListingCount count : this.listingCounts) {
+            if (count.getContext() == context && count.getLocale() == locale) {
+                return count.getCount();
+            }
+        }
+
+        return null;
     }
 
     public SchoolInfo getSchoolInfo() {

@@ -3,16 +3,28 @@ package com.forrent.beans.geography.entity;
 import com.forrent.beans.geography.GeoType;
 import com.forrent.beans.geography.id.GeoId;
 
+/**
+ * This class is meant to serve as a simple placeholder to represent a Geographical Entity.
+ * It contains an id for uniquely identifying the entity and a name for human readability.
+ */
 public class GeoEntityReference
 {
-    private GeoId id;
-    private String name;
-    private GeoType type;
+    /**
+     * Id unique to Geographical Entity.
+     */
+    protected GeoId id;
+
+    /**
+     * Human readable name of GeoEntity.
+     */
+    protected String name;
+
+    public GeoEntityReference() {
+    }
 
     public GeoEntityReference(final GeoId id, final String name) {
         this.id = id;
         this.name = name;
-        this.type = id.getGeoType();
     }
 
     public GeoType getGeoType() {
@@ -32,7 +44,7 @@ public class GeoEntityReference
     }
 
     public GeoType getType() {
-        return this.type;
+        return this.getId().getGeoType();
     }
 
     public void setId(final GeoId id) {
@@ -41,9 +53,5 @@ public class GeoEntityReference
 
     public void setName(final String name) {
         this.name = name;
-    }
-
-    public void setType(final GeoType type) {
-        this.type = type;
     }
 }

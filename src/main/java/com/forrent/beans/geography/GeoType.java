@@ -5,16 +5,13 @@ package com.forrent.beans.geography;
  */
 public enum GeoType
 {
-    AREA,
-    CITY,
-    METRO,
-    STATE,
-    ZIP,
-    NEIGHBORHOOD,
-    INSTITUTION;
-
-    public String toLowerCase()
-    {
-        return this.toString().toLowerCase();
-    }
+    area,
+    city,
+    country,
+    metro,
+    school,
+    state,
+    zip,
+    neighborhood,
+    institution;
 }
