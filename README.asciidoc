@@ -1,5 +1,4 @@
-java-beans
-==========
+= java-beans =
 
 ForRent Java Beans useful across multiple code bases.
 
@@ -14,6 +13,13 @@ ForRent Java Beans useful across multiple code bases.
 
 You can upload the jar file either from Jenkins or from command line on your local machine.
 
+=== Uploading from Local Machine ===
+
+1. Increment the tag_name in `/gradle.properties`. Tag should match the pattern  `\d.\d.\d-.*`, for example "0.0.1-COR-4345".
+2. Set `maven_repo_username` and `maven_repo_password` in `/gradle.properties`. Request an account if you don't have one.
+3. Run `./gradlew uploadArchives`.
+4. Hosted versions can be found here: http://dsfrcsatis01.frmsystems.net:8080/index.html#artifact/com.forrent/java-beans
+
 === Uploading from Jenkins ===
 
 Create a tag based off of the master branch or any branch.
@@ -26,16 +32,4 @@ Then log into Jenkins and run the "Deploy_Java-Beans_To_Maven" job. The job expe
 * tag_name: The name of the tag you created.
 * maven_repo_username: The mavenrepo.forrent.com username
 * maven_repo_password: The mavenrepo.forrent.com password
-
-=== Uploading from local machine ===
-
-Uploading from your local machine is helpful especially when you want to quickly test your changes.
-
-To do this open the gradle.properties file and modify accordingly.
-
-* Set the tag_name to a value like so `\d.\d.\d-.*`. For example 0.0.1-COR-4345.
-* Set the maven_repo_username and maven_repo_password
-
-And then run `./gradlew uploadArchives`
-
 
