@@ -5,6 +5,11 @@ package com.forrent.beans.geography;
  */
 public enum ShapeType
 {
-    boundary,
-    center;
+    BOUNDARY,
+    CENTER;
+
+    public String toLowerCase()
+    {
+        return this.toString().toLowerCase();
+    }
 }
