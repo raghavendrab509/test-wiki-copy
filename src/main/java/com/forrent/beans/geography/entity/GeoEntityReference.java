@@ -1,6 +1,5 @@
 package com.forrent.beans.geography.entity;
 
-import com.forrent.beans.geography.GeoType;
 import com.forrent.beans.geography.id.GeoId;
 
 /**
@@ -12,42 +11,30 @@ public class GeoEntityReference
     /**
      * Id unique to Geographical Entity.
      */
-    protected GeoId id;
+    private String id;
 
     /**
      * Human readable name of GeoEntity.
      */
-    protected String name;
+    private String name;
 
     public GeoEntityReference() {
     }
 
     public GeoEntityReference(final GeoId id, final String name) {
-        this.id = id;
+        this.id = id.toString();
         this.name = name;
     }
 
-    public GeoType getGeoType() {
-        return this.id.getGeoType();
-    }
-
-    public GeoId getId() {
+    public String getId() {
         return this.id;
-    }
-
-    public String getKey() {
-        return this.id.getKey();
     }
 
     public String getName() {
         return this.name;
     }
 
-    public GeoType getType() {
-        return this.getId().getGeoType();
-    }
-
-    public void setId(final GeoId id) {
+    public void setId(final String id) {
         this.id = id;
     }
 
