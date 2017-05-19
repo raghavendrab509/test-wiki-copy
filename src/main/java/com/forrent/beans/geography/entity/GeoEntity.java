@@ -4,14 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.forrent.beans.geography.GeoType;
-import com.forrent.beans.geography.id.GeoId;
 
 public class GeoEntity
 {
     private List<String> aliases = new ArrayList<>();
     private Detail detail = new Detail();
     private String displayName;
-    private GeoId id;
+    private String id;
     private Point location = new Point();
     private String name;
     private List<Relationship> relationships = new ArrayList<>();
@@ -30,7 +29,7 @@ public class GeoEntity
         return this.displayName;
     }
 
-    public GeoId getId() {
+    public String getId() {
         return this.id;
     }
 
@@ -70,7 +69,7 @@ public class GeoEntity
         this.type = type;
     }
 
-    public void setId(final GeoId id) {
+    public void setId(final String id) {
         this.id = id;
     }
 
