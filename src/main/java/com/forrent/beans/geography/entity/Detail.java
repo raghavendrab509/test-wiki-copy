@@ -14,7 +14,6 @@ public class Detail
     private Character firstLetter;
     private List<ListingCount> listingCounts = new ArrayList<>();
     private SchoolInfo schoolInfo = new SchoolInfo();
-    private String vanityName;
     private String website;
 
     public String getAbbreviation() {
@@ -52,10 +51,6 @@ public class Detail
         return this.schoolInfo;
     }
 
-    public String getVanityName() {
-        return this.vanityName;
-    }
-
     public String getWebsite() {
         return this.website;
     }
@@ -82,10 +77,6 @@ public class Detail
 
     public void setSchoolInfo(final SchoolInfo schoolInfo) {
         this.schoolInfo = schoolInfo;
-    }
-
-    public void setVanityName(final String vanityName) {
-        this.vanityName = vanityName;
     }
 
     public void setWebsite(final String website) {
