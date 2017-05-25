@@ -1,0 +1,5 @@
+# Copy this file to `gradle.properties`.
+
+tag_name=0.0.0-ticket_name
+maven_repo_username=frsystems_user
+maven_repo_password=frsystems_pass
