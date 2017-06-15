@@ -12,6 +12,8 @@ public class Detail
     private Address address;
     private String findUri;
     private Character firstLetter;
+    private Boolean hasBestPlaces;
+    private Boolean hasLocalGuide;
     private List<ListingCount> listingCounts = new ArrayList<>();
     private SchoolInfo schoolInfo = new SchoolInfo();
     private String website;
@@ -23,17 +25,18 @@ public class Detail
     public Address getAddress() {
         return this.address;
     }
-
     public String getFindUri() {
         return this.findUri;
     }
-
     public Character getFirstLetter() {
         return this.firstLetter;
     }
+    public Boolean getHasBestPlaces() {
+        return this.hasBestPlaces;
+    }
 
-    public List<ListingCount> getListingCounts() {
-        return this.listingCounts;
+    public Boolean getHasLocalGuide() {
+        return this.hasLocalGuide;
     }
 
     public Integer getListingCount(final Context context, final Locale locale)
@@ -45,6 +48,10 @@ public class Detail
         }
 
         return null;
+    }
+
+    public List<ListingCount> getListingCounts() {
+        return this.listingCounts;
     }
 
     public SchoolInfo getSchoolInfo() {
@@ -69,6 +76,18 @@ public class Detail
 
     public void setFirstLetter(final Character firstLetter) {
         this.firstLetter = firstLetter;
+    }
+
+    public void setHasBestPlaces(final Boolean hasBestPlaces) {
+        this.hasBestPlaces = hasBestPlaces;
+    }
+
+    public void setHasLocalGuide(final Boolean hasLocalGuide) {
+        this.hasLocalGuide = hasLocalGuide;
+    }
+
+    public void setListingCounts(final List<ListingCount> listingCounts) {
+        this.listingCounts = listingCounts;
     }
 
     public void setPropertyCounts(final List<ListingCount> listingCounts) {
