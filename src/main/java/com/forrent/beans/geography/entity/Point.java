@@ -1,9 +1,17 @@
 package com.forrent.beans.geography.entity;
 
-class Point
+public class Point
 {
     private Double lat;
     private Double lon;
+
+    public Point() {}
+
+    public Point(final Double lon, final Double lat)
+    {
+        this.lon = lon;
+        this.lat = lat;
+    }
 
     public Double getLat() {
         return this.lat;
