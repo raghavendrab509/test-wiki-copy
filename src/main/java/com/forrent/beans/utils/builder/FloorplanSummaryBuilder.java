@@ -30,7 +30,7 @@ public class FloorplanSummaryBuilder
         floorplanSummary.setBaths(this.buildBathroomsRange(floorplans));
         floorplanSummary.setPrice(this.buildPricesRange(floorplans));
         floorplanSummary.setSquareFeet(this.buildSquareFeetRange(floorplans));
-        floorplanSummary.setHasPerBedPricing(this.determinePerBedPricing(floorplans));
+        floorplanSummary.setHasPerBedPricing(this.determineHasPerBedPricing(floorplans));
         floorplanSummary.setNumberOfAvailableUnits(this.getNumberOfAvailableUnits(floorplans));
 
         return floorplanSummary;
@@ -207,7 +207,7 @@ public class FloorplanSummaryBuilder
         return byRoomCount;
     }
 
-    private boolean determinePerBedPricing(final List<Floorplan> floorplans)
+    private boolean determineHasPerBedPricing(final List<Floorplan> floorplans)
     {
         boolean hasPerBedPricing = false;
 
