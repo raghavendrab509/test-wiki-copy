@@ -15,6 +15,8 @@ public class FloorplanSummary implements IObjectWithId, Serializable
     private String id;
     private Range<Integer> price = new Range<Integer>();
     private Range<Integer> squareFeet = new Range<Integer>();
+    private Boolean hasPerBedPricing;
+    private Integer numberOfAvailableUnits;
 
     public Range<Double> getBaths() {
         return this.baths;
@@ -55,5 +57,25 @@ public class FloorplanSummary implements IObjectWithId, Serializable
 
     public void setSquareFeet(final Range<Integer> squareFeet) {
         this.squareFeet = squareFeet;
+    }
+
+    public Boolean getHasPerBedPricing()
+    {
+        return this.hasPerBedPricing;
+    }
+
+    public void setHasPerBedPricing(final Boolean hasPerBedPricing)
+    {
+        this.hasPerBedPricing = hasPerBedPricing;
+    }
+
+    public Integer getNumberOfAvailableUnits()
+    {
+        return this.numberOfAvailableUnits;
+    }
+
+    public void setNumberOfAvailableUnits(final Integer numberOfAvailableUnits)
+    {
+        this.numberOfAvailableUnits = numberOfAvailableUnits;
     }
 }
