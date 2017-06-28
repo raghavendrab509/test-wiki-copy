@@ -30,6 +30,8 @@ public class FloorplanSummaryBuilder
         floorplanSummary.setBaths(this.buildBathroomsRange(floorplans));
         floorplanSummary.setPrice(this.buildPricesRange(floorplans));
         floorplanSummary.setSquareFeet(this.buildSquareFeetRange(floorplans));
+        floorplanSummary.setHasPerBedPricing(this.determineHasPerBedPricing(floorplans));
+        floorplanSummary.setNumberOfAvailableUnits(this.getNumberOfAvailableUnits(floorplans));
 
         return floorplanSummary;
     }
@@ -203,5 +205,31 @@ public class FloorplanSummaryBuilder
         }
 
         return byRoomCount;
+    }
+
+    private boolean determineHasPerBedPricing(final List<Floorplan> floorplans)
+    {
+        boolean hasPerBedPricing = false;
+
+        for (final Floorplan floorplan : floorplans) {
+            if (floorplan.getPerBedPricing() != null && floorplan.getPerBedPricing()) {
+                hasPerBedPricing = true;
+                break;
+            }
+        }
+
+        return hasPerBedPricing;
+    }
+
+    private Integer getNumberOfAvailableUnits(final List<Floorplan> floorplans)
+    {
+        Integer numberOfAvailableUnits = 0;
+
+        for (final Floorplan floorplan : floorplans) {
+            final Integer rentableUnits = floorplan.getRentableUnits() == null ? 0 : floorplan.getRentableUnits();
+            numberOfAvailableUnits = rentableUnits  + numberOfAvailableUnits;
+        }
+
+        return numberOfAvailableUnits;
     }
 }
