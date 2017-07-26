@@ -1,0 +1,4 @@
+version = increment this to the current version every time
+tag_name = version-ticketName
+maven_repo_username = userName
+maven_repo_password = password
