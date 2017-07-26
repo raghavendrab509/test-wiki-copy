@@ -34,3 +34,11 @@ Then log into Jenkins and run the "Deploy_Java-Beans_To_Maven" job. The job expe
 * maven_repo_username: The mavenrepo.forrent.com username
 * maven_repo_password: The mavenrepo.forrent.com password
 
+=== Automated Jenkins upload ===
+
+Follow the directions in version.properties.example to format version.properties correctly.
+
+Create review branch from the local repository.  Jenkins will then receive a webhook from github starting the upload.
+
+Merge review branch into master when ready, and Jenkins will then start the other job, which will upload the final version which will 
+have no reference to the review branch.
