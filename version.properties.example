@@ -1,4 +1,4 @@
 version = increment this to the current version every time
-ticket_name = review_jiraTicketName
+ticket_name = jiraTicketName
 maven_repo_username = userName
 maven_repo_password = password
