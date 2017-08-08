@@ -6,7 +6,8 @@ package com.forrent.beans.geography;
 public enum ShapeType
 {
     BOUNDARY,
-    CENTER;
+    CENTER,
+    NEARBY;
 
     public String toLowerCase()
     {
