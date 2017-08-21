@@ -1,10 +1,11 @@
 package com.forrent.beans.propertyListing;
 
-import com.forrent.beans.common.ObjectWithIdCollection;
+import java.util.Optional;
+
 import com.forrent.beans.common.Listing;
 import com.forrent.beans.common.ListingType;
-
-import java.util.Optional;
+import com.forrent.beans.common.ObjectCollection;
+import com.forrent.beans.common.ObjectWithIdCollection;
 
 @SuppressWarnings("serial")
 public class PropertyListing extends Listing
@@ -16,7 +17,8 @@ public class PropertyListing extends Listing
     private Resources resources = new Resources();
     private ObjectWithIdCollection<SiteText> siteTexts = new ObjectWithIdCollection<>();
     private PropertyReviewsCollection reviews = new PropertyReviewsCollection();
-
+    private ObjectCollection<AdCampaign> adCampaigns = new ObjectCollection<>();
+    
     public PropertyListing()
     {
         this.listingType = ListingType.PROPERTY_LISTING;
@@ -81,5 +83,13 @@ public class PropertyListing extends Listing
 
     public void setResources(final Resources resources) {
         this.resources = resources;
+    }
+
+    public ObjectCollection<AdCampaign> getAdCampaigns() {
+        return adCampaigns;
+    }
+
+    public void setAdCampaigns(ObjectCollection<AdCampaign> adCampaigns) {
+        this.adCampaigns = adCampaigns;
     }
 }
