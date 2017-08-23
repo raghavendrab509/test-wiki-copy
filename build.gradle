@@ -8,7 +8,7 @@ targetCompatibility = 1.8
 // Change build directory so clean doesn't delete build/hooks
 buildDir = 'gradle-build'
 
-version = tag_name
+version = System.getenv('tag_name')
 jar {
     baseName = "java-beans"
     version = version
@@ -22,7 +22,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository(url: "https://mavenrepo.forrent.com/repository/internal/") {
-                 authentication(userName: maven_repo_username, password: maven_repo_password)
+                 authentication(userName: System.getenv('maven_repo_username'), password: System.getenv('maven_repo_password'))
             }
             pom.version = version
             pom.artifactId = "java-beans"
