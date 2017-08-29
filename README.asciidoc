@@ -26,11 +26,10 @@ ForRent Java Beans useful across multiple code bases.
 Create a tag based off of the master branch or any branch.
 
 * Set the version number following the semantic versioning convention `\d.\d.\d`. For example 0.0.1.
-* Set the ticket name.
 
 Then log into Jenkins and run the "Deploy_Java-Beans_To_Maven" job. The job takes three parameters, which will be populated 
 from the selected branch:
 
-* tag_name: The name of the tag you created.  This is created by Jenkins from the version and ticket name
+* tag_name: The name of the tag you created.  This is created by Jenkins from the version and branch name if on a review branch
 * maven_repo_username: The mavenrepo.forrent.com username
 * maven_repo_password: The mavenrepo.forrent.com password
