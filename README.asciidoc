@@ -25,20 +25,12 @@ ForRent Java Beans useful across multiple code bases.
 
 Create a tag based off of the master branch or any branch.
 
-* If creating a tag based off of master the tag name should follow the semantic versioning convention `\d.\d.\d`. For example 0.0.1.
-* If creating a tag based off of other branches the tag name should be as follows `\d.\d.\d-.*`. For example 0.0.1-COR-4345.
+* Set the version number following the semantic versioning convention `\d.\d.\d`. For example 0.0.1.
+* Set the ticket name.
 
-Then log into Jenkins and run the "Deploy_Java-Beans_To_Maven" job. The job expects three parameters;
+Then log into Jenkins and run the "Deploy_Java-Beans_To_Maven" job. The job takes three parameters, which will be populated 
+from the selected branch:
 
-* tag_name: The name of the tag you created.
+* tag_name: The name of the tag you created.  This is created by Jenkins from the version and ticket name
 * maven_repo_username: The mavenrepo.forrent.com username
 * maven_repo_password: The mavenrepo.forrent.com password
-
-=== Automated Jenkins upload ===
-
-Follow the directions in version.properties.example to format version.properties correctly.
-
-Create review branch from the local repository.  Jenkins will then receive a webhook from github starting the upload.
-
-Merge review branch into master when ready, and Jenkins will then start the other job, which will upload the final version which will 
-have no reference to the review branch.
