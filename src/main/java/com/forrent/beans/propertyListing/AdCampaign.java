@@ -2,7 +2,7 @@ package com.forrent.beans.propertyListing;
 
 public class AdCampaign
 {
-    private String adCampaignId;
+    private Integer adCampaignId;
     private String logo;
     private String headlineText;
     private String linkText;
@@ -58,11 +58,11 @@ public class AdCampaign
         this.color = color;
     }
 
-    public String getAdCampaignId() {
+    public Integer getAdCampaignId() {
         return adCampaignId;
     }
 
-    public void setAdCampaignId(String adCampaignId) {
+    public void setAdCampaignId(Integer adCampaignId) {
         this.adCampaignId = adCampaignId;
     }
 }
