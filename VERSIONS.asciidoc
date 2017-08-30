@@ -3,7 +3,10 @@ Versions
 
 The version number increments every time you deploy the repository to Archiva.
 
-To increment version number manually make change in the `gradle.properties` according to the rules of http://semver.org/[semantic versioning].
+To increment version number manually make change in the `version.properties` according to the rules of http://semver.org/[semantic versioning].
+
+== 1.14.1 ==
+* Changed the information provided in version.properties to allow the new maven deployment jenkins job to run.
 
 == 1.13.9 ==
 * Add 'hasPerBedPricing' and 'numberOfAvailableUnits' to the floorplanSummaries collection.
